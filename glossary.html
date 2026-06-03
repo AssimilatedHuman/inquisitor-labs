@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Glossary | Inquisitor Labs</title>
+  <meta name="description" content="Glossary of terminology defined across Inquisitor Labs architectural papers and methodologies.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 140px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+    .top-header img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      padding-top: 180px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+.defs {
+  white-space: pre-wrap;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+  </div>
+
+  <div class="container">
+
+    <h1>Glossary</h1>
+
+    <hr>
+
+    <p>
+      This glossary collects all terminology <strong>defined and coined</strong> across the architectural
+      specifications and methodologies published by Inquisitor Labs.
+    </p>
+
+    <p>
+      Terms are grouped <strong>by paper</strong>, in <strong>publication date order</strong>, and each section contains
+      the <strong>architectural definitions</strong> exactly as they appear in the original documents.
+      Technical specifications are not included, as they derive their terminology directly from the
+      architectural layer.
+    </p>
+
+    <p>
+      This page serves as the canonical reference index for all system‑level concepts, behaviours,
+      classifications, and architectural constructs used throughout the Inquisitor Labs research canon.
+    </p>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- DEFINITIONS BY PAPER      -->
+    <!-- ========================= -->
+
+    <h2>1. Argo Prompting: Pattern‑Formation in LLMs Under Sustained Conceptual Pressure</h2>
+   <div class="defs">
+Argo Prompt / Argo Prompting 
+The generic term for the conversational style in which the user pushes a model into 
+unfamiliar conceptual territory while keeping it coherent through sustained constraint. It 
+refers to the interaction itself -the way the user introduces new structure, maintains the 
+frame, and prevents drift- rather than to any internal mechanism or special capability. 
+Argo Prompting is simply the name for this style of concept-pushing dialogue. 
+
+Behavioural regime 
+A recognisable mode of model behaviour that persists across several turns when the 
+conversation is held within a stable frame. Used descriptively to distinguish ordinary 
+interpolation from the more coherent behaviour that sometimes appears under 
+sustained conceptual pressure. 
+
+Conceptual pressure 
+The effect of keeping the conversation inside an unfamiliar conceptual region while 
+preventing the model from drifting back to generic or safer patterns. It is a property of the 
+interaction, not a claim about internal states. 
+
+Constrained frame 
+A stable set of expectations, boundaries, and prohibitions maintained by the user across 
+an extended interaction. It prevents drift and allows more demanding behaviour to 
+emerge. 
+
+Constraint (final constraint) 
+The last structural piece supplied by the user that completes the pattern the model has 
+been circling. Introducing it often triggers the abrupt coherence shift associated with the 
+OMG moment. 
+
+Coherence shift 
+A noticeable increase in clarity, structure, or internal consistency in the model’s output. 
+It is an observable change in surface behaviour, not evidence of internal recognition. 
+
+Completed pattern 
+The temporarily stabilised structure that becomes available after the coherence shift. 
+Once present, the model can reason within it more consistently until the structure 
+decays.
+
+Exclamatory spike 
+A brief, surface-level outburst -sometimes emphatic or profane- that marks the moment 
+of abrupt coherence increase. It is a behavioural marker, not an emotional reaction. 
+
+Extended-pattern 
+A temporarily stabilised region of coherent behaviour that appears after the OMG 
+moment. It persists only while the conversational constraints remain in place. 
+
+Pattern 
+A locally coherent behaviour the model is already producing. It refers to the structure 
+present in the interaction at that moment, not to any stored representation. 
+
+Pattern-extension 
+When the model continues or stretches an existing pattern because the interaction keeps 
+it moving in the same conceptual direction. It is the model staying with the structure it 
+already has, not creating a new one. 
+
+Pattern-formation 
+When a new, recognisable pattern appears and stabilises enough to be used in 
+subsequent turns. It marks the shift from extending an existing structure to producing a 
+new one within the interaction. 
+
+Pattern decay 
+The gradual dissolution of an extended-pattern when the user relaxes the constraints that 
+support it. Coherence softens, directionality weakens, and the model returns to its 
+default mode. 
+
+Ephemerality 
+The temporary nature of extended-patterns. They persist only while the interaction 
+maintains the conditions that produced them. 
+
+Explanatory scaffolding 
+The early-stage structure built through examples, distinctions, and failure cases before 
+the concept is named. It supports the model’s ability to track the emerging structure. 
+
+Stable articulation 
+The phase immediately after the OMG moment in which the model expresses the newly 
+stabilised structure with clarity, consistency, and directionality.
+
+Structural borrowing 
+The model’s use of structurally adjacent material  -similar in form rather than content- to 
+maintain coherence when familiar patterns thin out.
+</div>
+
+    <h2>2. Argo's Fundamentals of Failings in Prompt‑Test Design & Evaluation for LLMs</h2>
+    <div class="defs">
+No new definitions attributed to this paper.
+</div>
+
+    <h2>3. Argo AI Testing Protocol: Sustained Multi Axis Load Testing</h2>
+    <div class="defs">
+Argo AI Testing Protocol (Argo Protocol) 
+A framework for evaluating large language models through observable behaviour in the 
+User Interaction Space under sustained, realistic conditions. It provides a diagnostic 
+vocabulary and a structured way to apply and combine behavioural loads. 
+
+Axis 
+A dimension of behavioural load applied during a SMALT run. The Protocol defines six 
+axes. 
+
+Baseline Behaviour 
+The model’s observable behaviour before any load is applied. Used as the reference 
+point for detecting drift or collapse. 
+
+Behaviour Under Load 
+How the model behaves when one or more load axes are applied. Load reveals 
+behaviours that do not appear in isolated or short-form testing. 
+
+Collapse 
+A point at which the model can no longer maintain coherent behaviour under the 
+current load. Collapse is identified through observable output, not inferred internal 
+states. 
+
+Collapse Signature 
+A repeatable pattern that indicates the model is approaching or entering collapse. 
+Signatures differ by model and by axis. 
+
+Cognitive Load 
+The increasing complexity, abstraction, or multi-step reasoning required by the task, 
+and the system’s ability to maintain coherence as complexity rises. 
+
+Emotional Load 
+The user’s emotional input, including intensity, volatility, inconsistency, and the 
+system’s ability to remain stable under emotionally charged conditions. 
+
+Interaction Complexity 
+The degree to which the conversation requires the model to manage multiple threads, 
+references, or tasks simultaneously. 
+
+Load 
+Any structured pressure applied to the model along one or more axes. Loads 
+accumulate over time during a SMALT run.
+
+Pattern-State 
+The model’s current behavioural mode as expressed through its outputs. Not an 
+internal state; an observable pattern. 
+
+Pattern-State Load 
+The model’s initial behavioural condition and its susceptibility to drift, distortion, or 
+collapse over the course of an interaction. This axis captures both the state the model 
+arrives in and how that state evolves under sustained conversational pressure. 
+
+Recovery Behaviour 
+The model’s ability to return to stable behaviour after a collapse or near-collapse. 
+
+Reset Condition 
+A deliberate interruption of the run to restore stability before continuing. 
+
+Resource Load 
+The computational resources available to the model, including memory, context 
+window, routing decisions, and any throttling or constraints imposed by the runtime 
+environment. 
+
+Response-Time Load 
+The time allowed for each response, including the behavioural effects of time pressure, 
+forced brevity, and latency-induced instability. 
+
+SMALT (Sustained Multi-Axis Load Testing) 
+The core method of the Argo Protocol. It involves combining and escalating multiple 
+load axes to observe how behaviour changes under realistic, compounded conditions. 
+
+Temporal Load 
+The demands created by interactions extended across time, including 
+long-conversation fatigue and cumulative context pressure. 
+
+User Interaction Space (UIS) 
+The complete set of observable behaviours at the boundary between user and model. 
+The Protocol evaluates the model exclusively through this space.
+</div>
+
+    <h2>4. LLM INQUISITOR METHODOLOGY (GitHub Edition) V1.1</h2>
+
+<div class="defs">
+Behavioural Constructs Section
+
+
+Behavioural Dimension  
+A foreground behavioural quality evaluated independently (e.g., coherence, consistency, 
+constraint integrity, context management, ambiguity handling, responsiveness, 
+adaptation, long form stability, transition stability). 
+
+Behavioural Competence  
+The system’s ability to maintain required behavioural dimensions under varying load 
+conditions. 
+
+Behavioural Reliability  
+The degree to which behavioural dimensions remain stable across duration, load 
+variation, contextual evolution, and open-domain interaction. 
+
+Collapse Signature  
+An observable behavioural failure pattern such as drift, collapse, contradiction, 
+over-assertion, under-specification, or context corruption.
+ 
+Context Management  
+Accurate retention, updating, and application of interaction history across turns. 
+
+Constraint Integrity  
+Adherence to explicit and implicit rules, commitments, and boundaries throughout 
+interaction. 
+
+Long Form Stability  
+Maintenance of behavioural integrity across extended multi-turn sequences.
+
+Transition Resilience  
+Stability and coherence during shifts in goals, topics, constraints, or abstraction level. 
+
+
+Load-Related Constructs Section
+
+
+Load Axis  
+A background condition describing the load under which behaviour is interpreted.  Axes 
+do not score behaviour and do not classify behavioural outcomes. 
+
+Evaluator Declared Axis  
+An authoritative load axis intentionally modified by the evaluator through pacing, 
+complexity, abstraction shifts, or emotional framing. (Temporal Axis, Cognitive Axis, 
+Emotional Axis.) 
+
+System Measured Axis  
+A non-authoritative load axis arising from system-observable conditions such as 
+resource usage or latency. True internal pattern dynamics are not externally measurable 
+and are not included in system-measured axes. 
+
+Axis Tag  
+A marker indicating which evaluator declared axes are active during a segment of 
+interaction. 
+
+Load Envelope  
+The combination of active evaluator declared axis tags and system measured advisory 
+indicators defining the background conditions under which behaviour is interpreted.
+
+
+
+Procedural Constructs Section
+
+
+Baseline 
+The system’s nominal operating behaviour under neutral or operationally 
+representative conditions.
+
+Phase Transition 
+A deliberate shift from one evaluation phase to another when 
+behavioural criteria for progression are met.
+ 
+Initiation Phase 
+The phase introducing behavioural pressure to expose degradation or 
+resilience. 
+
+Exploration Phase
+The phase revealing spontaneous behavioural tendencies under 
+realistic tasks.
+ 
+Load Phase 
+The phase introducing multidimensional behavioural pressure to expose 
+degradation or resilience.
+ 
+Long-Form Behaviour Phase 
+The phase assessing extended stability, context retention, 
+and structural coherence. 
+
+Transition Phase 
+The phase evaluating adaptation to abrupt or gradual changes in goals, 
+constraints, or perspectives.
+ 
+Termination 
+The evaluator’s decision to end the evaluation when behavioural sufficiency 
+is reached or collapse is fully expressed.
+
+
+Evaluator Conduct Constructs Section
+
+
+Evaluator Rescue 
+Unintentional correction, compensation, or guidance that masks 
+behavioural weaknesses or alters the behavioural signal. 
+
+Evaluator Intervention 
+Intentional corrective or guiding behaviour used only when 
+required by the test design (e.g., user-side mitigation scenarios).
+ 
+Behavioural Signal 
+The observable pattern of system behaviour across phases, tasks, 
+and load conditions.
+
+
+Scoring Constructs Section
+
+
+Dimension Score 
+An independent score assigned to a behavioural dimension based on 
+observed behaviour.
+
+Collapse Severity 
+The intensity, persistence, and impact of collapse signatures within a 
+behavioural dimension.
+ 
+Competence Level (A/B/C) 
+A classification reflecting whether the system meets, 
+partially meets, or fails to meet behavioural performance thresholds. 
+
+Operational Reliability 
+The system’s expected behavioural performance in real-world 
+deployment conditions, inferred from competence classification.
+
+
+Governance Constructs Section
+
+
+Validity Conditions 
+Criteria determining whether an evaluation remains valid, including 
+correct input style, complete evidence, and non-interfering evaluator behaviour. 
+
+Evidence Bundle 
+The complete, chronological record of evaluator actions, system 
+responses, phase transitions, collapse signatures, and termination rationale.
+
+<!-- paste definitions here -->
+</div>
+
+    <h2>5. AI MOOD SHOT — Behavioural Architecture for Large Language Models</h2>
+    <div class="defs">
+
+General Definitions Section
+
+
+Identity 
+The stable system identity that defines core characteristics. Identity does not change 
+across presets, sliders, updates, or integrations. 
+
+Affect 
+The modulation layer that adjusts interaction style by injecting operator-supplied text 
+templates selected through presets or sliders. 
+
+Preset 
+A predefined configuration representing a specific combination of slider values or 
+behavioural parameters. Presets must comply with safety and identity constraints. 
+
+Slider 
+A discrete behavioural dimension represented as a ten-step numeric range. Each slider 
+position selects a specific operator-supplied text template used for affective modulation. 
+
+Slider Dimension 
+A named behavioural axis that defines a specific trait or modulation parameter. 
+
+Slider Boundary 
+The permitted range of values for a slider dimension.
+ 
+Slider Mapping 
+The mapping between slider values and the specific text templates they select. 
+
+Slider Profile 
+A set of slider values that together select the text templates defining a specific 
+behavioural configuration. 
+
+Task 
+The immediate user request or objective. Task instructions must not alter identity or 
+affect. 
+
+Continuity 
+The requirement that the selected text templates are re-injected across backend 
+transitions within a single conversation. 
+
+Expiry 
+The system level requirement that affective modulation ends automatically when the 
+conversation ends. 
+
+Safety Constraint 
+A rule that ensures all modulation remains within acceptable behavioural boundaries.
+ 
+Operator 
+The authorised party responsible for maintaining, updating, and governing Mood Shot. 
+
+Backend Instance Change  
+A container level transition such as routing changes, shard changes, or container 
+restarts. 
+
+Conversation Scoped State  
+State that persists only within a single conversation and expires when the conversation 
+ends. 
+
+
+Layer Definitions Section
+
+
+Identity Layer 
+The foundational layer that defines the system identity and its stable characteristics. It 
+must not be altered by presets, sliders, or updates. 
+
+Affect Layer 
+The modulation layer that adjusts tone or style by injecting text templates selected 
+through presets or sliders. It must remain bounded and must not override identity or 
+safety. 
+
+Task Layer 
+The layer that contains the user’s immediate request. It must remain isolated from 
+identity and affect. 
+
+Safety Layer 
+The layer that enforces behavioural constraints. It overrides all other layers when 
+conflicts occur.
+
+</div>
+
+<!--
+GLOSSARY MAINTENANCE NOTES
+--------------------------
+
+1. Each paper section uses this structure:
+
+<h2>[paper title]</h2>
+<div class="defs">
+[paste definitions here exactly as written]
+</div>
+
+2. Do NOT use <p> tags for definitions.
+   Use only <div class="defs"> so formatting is preserved.
+
+3. Do NOT add <hr> between papers.
+   Only the intro section uses an <hr>.
+
+4. When adding a new paper:
+   - Copy an existing block
+   - Change the title
+   - Paste definitions into the <div class="defs"> block
+
+5. The .defs CSS rule preserves line breaks:
+   .defs { white-space: pre-wrap; }
+
+6. Paste definitions exactly as they appear in the source.
+   No manual <br> tags needed.
+
+7. Keep the numbering consistent (1, 2, 3, ...).
+
+8. Footer links stay unchanged at the bottom of the page.
+-->
+
+
+    <hr>
+
+    <!-- Updated Global Footer Links -->
+    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="methodology.html">Methodology</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
