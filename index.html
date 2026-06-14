@@ -6,12 +6,12 @@
   <title>Inquisitor Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/">
-  
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/">
+
   <style>
     body {
       font-family: system-ui, sans-serif;
-      font-weight: 525; /* slightly heavier, still not bold */
+      font-weight: 525;
       margin: 0;
       padding: 0;
       background: #f7f7f7;
@@ -49,14 +49,32 @@
     h1, h2, h3 {
       margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b; /* Rich Brown */
+      color: #5a3e2b;
     }
-    nav ul {
-      padding-left: 1.2rem;
-    }
-    nav ul li {
-      margin: 0.3rem 0;
-    }
+
+    /* Button-style links on the left */
+  p.home-row {
+  display:flex;
+  align-items:flex-start;
+  gap:1rem;
+}
+
+.nav-button {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:140px; /* fits “Management” */
+  padding:0.25rem 0.6rem;
+  font-weight:600;
+  background:#000; /* black button */
+  color:#1BAFBF; /* turquoise text */
+  text-decoration:none;
+  border-radius:4px;
+  flex-shrink:0;
+}
+.nav-button:hover {
+  background:#111; /* subtle hover, still black */
+}
     p {
       text-align: justify;
       text-justify: inter-word;
@@ -73,53 +91,62 @@
   <div class="container">
     <h1>Inquisitor Labs</h1>
 
-    <p>Inquisitor Labs is an independent entity which focuses on AI behaviour, AI systems, human–AI interaction, communications, cryptography, blockchain, and advanced systems architecture. We study how intelligent systems behave, adapt, fail, and influence the environments they operate in, and how future technical ecosystems should be designed.</p>
+    <p><strong>Free practical info on using AI at work.</strong></p>
 
-    <p>RESEARCHING the foundations of AI behaviour, emergent system dynamics, interaction patterns, communication structures, distributed trust, and the architectures that enable secure, reliable intelligent systems.</p>
-
-    <p>DEVELOPING novel system architectures, technical specifications, workflow models, communication protocols, and future facing system designs. Development work spans practical solutions, experimental prototypes, and speculative architectures that explore what comes next in intelligent systems.</p>
-
-    <p>PRODUCING system architecture solutions, AI workflow solutions, technical specifications, application and system specifications, research and speculative papers, behavioural analyses, and forward-looking conceptual work.</p>
-
-    <p>INQUISITOR LABS exists to develop more capable and resilient AI systems and workflows, understand AI behaviour, educate others on our insights, and conceptualise how future technical ecosystems should be designed.</p>
-
-    <h2>Services</h2>
-
-    <h3>Research</h3>
-    <p>Formal and exploratory work on AI behaviour, system architecture, workflow design, interaction patterns, and future technical ecosystems. This includes behavioural evaluation, failure mode mapping, black box interrogation, workflow stability analysis, evaluation methodology design, long context behaviour studies, red team style probing, model agnostic architecture guidance, human–AI interaction analysis, and conceptual ecosystem design.</p>
-
-    <h3>Insights</h3>
-    <p>Clear, practical explanations of AI behaviour for everyone and anyone whose work or personal life now intersects with AI usage.</p>
-
-    <h3>Training &amp; Reference Range</h3>
-    <p>Structured materials for developers and users: available for download from our Gumroad partner shop.</p>
-
-    <h3>Open Use / Open Build</h3>
-    <p>Selective release of intellectual property in the form of architectural and technical specifications for others to develop and build on.</p>
-
-    <h3>LLM INQUISITOR Methodology</h3>
-    <p>Industry first, full methodology for testing AI under real conditions in actual workflows, using the tasks systems are intended to perform rather than inadequate short prompts.</p>
-
-    <h3>Collaboration &amp; Project Work</h3>
-    <p>Engagement with businesses, research bodies, small teams, and startups on system design, workflow engineering, behavioural analysis, and conceptual architecture. Focused on system agnostic, black box understanding rather than installation or basic setup. Includes funded projects, co research, technical exploration, and joint solution development.</p>
-
-   <hr>
-
-<p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="methodology.html">Methodology</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a>
+<p class="home-row">
+  <a class="nav-button" href="insights.html">Users</a>
+  Help with unreliable AI tools, broken workflows, strange outputs, and day‑to‑day AI problems.
 </p>
 
-<p style="text-align:center; font-size: 0.85rem; color:#555; margin-top:1rem;">
-  Contact via GitHub: <a href="https://github.com/AssimilatedHuman">AssimilatedHuman</a>
+<p class="home-row">
+  <a class="nav-button" href="insights.html">Developers</a>
+  Guidance on real failure modes, workflow stability, long‑context issues, and black‑box behaviour.
 </p>
+
+<p class="home-row">
+  <a class="nav-button" href="insights.html">Management</a>
+  Clarity on rollout risks, user‑blame traps, reporting culture, and why AI deployments fail.
+</p>
+
+<p class="home-row">
+  <a class="nav-button" href="research.html">Research</a>
+  Publicly available work from Inquisitor Labs.
+</p>
+
+<p class="home-row">
+  <a class="nav-button" href="openuse.html">Open Use</a>
+  Selectively released architectural and technical specifications for others to build on.
+</p>
+
+<p class="home-row">
+  <a class="nav-button" href="services.html">Services</a>
+  UX and AI evaluation based on real workflows, real tasks, and real system behaviour.
+</p>
+
+<p class="home-row">
+  <a class="nav-button" href="collaborations.html">Collaborations</a>
+  Working with teams of any size on system design and behavioural analysis.
+</p>
+
+
+
+    <hr>
+
+    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="methodology.html">Methodology</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a>
+    </p>
+
+    <p style="text-align:center; font-size: 0.85rem; color:#555; margin-top:1rem;">
+      Contact via GitHub: <a href="https://github.com/AssimilatedHuman">AssimilatedHuman</a>
+    </p>
 
   </div>
 
