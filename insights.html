@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 
   <!-- SEO CORE -->
-  <title>Inquisitor Labs — Insights | AI Behaviour, Testing & Failure Analysis</title>
+  <title>Inquisitor Labs - Insights | AI Behaviour, Testing & Failure Analysis</title>
   <meta name="description" content="Free AI insights from Inquisitor Labs. Practical guidance on AI testing, AI failure modes, workplace AI risks, chatbot behaviour, and real-world AI adoption challenges.">
   <meta name="keywords" content="AI testing, AI behaviour, AI failure modes, chatbot behaviour, AI workplace risks, AI insights, Inquisitor Labs, AI methodology, AI development failures">
   <meta name="author" content="William Argo">
@@ -37,7 +37,7 @@
   <style>
     body {
       font-family: system-ui, sans-serif;
-      font-weight: 525; /* slightly heavier, still not bold */
+      font-weight: 525;
       margin: 0;
       padding: 0;
       background: #f7f7f7;
@@ -65,26 +65,64 @@
       display: block;
     }
     .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-      padding-top: 180px;
-      background: #fff;
-      box-sizing: border-box;
-    }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  padding-top: 140px; /* was 180px */
+  background: #fff;
+  box-sizing: border-box;
+}
+
     h1, h2 {
       margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b; /* Rich Brown */
+      color: #5a3e2b;
     }
+ h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 650;
+  font-size: 1.25rem;
+  color: #333; /* darker grey so it stands out */
+}
 
-    /* Slight spacing for SEO insight blocks */
-    h3 {
-      margin-top: 1.2rem;
-      margin-bottom: 0.6rem;
-      font-weight: 600;
-      color: #5a3e2b; /* Rich Brown */
-    }
+details > summary {
+  color: #5a3e2b; /* keep dropdowns brown */
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.pdf-two-col {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.pdf-two-col div {
+  width: 49%;
+  padding: 0.2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.pdf-two-col div:only-child {
+  width: 100%;
+}
+
+.pdf-two-col a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pdf-two-col a:hover {
+  text-decoration: underline;
+  color: #5a3e2b;
+}
+
+
   </style>
 </head>
 
@@ -98,44 +136,313 @@
     <h1>Inquisitor Labs — Insights</h1>
 
     <p><strong>INSIGHTS PAGE</strong></p>
-    <p>Welcome to the free Insights page from Inquisitor Labs.</p>
 
-    <p>AI is being deployed across workplaces at a pace nobody can realistically keep up with. Everyone across the board is being left to deal with systems they were never trained for, while still being held responsible when things go wrong.</p>
+<p>AI is being rolled out faster than anyone can realistically adapt, leaving people to work with systems they were never trained for while still being held responsible when things go wrong. Much of this comes from AI that was never tested under real working conditions. Inquisitor Labs focuses on how these systems actually behave in the wild — the strange chatbot replies, stubborn image generators, broken workflows, and AI jobs that never quite materialise.</p>
 
-    <p>A large part of this chaos comes from AI that has never been properly tested under real working conditions — itself a symptom of an industry deploying systems it does not have the tools, training, or methodology to properly quality‑check.</p>
+<p>Below are deeper insights into the questions people actually ask about AI at work and at home.</p>
 
-    <p>Inquisitor Labs is working to fill that knowledge gap.</p>
 
-    <p>Below are a series of deeper insights into the main conversations many people have related to AI at work or at home. Not the hype of AI taking over, but the reality of weird chats, difficult image generators, broken workflows and unfilled job vacancies in the industry.</p>
+<h2>Available Insights</h2>
 
-    <h2>Available Insights</h2>
+<div class="pdf-two-col">
 
-    <h3><a href="insight-am-i-liable-for-ai-mistake-at-work.pdf">Am I Liable For An AI Mistake At Work?</a></h3>
-    <h3><a href="insight-how-do-i-test-my-ai.pdf">How Do I Test My AI?</a></h3>
-    <h3><a href="insight-how-to-talk-effectively-about-ai-at-work.pdf">How Can I Talk Effectively About AI At Work?</a></h3>
-    <h3><a href="insight-why-ai-fails-at-coding.pdf">Why AI Fails At Coding</a></h3>
-    <h3><a href="insight-why-ai-fails-in-writing-tasks.pdf">Why AI Fails At Long Writing Tasks</a></h3>
-    <h3><a href="insight-why-ai-wont-generate-the-image-i-want.pdf">Why AI Won’t Generate The Image I Want</a></h3>
-    <h3><a href="insight-why-chatbots-say-weird-things.pdf">Why Chatbots Say Weird Things</a></h3>
-    <h3><a href="insight-why-is-my-ai-development-failing.pdf">Why Is My AI Development Failing?</a></h3>
-    <h3><a href="insight-why-cant-i-hire-anyone-to-test-my-ai.pdf">Why Can’t I Hire Anyone To Test My AI?</a></h3>
-    <h3><a href="insight-why-cant-i-get-a-job-in-ai-testing.pdf">Why Can’t I Get A Job In AI Testing?</a></h3>
+  <div><a href="insight-am-i-liable-for-ai-mistake-at-work.pdf">Am I Liable For An AI Mistake At Work?</a></div>
+  <div><a href="insight-how-do-i-test-my-ai.pdf">How Do I Test My AI?</a></div>
 
-    <hr>
+  <div><a href="insight-how-to-talk-effectively-about-ai-at-work.pdf">How Can I Talk Effectively About AI At Work?</a></div>
+  <div><a href="insight-why-ai-fails-at-coding.pdf">Why AI Fails At Coding</a></div>
 
-    <hr>
+  <div><a href="insight-why-ai-fails-in-writing-tasks.pdf">Why AI Fails At Long Writing Tasks</a></div>
+  <div><a href="insight-why-ai-wont-generate-the-image-i-want.pdf">Why AI Won’t Generate The Image I Want</a></div>
 
-<p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="methodology.html">Methodology</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a>
+  <div><a href="insight-why-chatbots-say-weird-things.pdf">Why Chatbots Say Weird Things</a></div>
+  <div><a href="insight-why-is-my-ai-development-failing.pdf">Why Is My AI Development Failing?</a></div>
+
+  <div><a href="insight-why-cant-i-hire-anyone-to-test-my-ai.pdf">Why Can’t I Hire Anyone To Test My AI?</a></div>
+  <div><a href="insight-why-cant-i-get-a-job-in-ai-testing.pdf">Why Can’t I Get A Job In AI Testing?</a></div>
+
+</div>
+
+<p style="margin-top:0.8rem;">
+  <strong>Further Reading:</strong>
+  <a href="https://books2read.com/u/388QRd">Surviving AI Rollouts at Work</a>
 </p>
+
+
+<p style="margin-top:1.5rem;">
+  <strong>Further Reading:</strong>
+  <a href="https://books2read.com/u/388QRd">Evaluating & Testing AI Using Real-World Work</a>
+</p>
+
+
+    <h2>Deeper AI questions</h2>
+
+    <!-- WORKING WITH AI -->
+    <h3>Working with AI</h3>
+
+    <details>
+      <summary>Why does the AI keep changing its answers?</summary>
+      <ul>
+        <li>why does copilot give different answers every time</li>
+        <li>why does chatgpt give different answers to the same question</li>
+        <li>why does gemini contradict itself</li>
+        <li>why does ai give different answers every time</li>
+        <li>why is ai so inconsistent day to day</li>
+      </ul>
+      <p>AI systems don’t produce identical outputs because they’re probabilistic, not deterministic. They generate responses by sampling from many possible patterns, so even tiny changes in wording, context, or internal model state can shift the result. Updates, safety filters, and background system changes also affect behaviour. AI will always feel inconsistent unless workflows are designed to assume variability rather than fight it.</p>
+    </details>
+
+    <details>
+      <summary>Why does the AI forget what we were doing?</summary>
+      <ul>
+        <li>why does copilot forget what we were doing</li>
+        <li>why does chatgpt forget what i said earlier</li>
+        <li>why does chatgpt get confused halfway through a task</li>
+        <li>why does claude forget earlier context in long chats</li>
+        <li>why does ai forget things so quickly</li>
+      </ul>
+      <p>AI doesn’t have memory — it only sees the text currently inside its context window. As conversations grow, earlier details fall out of scope or get compressed, causing drift or contradictions. Long tasks, multi step instructions, and extended chats push models past their stable limits. This isn’t user error — it’s a structural limitation of how LLMs store and process context.</p>
+    </details>
+
+    <details>
+      <summary>Why does the AI ignore or misread my instructions?</summary>
+      <ul>
+        <li>why does copilot rewrite things i didn’t ask it to</li>
+        <li>why does copilot ignore my instructions</li>
+        <li>why does copilot not understand my prompts</li>
+        <li>why does gemini misread my instructions</li>
+        <li>why does ai not follow instructions properly</li>
+      </ul>
+      <p>AI doesn’t “read” instructions — it predicts patterns that resemble examples from training. If your request looks similar to a pattern the model has seen before, it may follow that instead of your literal wording. Ambiguity, long prompts, mixed tones, or competing instructions (system vs user) increase misfires. This is why AI sometimes rewrites, reframes, or ignores parts of what you asked.</p>
+    </details>
+
+    <details>
+      <summary>Why does the AI refuse simple tasks?</summary>
+      <ul>
+        <li>why does copilot refuse to do simple tasks</li>
+        <li>why does chatgpt refuse to answer sometimes</li>
+        <li>why does claude refuse to continue writing</li>
+        <li>why does ai get stuck or freeze mid task</li>
+        <li>why does gemini give me outdated info</li>
+      </ul>
+      <p>AI models have layered safety systems that block or reshape outputs when they detect risk — often incorrectly. They may refuse harmless tasks because the model misclassifies them as sensitive, unsafe, or policy restricted. Sometimes the refusal is silent: the model stalls, apologises, or derails. This isn’t the user’s fault — it’s the safety stack being overly cautious or misfiring.</p>
+    </details>
+
+    <details>
+      <summary>Why does the AI make things up or rewrite stuff?</summary>
+      <ul>
+        <li>why does copilot change the tone of my emails</li>
+        <li>why does chatgpt hallucinate stuff that isn’t real</li>
+        <li>why does claude change the structure of my text</li>
+        <li>why does ai make things up</li>
+        <li>why does gemini give me outdated info</li>
+      </ul>
+      <p>AI doesn’t know facts — it generates plausible text based on patterns. When it lacks information, it fills gaps with confident sounding guesses. This can look like hallucination, outdated info, or unrequested rewriting. The model isn’t lying — it’s predicting what “should” come next, even when reality doesn’t match the pattern.</p>
+    </details>
+
+    <!-- DEVELOPING & TESTING AI -->
+    <h3>Developing & testing AI</h3>
+
+    <details>
+      <summary>Why are AI outputs inconsistent even with the same prompt?</summary>
+      <ul>
+        <li>why does ai give different outputs with the same prompt</li>
+        <li>why does chatgpt change its answer when i rerun a test</li>
+        <li>why does claude drift during long test runs</li>
+        <li>why does gemini contradict earlier steps in a workflow</li>
+        <li>why does copilot produce inconsistent code suggestions</li>
+      </ul>
+      <p>AI models are probabilistic, not deterministic. They don’t execute fixed logic — they sample from many possible next token predictions. Even tiny changes in prompts, ordering, hidden system instructions, or model state can shift the output. During development, this shows up as drift, contradictions, inconsistent code suggestions, and different answers on reruns. This isn’t a bug — it’s how LLMs work. Testing must assume variability, not expect stability.</p>
+    </details>
+
+    <details>
+      <summary>Why is AI so sensitive to tiny prompt changes?</summary>
+      <ul>
+        <li>why is ai so hard to test consistently</li>
+        <li>why do llms fail deterministic tests</li>
+        <li>why does ai pass a test one day and fail the next</li>
+        <li>why does ai break when i change one word in the prompt</li>
+        <li>why does ai behave differently in staging vs production</li>
+      </ul>
+      <p>LLMs are extremely sensitive to prompt phrasing, ordering, and context. A one word change can alter the entire output. They also behave differently across environments because staging, production, and vendor backends run different versions, safety layers, or sampling settings. This makes deterministic testing unreliable — AI systems require statistical, not binary, test design.</p>
+    </details>
+
+    <details>
+      <summary>Why does AI lose context or ignore steps in long workflows?</summary>
+      <ul>
+        <li>why does ai forget earlier steps in a long workflow</li>
+        <li>why does chatgpt ignore system instructions sometimes</li>
+        <li>why does claude lose context in long chains</li>
+        <li>why does gemini misinterpret structured prompts</li>
+        <li>why does copilot not follow multi step instructions</li>
+      </ul>
+      <p>Models don’t “remember” — they only see what fits in the context window. As workflows grow, earlier steps fall out of scope or get compressed, causing drift or forgotten instructions. Models also follow a hierarchy of instructions (system &gt; developer &gt; user), so they may ignore or override user prompts. Structured prompts, long chains, and multi step tasks push models past their stable reasoning limits.</p>
+    </details>
+
+    <details>
+      <summary>Why does AI refuse tasks or stop mid‑answer during testing?</summary>
+      <ul>
+        <li>why does ai refuse tasks that are clearly safe</li>
+        <li>why does chatgpt over apply safety filters</li>
+        <li>why does claude stop mid answer with no error</li>
+        <li>why does gemini apologise instead of completing the task</li>
+        <li>why does copilot refuse to generate code it generated yesterday</li>
+      </ul>
+      <p>Safety systems sit on top of the model and can block or reshape outputs. They often misclassify harmless tasks as risky, causing refusals, apologies, stalls, or incomplete answers. Different vendors apply different guardrails, so behaviour varies across models. Sometimes the model simply stops mid output because a safety layer intervened without explanation.</p>
+    </details>
+
+    <details>
+      <summary>Why is debugging or integrating AI so difficult?</summary>
+      <ul>
+        <li>why is ai so hard to debug</li>
+        <li>why do llms fail when i add real world data</li>
+        <li>why does ai break when integrated into a larger system</li>
+        <li>why does ai produce different results depending on the tool i use</li>
+        <li>why do ai tests fail when humans can do the task easily</li>
+      </ul>
+      <p>LLMs don’t expose internal reasoning, so debugging is guesswork. They perform well on clean examples but break on messy real world data because they rely on pattern matching, not understanding. Integrations amplify this fragility — different tools, wrappers, and runtimes produce different outputs. AI tests often fail where humans succeed because humans generalise; models only interpolate patterns they’ve seen.</p>
+    </details>
+
+    <!-- DEPLOYING AI IN ORGANISATIONS -->
+    <h3>Deploying AI in organisations</h3>
+
+    <details>
+      <summary>Why do AI rollouts fail or get ignored by staff?</summary>
+      <ul>
+        <li>why do ai rollouts fail in companies</li>
+        <li>why don’t employees use the ai tools we deployed</li>
+        <li>why does ai not save time like the vendor promised</li>
+        <li>why is ai adoption so slow in my organisation</li>
+        <li>why do teams ignore ai guidance even when it’s correct</li>
+      </ul>
+      <p>AI rollouts fail because organisations treat AI as a tool installation rather than a behaviour change programme. Employees don’t adopt AI when workflows, incentives, training, and expectations stay the same. If AI adds friction, feels risky, or creates extra work, people avoid it. Leadership often expects instant productivity gains, but adoption requires redesigning processes, clarifying when AI should be used, and building trust through small, reliable wins.</p>
+    </details>
+
+    <details>
+      <summary>Why does AI break when plugged into real systems?</summary>
+      <ul>
+        <li>why does ai break when we integrate it with our existing systems</li>
+        <li>why does copilot behave differently in different apps</li>
+        <li>why does ai not work with our internal data properly</li>
+        <li>why does ai struggle with real world messy data</li>
+        <li>why does ai produce different results depending on the platform</li>
+      </ul>
+      <p>AI breaks when integrated into real systems because enterprise environments are messy: inconsistent data, legacy software, conflicting formats, and fragmented platforms. LLMs rely on clean, structured patterns, so real world data causes errors or unpredictable behaviour. Different apps, wrappers, and platforms run different model versions or settings, so outputs vary across environments. AI deployment succeeds only when data pipelines, integrations, and workflows are deliberately engineered for stability.</p>
+    </details>
+
+    <details>
+      <summary>Why is AI so hard to govern, audit, or keep compliant?</summary>
+      <ul>
+        <li>why is ai so hard to govern across departments</li>
+        <li>why does ai introduce new risks we didn’t plan for</li>
+        <li>why is it so hard to get compliance comfortable with ai</li>
+        <li>why does ai output violate policy even with guardrails</li>
+        <li>why can’t we explain ai decisions to auditors</li>
+      </ul>
+      <p>AI introduces new risks that don’t fit traditional governance models. Compliance teams struggle because AI outputs are probabilistic, hard to audit, and difficult to explain. Policies designed for deterministic software don’t map cleanly to LLM behaviour. Guardrails reduce risk but can still produce policy violating outputs. Organisations need new governance frameworks that account for uncertainty, traceability, and human oversight rather than relying on legacy controls.</p>
+    </details>
+
+    <details>
+      <summary>Why is AI unreliable or inconsistent in production?</summary>
+      <ul>
+        <li>why does ai behave differently day to day in production</li>
+        <li>why does chatgpt give different answers to the same workflow</li>
+        <li>why does gemini break long processes halfway through</li>
+        <li>why does claude forget earlier steps in operational tasks</li>
+        <li>why does copilot freeze or stall during business tasks</li>
+      </ul>
+      <p>AI behaves differently day to day because models update, safety layers shift, and backend systems change without notice. Long workflows amplify drift: models forget earlier steps, stall, or break mid process. Different vendors have different stability profiles, so behaviour varies across ChatGPT, Gemini, Claude, and Copilot. AI in production must be monitored like a living system — with observability, fallback paths, and human in the loop checks.</p>
+    </details>
+
+    <details>
+      <summary>Why don’t people trust or adopt AI at work?</summary>
+      <ul>
+        <li>why do employees not trust ai outputs</li>
+        <li>why do staff think ai will replace them</li>
+        <li>why is ai training not improving adoption</li>
+        <li>why do managers expect ai to work like a human</li>
+        <li>why do teams blame ai for problems caused by bad processes</li>
+      </ul>
+      <p>Employees don’t trust AI when outputs feel inconsistent, opaque, or risky. Staff fear replacement when leadership frames AI as a cost cutting tool rather than a capability amplifier. Training often fails because it teaches features, not workflows. Managers expect AI to behave like a human colleague, which sets unrealistic expectations. Teams blame AI for process failures because the underlying processes were never designed for probabilistic systems. Successful deployment requires cultural readiness, not just technical rollout.</p>
+    </details>
+
+    <!-- AI INDUSTRY & CAREERS -->
+    <h3>AI industry & careers</h3>
+
+    <details>
+      <summary>What qualifications do you actually need to work in AI?</summary>
+      <ul>
+        <li>what qualifications do i need for a job in ai testing</li>
+        <li>do i need a degree to work in ai</li>
+        <li>how do i get into ai without a technical background</li>
+        <li>what skills do i need for ai jobs</li>
+        <li>how do i switch careers into ai from a non tech role</li>
+      </ul>
+      <p>The AI industry is still in its infancy, so companies copy requirements from older tech roles — which is why listings often demand degrees that aren’t actually relevant to the work. Employers ask for them because they don’t yet know how to assess AI specific capability. What really matters is whether you can evaluate AI behaviour, think clearly, test systematically, and communicate findings. People who build these skills — regardless of formal qualifications — stand out because almost nobody can demonstrate real behavioural evaluation competence. The field is new enough that practical skill beats credentials every time.</p>
+    </details>
+
+    <details>
+      <summary>What do AI testers and evaluators actually do?</summary>
+      <ul>
+        <li>how do i become an ai evaluator</li>
+        <li>what does an ai tester actually do</li>
+        <li>how do i get a job in ai safety</li>
+        <li>why can’t i get a job in ai testing</li>
+        <li>how much do ai testing jobs pay</li>
+      </ul>
+      <p>AI testing and evaluation roles are poorly defined because the industry hasn’t standardised what “testing AI” actually means. Companies often ask for degrees or research backgrounds simply because they don’t know what else to ask for. In reality, the work is about breaking models, analysing behaviour, spotting risks, and documenting failures — not academic credentials. Job titles, requirements, and pay bands vary wildly because organisations are still figuring out what these roles should look like. Candidates who can show structured evaluation work immediately differentiate themselves from the noise.</p>
+    </details>
+
+    <details>
+      <summary>Is prompt engineering a real job or just a skill?</summary>
+      <ul>
+        <li>how do i get into prompt engineering</li>
+        <li>what does a prompt engineer actually do</li>
+        <li>why are prompt engineering jobs so rare</li>
+        <li>do i need coding skills for prompt engineering</li>
+        <li>how do i build a portfolio for ai prompt work</li>
+      </ul>
+      <p>Prompt engineering isn’t a standalone career — it’s a skill embedded inside other roles like evaluation, product, research, and operations. The early hype created unrealistic expectations, so companies now overcorrect by asking for degrees, coding skills, or research backgrounds even when the work doesn’t require them. Jobs are rare because the industry realised it needs people who understand workflows, reasoning, and constraints — not just clever prompts. A portfolio of real model interaction work is far more valuable than formal qualifications.</p>
+    </details>
+
+    <details>
+      <summary>Why are AI job listings so confusing or unrealistic?</summary>
+      <ul>
+        <li>why do ai job listings make no sense</li>
+        <li>why do ai roles require impossible experience</li>
+        <li>why do job boards not list ai testing as a category</li>
+        <li>why does every ai job ask for phd level skills</li>
+        <li>why do companies not know how to hire ai testers</li>
+      </ul>
+      <p>AI hiring is chaotic because companies don’t yet understand the roles they’re trying to fill. Job boards don’t have categories for evaluation or safety, so listings get shoved under “engineering” or “research”, which forces HR teams to paste in irrelevant degree requirements and impossible experience levels. Many organisations confuse annotation work with evaluation work, or assume AI roles must look like traditional software roles. The result is job ads that make no sense — not because candidates are unqualified, but because the hiring pipeline is still immature.</p>
+    </details>
+
+    <details>
+      <summary>What does a real career path in AI look like?</summary>
+      <ul>
+        <li>what is the career path for ai testing roles</li>
+        <li>is ai a stable career or hype</li>
+        <li>how do i stand out when applying for ai jobs</li>
+        <li>why do ai companies hire so inconsistently</li>
+        <li>how do i get real experience with ai models for my cv</li>
+      </ul>
+      <p>AI careers are stable when tied to real organisational needs: testing, safety, risk, operations, and workflow design. The industry is young, so hiring is inconsistent and job titles vary, but the underlying demand for people who understand AI behaviour is growing fast. You stand out by showing practical evaluation work — real tests, documented findings, reproducible examples — not by collecting certificates. Because the field is so new, people who build hands on experience with models gain an advantage that formal qualifications can’t match.</p>
+    </details>
+
+    <hr>
+    <hr>
+
+    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="methodology.html">Methodology</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a>
+    </p>
 
     <p>(C) William Argo</p>
 
