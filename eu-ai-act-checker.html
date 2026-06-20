@@ -13,6 +13,36 @@
       background-color: #f9f9f9;
       color: #333;
     }
+
+    /* Top header (Inquisitor Labs logo) */
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 140px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+    .top-header img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    /* Spacer to push content below fixed header */
+    .header-spacer {
+      height: 140px;
+      width: 100%;
+    }
+
+    /* EU AI Act banner */
     .banner {
       background-color: #000;
       color: #00bcd4;
@@ -28,6 +58,8 @@
       margin: 10px 0 0;
       font-size: 1.2em;
     }
+
+    /* Main container */
     .container {
       width: 90%;
       max-width: 900px;
@@ -36,6 +68,7 @@
       padding: 30px 40px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     h1, h2, h3 {
       color: #222;
     }
@@ -54,7 +87,15 @@
 
 <body>
 
-  <!-- Banner -->
+  <!-- Inquisitor Labs fixed header -->
+  <div class="top-header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
+  </div>
+
+  <!-- Spacer to offset fixed header -->
+  <div class="header-spacer"></div>
+
+  <!-- EU AI Act banner -->
   <div class="banner">
     <div class="banner-content">
       <h1>EU AI Act</h1>
