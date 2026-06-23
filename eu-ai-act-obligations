@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>EU AI Act Developer Obligations | Inquisitor Labs</title>
+  <meta name="description" content="Understand your legal obligations as an AI developer under the EU AI Act, including documentation, testing, transparency, oversight, and post-market monitoring.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-obligations.html">
+  
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      font-weight: 525;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 140px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      padding-top: 180px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+
+    h1, h2 {
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #5a3e2b;
+    }
+
+    ul {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    .cta {
+      display: block;
+      text-align: center;
+      background: #5a3e2b;
+      color: #fff;
+      padding: 1rem 2rem;
+      margin: 2.5rem auto;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 4px;
+      width: 60%;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+  </div>
+
+  <div class="container">
+
+    <h1>EU AI Act — Developer Obligations</h1>
+
+    <p style="text-align: justify;">
+      If you develop an AI system that is available in the EU, you have legally binding obligations under the EU AI Act. These obligations apply whether you are a sole developer at home or a multi-million dollar corporation. They apply whether you run a local model or rely on a service provided by a large company. If you build it, adapt it, fine tune it, or make it available to others, you are a provider under the Act. This page explains what you must do to stay compliant.
+    </p>
+
+    <h2>Important</h2>
+
+    <p style="text-align: justify;">
+      If you are a sole developer at home or a multi-million dollar corporation, the obligations are the same. The Act assigns responsibility based on what you deploy, not who you are.
+    </p>
+
+    <h2>You Are a Provider Even If You Think You Are Not</h2>
+
+    <p style="text-align: justify;">
+      Most developers assume the Act only applies to big labs or companies selling AI products. That is wrong. You are a provider if you:
+    </p>
+
+    <ul>
+      <li>build an AI system</li>
+      <li>fine tune a model</li>
+      <li>integrate a model into a product</li>
+      <li>make an AI system available to others</li>
+      <li>release an AI system publicly</li>
+      <li>host an AI system that others can access</li>
+    </ul>
+
+    <p style="text-align: justify;">
+      If EU users can reach your system, you are in scope.
+    </p>
+
+    <h2>Your Core Obligations as a Developer</h2>
+
+    <h2>1. Technical Documentation</h2>
+
+    <p style="text-align: justify;">
+      You must produce documentation that explains what the system does, how it works, what data it uses, what risks it creates, and how those risks are controlled. This documentation must be complete enough for regulators to understand and audit your system.
+    </p>
+
+    <h2>2. Data Governance</h2>
+
+    <p style="text-align: justify;">
+      You must ensure that your training data is relevant, representative, and appropriate. You must document data sources, manage data quality, and track known limitations. Poor or undocumented data is a compliance failure.
+    </p>
+
+    <h2>3. Testing and Evaluation</h2>
+
+    <p style="text-align: justify;">
+      You must test your system before release, and the EU AI Act expects this testing to reflect how the system will be used in real conditions. Testing means full behavioural evaluation, not one-off prompt checks or isolated examples. Your system must be tested as it would be used by real users, in real workflows, under real load.
+    </p>
+
+    <p style="text-align: justify;">
+      A full behavioural testing methodology such as LLM INQUISITOR should be used.  
+      <a href="https://www.leanpub.com/llm-inquisitor" target="_blank" rel="noopener">Evaluating and Testing AI Using Real-World Work</a>
+    </p>
+
+    <ul>
+      <li>functional testing</li>
+      <li>robustness testing</li>
+      <li>safety testing</li>
+      <li>behavioural testing under real conditions</li>
+      <li>evaluation against known risks</li>
+      <li>evidence of how the system behaves under load</li>
+    </ul>
+
+    <p style="text-align: justify;">
+      If you cannot show evidence of full behavioural testing, you are non-compliant.
+    </p>
+
+    <h2>4. Logging and Traceability</h2>
+
+    <p style="text-align: justify;">
+      You must keep logs that allow regulators to understand how the system was used, trace decisions, and investigate incidents. Missing logs is a direct violation.
+    </p>
+
+    <h2>5. Transparency</h2>
+
+    <p style="text-align: justify;">
+      You must provide clear information to users about what the system does, how to use it safely, what its limitations are, and when they are interacting with AI.
+    </p>
+
+    <h2>6. Human Oversight</h2>
+
+    <p style="text-align: justify;">
+      You must design your system so that humans can understand its outputs, intervene when needed, and override decisions. If your system cannot be supervised, it cannot be deployed in high risk contexts.
+    </p>
+
+    <h2>7. Cybersecurity</h2>
+
+    <p style="text-align: justify;">
+      You must ensure your system is protected against tampering, model extraction, data poisoning, and adversarial inputs. Weak security is a compliance failure.
+    </p>
+
+    <h2>8. Post-Market Monitoring</h2>
+
+    <p style="text-align: justify;">
+      After release, you must monitor the system, track incidents, update documentation, fix emerging risks, and report serious incidents to regulators. Compliance does not end at launch.
+    </p>
+
+    <h2>Why This Matters</h2>
+
+    <p style="text-align: justify;">
+      These obligations are enforceable. If you miss documentation, skip testing, fail to log, or ignore risks, you can be fined even if no harm occurs. The Act expects developers to take responsibility for the systems they create, regardless of scale.
+    </p>
+
+    <h2>Where To Go Next</h2>
+
+    <p style="text-align: justify;">
+      For further resources on checking your liability, getting started with compliance, and testing your AI systems, go to the Inquisitor Labs EU AI Act hub on Leanpub. You will find:
+    </p>
+
+    <ul>
+      <li>the EU AI Act Compliance Checker</li>
+      <li>the EU AI Act Compliance Pack</li>
+      <li>Evaluating and Testing AI Using Real-World Work</li>
+    </ul>
+
+    <p style="text-align: justify;">
+      These resources give you a clear starting point for understanding your obligations, reducing your exposure under the Act, and evaluating your AI systems in real conditions.
+    </p>
+
+    <a class="cta" href="https://leanpub.com/u/william-argo" target="_blank" rel="noopener"
+      style="display:block; text-align:center; background:#b30000; color:#fff; padding:1rem 2rem; margin:2.5rem auto; font-size:1.2rem; text-decoration:none; border-radius:4px; width:60%;">
+      Get Compliant Now — Start Today
+    </a>
+
+    <hr>
+
+    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="methodology.html">Methodology</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
