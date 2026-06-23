@@ -6,20 +6,13 @@
   <title>Inquisitor Labs – Background Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/">
-
   <style>
     body {
       font-family: system-ui, sans-serif;
       font-weight: 525;
       margin: 0;
       padding: 0;
-
-      /* YOUR TEST BACKGROUND */
-      background-color: #dfeff0;
-      background-image: url('brushed-alum.png');
-      background-repeat: repeat;
-
+      background: #f7f7f7; /* keep body clean */
       color: #111;
       line-height: 1.6;
     }
@@ -51,7 +44,12 @@
       margin: 0 auto;
       padding: 2rem;
       padding-top: 180px;
-      background: #fff;
+
+      /* THIS is where the brushed metal goes */
+      background-color: #dfeff0;
+      background-image: url('brushed-alum.png');
+      background-repeat: repeat;
+
       box-sizing: border-box;
     }
 
@@ -101,19 +99,16 @@
   <div class="container">
     <h1>Background Texture Test</h1>
 
-    <p><strong>This page is testing the brushed-alum.png texture over the base colour #dfeff0.</strong></p>
+    <p><strong>This is the correct test: the brushed-alum texture is applied directly behind the text.</strong></p>
 
     <p>
-      Scroll the page and check how the texture behaves behind the header, around the container,
-      and in the margins. This simulates how it will look on real Inquisitor Labs pages.
+      This simulates how the metal background will look on real pages, where users actually read.
+      Check contrast, grain visibility, noise, and whether it feels premium or cheap.
     </p>
 
     <p>
-      If it looks clean, modern, and not like “council blue battleship primer,” then we’re on the right track.
-    </p>
-
-    <p>
-      If it looks muddy, noisy, or cheap, we bin it and try another tile.
+      If it looks like polished alloy, we keep it.  
+      If it looks like “council blue battleship primer,” we bin it.
     </p>
 
     <hr>
@@ -129,10 +124,6 @@
       <a href="glossary.html">Glossary</a> ·
       <a href="services.html">Services</a> ·
       <a href="eu-ai-act.html">EU AI Act</a>
-    </p>
-
-    <p style="text-align:center; font-size: 0.85rem; color:#555; margin-top:1rem;">
-      Contact via GitHub: <a href="https://github.com/AssimilatedHuman">AssimilatedHuman</a>
     </p>
 
   </div>
