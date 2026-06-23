@@ -41,11 +41,38 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/services.html</loc>
   </url>
 
+  <!-- EU AI Act Section -->
   <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act.html</loc>
     <lastmod>2026-06-17</lastmod>
   </url>
-  
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-categories.html</loc>
+    <lastmod>2026-06-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-fines.html</loc>
+    <lastmod>2026-06-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-obligations.html</loc>
+    <lastmod>2026-06-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-help.html</loc>
+    <lastmod>2026-06-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-checker.html</loc>
+    <lastmod>2026-06-23</lastmod>
+  </url>
+
+  <!-- PDFs -->
   <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/llm-inquisitor-methodology-github-edition1-1.pdf</loc>
   </url>
@@ -66,6 +93,7 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/mood-shot-technical-specification.pdf</loc>
   </url>
 
+  <!-- Insight PDFs -->
   <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/insight-am-i-liable-for-ai-mistake-at-work.pdf</loc>
   </url>
