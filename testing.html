@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>AI Behavioural Testing | Inquisitor Labs</title>
+  <meta name="description" content="Introduction to AI behavioural testing and links to the core components of the discipline.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/testing.html">
+  
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      font-weight: 525;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 140px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      padding-top: 180px;
+      background: #dfeff0 url('brushed-alum.png') repeat;
+      box-sizing: border-box;
+    }
+
+    .justified {
+      text-align: justify;
+    }
+    
+    h1, h2 {
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #5a3e2b;
+    }
+
+    ul {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+  </div>
+
+  <div class="container">
+
+    <h1>AI Behavioural Testing</h1>
+
+    <p>
+      AI systems do not fail at the level of prompts. They fail at the level of behaviour. AI behavioural testing examines how a system behaves across time, across workflows, and across realistic conversational or operational sequences.
+    </p>
+
+    <p>
+      It focuses on:
+    </p>
+
+    <ul>
+      <li>stability</li>
+      <li>predictability</li>
+      <li>behavioural integrity</li>
+      <li>real workflow performance</li>
+    </ul>
+
+    <p>
+      This page introduces the core ideas behind AI behavioural testing and links to the pages that expand each part of the discipline.
+    </p>
+
+    <h2>Why Prompt Testing Is Not Enough</h2>
+
+    <p>
+      Prompt testing treats AI systems as if they were simple input-output machines. Modern models do not behave this way. They:
+    </p>
+
+    <ul>
+      <li>change state</li>
+      <li>accumulate context</li>
+      <li>shift behaviour as interactions progress</li>
+      <li>behave differently under pressure or load</li>
+    </ul>
+
+    <p>
+      Behavioural testing addresses this gap by examining how systems behave under realistic conditions rather than in isolated prompt tests.
+      See <a href="testing-prompt-testing.html">Prompt Testing</a>.
+    </p>
+
+    <h2>Behavioural Failure Patterns</h2>
+
+    <p>
+      Real deployments reveal consistent behavioural patterns that never appear in single prompt tests. These patterns are central to understanding system stability and reliability.
+    </p>
+
+    <ul>
+      <li>behaviour changing over time</li>
+      <li>behaviour diverging across similar inputs</li>
+      <li>behaviour collapsing under pressure</li>
+    </ul>
+
+    <p>
+      See <a href="testing-failure-modes.html">Behavioural Failure Modes</a>.
+    </p>
+
+    <h2>Behavioural Testing vs Prompt Testing</h2>
+
+    <p>
+      Behavioural testing and prompt testing measure different things. Understanding the distinction is essential for:
+    </p>
+
+    <ul>
+      <li>evaluating system quality</li>
+      <li>assessing deployment risk</li>
+      <li>avoiding personal and corporate liability</li>
+    </ul>
+
+    <p>
+      See <a href="testing-vs-prompt-testing.html">Behavioural Testing vs Prompt Testing</a>.
+    </p>
+
+    <h2>Vectored Conversations</h2>
+
+    <p>
+      Vectored conversations provide a structured way to observe system behaviour across controlled conversational paths. They support:
+    </p>
+
+    <ul>
+      <li>repeatable behavioural observation</li>
+      <li>workflow simulation</li>
+      <li>stability and drift detection</li>
+      <li>cross-model comparison</li>
+    </ul>
+
+    <p>
+      See <a href="testing-vectored.html">Vectored Conversations</a>.
+    </p>
+
+    <h2>LLM INQUISITOR Methodology</h2>
+
+    <p>
+      The LLM INQUISITOR Methodology is the first available behavioural testing methodology designed specifically for LLM AI systems. It provides a complete, structured approach for evaluating AI behaviour in real workflows and under real conditions.
+    </p>
+
+    <p>
+      The Methodology page contains the full paper, including:
+    </p>
+
+    <ul>
+      <li>the behavioural testing lifecycle</li>
+      <li>scenario and workflow design</li>
+      <li>behavioural signature extraction</li>
+      <li>evaluation patterns</li>
+      <li>practitioner guidance</li>
+    </ul>
+
+    <p>
+      See <a href="methodology.html">Methodology</a>.
+    </p>
+
+    <hr>
+
+    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="methodology.html">Methodology</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="testing.html">Testing</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
