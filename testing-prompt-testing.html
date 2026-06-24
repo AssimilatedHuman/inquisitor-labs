@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Prompt Testing | Inquisitor Labs</title>
+  <meta name="description" content="Why prompt testing does not go far enough for evaluating AI systems.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/testing-prompt-testing.html">
+  
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      font-weight: 525;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 140px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      padding-top: 180px;
+      background: #dfeff0 url('brushed-alum.png') repeat;
+      box-sizing: border-box;
+    }
+
+    .justified {
+      text-align: justify;
+    }
+    
+    h1, h2 {
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #5a3e2b;
+    }
+
+    ul {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+  </div>
+
+  <div class="container">
+
+    <h1>Prompt Testing</h1>
+
+    <p>
+      Prompt testing seems sensible at first glance. You give an AI system a prompt, you look at the output, and you decide whether it is good enough. Most teams start here. Many never move beyond it.
+    </p>
+
+    <p>
+      Prompt testing is simple, fast, and easy to demonstrate. It is also limited. It cannot show how an AI system behaves over time, under pressure, or across real workflows. It measures surface responses, not behaviour.
+    </p>
+
+    <p>
+      This page explains why prompt testing feels useful, why it fails in practice, and why behavioural testing is required for any system that will be deployed in real environments.
+    </p>
+
+    <h2>Why Prompt Testing Feels Right</h2>
+
+    <p>
+      Prompt testing is attractive because it gives quick answers. It works well for:
+    </p>
+
+    <ul>
+      <li>checking formatting</li>
+      <li>checking tone</li>
+      <li>checking simple factual responses</li>
+      <li>checking whether a model can follow a short instruction</li>
+    </ul>
+
+    <p>
+      These checks are useful, but they do not reveal how the system behaves when the interaction becomes longer, more complex, or more realistic.
+    </p>
+
+    <h2>Where Prompt Testing Breaks Down</h2>
+
+    <p>
+      Prompt testing cannot detect:
+    </p>
+
+    <ul>
+      <li>behaviour changing over time</li>
+      <li>behaviour diverging across similar inputs</li>
+      <li>behaviour collapsing under pressure</li>
+      <li>behaviour shifting after context accumulation</li>
+      <li>behaviour that only appears in real workflows</li>
+    </ul>
+
+    <p>
+      These are behavioural effects. They do not show up in isolated prompts.
+    </p>
+
+    <h2>Why Teams Rely On It Anyway</h2>
+
+    <p>
+      Most teams use prompt testing because:
+    </p>
+
+    <ul>
+      <li>it is easy to run</li>
+      <li>it is easy to explain</li>
+      <li>it produces quick results</li>
+      <li>it feels objective</li>
+      <li>it fits into existing QA habits</li>
+    </ul>
+
+    <p>
+      The problem is that these habits were built for systems that do not behave like modern AI models.
+    </p>
+
+    <h2>The Pivot Point</h2>
+
+    <p>
+      Prompt testing does not go far enough. It can show whether a response looks acceptable in a single moment, but it cannot show whether the system will remain stable, predictable, and safe when used by real people in real workflows.
+    </p>
+
+    <p>
+      For that, you need behavioural testing.
+    </p>
+
+    <p>
+      Prompt testing also fails the requirements of legally binding legislation such as the EU AI Act, which demands evidence of system behaviour under realistic conditions, not isolated prompt outputs.
+    </p>
+
+    <p>
+      See <a href="testing.html">AI Behavioural Testing</a> for how behavioural testing works and why it is required for deployment level assurance.
+    </p>
+
+    <hr>
+
+    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
