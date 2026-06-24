@@ -33,6 +33,31 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/insights.html</loc>
   </url>
 
+  <!-- Testing Cluster -->
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/testing.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/testing-prompt-testing.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/testing-failure-modes.html</loc>
+    <lastmod>2026-06-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/testing-vs-prompt-testing.html</loc>
+    <lastmod>2026-06-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/testing-vectored.html</loc>
+    <lastmod>2026-06-24</lastmod>
+  </url>
+
+  <!-- Methodology (now a spoke, not a hub) -->
   <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/methodology.html</loc>
   </url>
