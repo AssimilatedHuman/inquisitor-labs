@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>Published Research | Inquisitor Labs</title>
-  <meta name="description" content="Published research linked to Inquisitor Labs.">
+  <title>Published Research – Inquisitor Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/research.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525; /* slightly heavier, still not bold */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
 
@@ -25,9 +22,12 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,52 +36,75 @@
     }
 
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    .container {
-      max-width: 900px;
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
 
-  .justified {
-      text-align: justify;
-    }
-    
     h1, h2 {
-      margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b; /* Rich Brown */
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
 
-    ul {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
     }
 
-    li {
-      margin-bottom: 2rem;
+    h2 {
+      font-size: 1.4rem;
     }
 
-    /* footer nav: no bullets, inline links, centred */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .research-card {
+      margin-top: 18px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .research-card strong {
+      font-size: 1.05rem;
+      color: #1f1a17;
+    }
+
+    .research-card a {
+      color: #1f1a17;
+      text-decoration: none;
+    }
+
+    .research-card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-nav {
       text-align: center;
-    }
-
-    nav li {
-      display: inline;
-      margin: 0 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -89,67 +112,89 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Published Research</h1>
+    <section class="section-card">
+      <h1>Published Research</h1>
+      <p>
+        Publicly available research linked to Inquisitor Labs can be found here. This is not an exhaustive list. Updates will be posted as further research is completed.
+      </p>
+    </section>
 
-    <p>
-      Publicly available research linked to Inquisitor Labs can be found here.
-      This is not an exhaustive list. Updates will be posted as and when further research is completed.
+    <section class="section-card">
+      <h2>Research Catalogue</h2>
+
+      <div class="research-card">
+        <strong>Vectored Conversational AI Testing</strong>
+        <p>
+          Vectored Conversational AI Testing is a behavioural evaluation method for AI systems that operate through conversation. It uses live interaction to observe coherence, boundary handling, context retention, and behavioural stability as dialogue evolves.
+        </p>
+        <p>
+          Controlled conversational variations reveal behavioural patterns that static tests do not expose. The paper outlines the structure and operational workflow of the method, its relevance to EU AI Act expectations, and the boundaries of what the approach does and does not attempt.
+        </p>
+        <p><a href="https://zenodo.org/records/21045949">Zenodo DOI</a></p>
+      </div>
+      <div class="research-card">
+        <strong>LLM INQUISITOR Methodology (GitHub Edition) v1.1</strong>
+        <p>
+          This document defines the LLM INQUISITOR Methodology: a structured, repeatable discipline for evaluating the behaviour of large language models under controlled load. It provides a formal approach for assessing reliability through observable behaviour and evidentiary traceability.
+        </p>
+        <p>
+          The methodology supports rigorous evaluation in research, safety, and enterprise assurance contexts, where behavioural stability under real operational conditions is essential.
+        </p>
+        <p><a href="https://zenodo.org/records/20435494">Zenodo DOI</a></p>
+      </div>
+
+      <div class="research-card">
+        <strong>Argo AI Testing Protocol: Sustained Multi Axis Load Testing</strong>
+        <p>
+          Most evaluation of conversational AI relies on short, prompt based tests that fail to reflect how real people use these systems. Such tests do not capture extended interaction, shifting user intent, or cumulative context effects.
+        </p>
+        <p>
+          This paper introduces the Argo AI Testing Protocol, a conceptual approach for evaluating AI systems within the User Interaction Space — the full set of observable outputs and interactions available to a user.
+        </p>
+        <p><a href="https://zenodo.org/records/19919031">Zenodo DOI</a></p>
+      </div>
+
+      <div class="research-card">
+        <strong>Argo’s Fundamentals of Failings in Prompt Test Design and Evaluation for LLMs</strong>
+        <p>
+          This paper identifies the core structural failings in prompt test design and evaluation for LLMs. It shows that current methods cannot produce reliable signals: they mismeasure capability, misinterpret outputs, and often generate failure states created by the tests themselves.
+        </p>
+        <p>
+          These practices emerged in an industry expanding faster than it can define standards, leaving evaluation shaped by inconsistent methods and gatekeepers with limited grounding in the systems they are judging.
+        </p>
+        <p><a href="https://zenodo.org/records/19599444">Zenodo DOI</a></p>
+      </div>
+
+      <div class="research-card">
+        <strong>Argo Prompting: Pattern Formation in LLMs Under Sustained Conceptual Pressure</strong>
+        <p>
+          This paper introduces Argo Prompting, a method for inducing pattern formation behaviour in large language models through sustained conceptual pressure. It distinguishes pattern formation from collapse, hallucination, and surface level pattern matching.
+        </p>
+        <p>
+          The paper provides a practical framework for researchers studying LLM behaviour under extended reasoning conditions.
+        </p>
+        <p><a href="https://zenodo.org/records/19511615">Zenodo DOI</a></p>
+      </div>
+    </section>
+
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
-
-    <ul>
-
-  <li>
-        <strong>VECTORED CONVERSATIONAL AI TESTING</strong><br>
-        Vectored Conversational AI Testing is a behavioural evaluation method for AI systems that operate through conversation. Instead of predefined prompts or static scenarios, it uses live interaction to observe coherence, boundary handling, context retention, and behavioural stability as dialogue evolves. Controlled conversational variations reveal behavioural patterns that static tests do not expose.
-        The paper outlines the structure and operational workflow of the method, its relevance to EU AI Act expectations for conversational AI systems, and the boundaries of what the approach does and does not attempt. The result is a repeatable framework for assessing AI behaviour in systems where conversation is the primary mode of operation.<br>
-        <a href="https://zenodo.org/records/21045949">Zenodo DOI</a>
-      </li>
-      
-      <li>
-        <strong>LLM INQUISITOR METHODOLOGY (GitHub Edition) v1.1</strong><br>
-        This document defines the LLM INQUISITOR METHODOLOGY: a structured, repeatable discipline for evaluating the behaviour of large language models under controlled load. It provides a formal approach for assessing reliability through observable behaviour and evidentiary traceability. The methodology is designed to support rigorous evaluation in research, safety, and enterprise assurance contexts, where behavioural stability under real operational conditions is a critical requirement.<br>
-        <a href="https://zenodo.org/records/20435494">Zenodo DOI</a>
-      </li>
-
-      <li>
-        <strong>Argo AI Testing Protocol: Sustained Multi‑Axis Load Testing</strong><br>
-        Most evaluation of conversational AI relies on short, prompt‑based tests that fail to reflect how real people use these systems in real and diverse situations. Such tests do not capture the demands of extended interaction, shifting user intent, or the cumulative effects of context over time. This paper introduces the Argo AI Testing Protocol (the Argo Protocol), a conceptual approach for evaluating AI systems within the User Interaction Space — the full set of observable outputs and interactions available to a user.<br>
-        <a href="https://zenodo.org/records/19919031">Zenodo DOI</a>
-      </li>
-
-      <li>
-        <strong>Argo’s Fundamentals of Failings in Prompt‑Test Design & Evaluation for LLMs</strong><br>
-        This paper identifies the core structural failings in prompt‑test design and evaluation for LLMs. It shows that the methods currently used to assess model behaviour cannot produce reliable signals: they mismeasure capability, misinterpret outputs, and often generate failure states created by the tests themselves. These practices emerged in an industry expanding faster than it can define standards, leaving evaluation shaped by inconsistent methods and gatekeepers with little grounding in the systems they are judging.<br>
-        <a href="https://zenodo.org/records/19599444">Zenodo DOI</a>
-      </li>
-
-      <li>
-        <strong>Argo Prompting: Pattern‑Formation in LLMs Under Sustained Conceptual Pressure</strong><br>
-        This paper introduces Argo Prompting, a method for inducing pattern‑formation behaviour in large language models through sustained conceptual pressure. It distinguishes pattern‑formation from collapse, hallucination, and surface‑level pattern‑matching, and shows how guided conceptual pressure produces coherent structural responses. The paper provides a practical framework for researchers studying LLM behaviour under extended reasoning conditions.<br>
-        <a href="https://zenodo.org/records/19511615">Zenodo DOI</a>
-      </li>
-
-    </ul>
-
-   <hr>
-
-<p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="testing.html">Testing</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a> .
-  <a href="eu-ai-act.html">EU AI Act</a>
-</p>
 
   </div>
 
