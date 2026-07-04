@@ -2,145 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self';">
-  <title>Inquisitor Labs</title>
+  <title>Inquisitor Labs – AI Behavioural Evaluation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/">
 
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
 
+    /* Fixed Header */
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    .container {
-      max-width: 900px;
+    /* Main Page Container */
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
 
-    h1, h2, h3 {
-      margin-top: 2rem;
+    /* Typography */
+    h1, h2 {
       font-weight: 600;
-      color: #5a3e2b;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
 
-    .home-row {
-      margin-bottom: 1.5rem;
-    }
-
-    .nav-button {
-      display: inline-block;
-      width: 140px;
-      padding: 0.25rem 0.6rem;
-      font-weight: 600;
-      background: #000;
-      color: #1BAFBF;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
-    }
-    .nav-button:hover {
-      background: #111;
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
     }
 
     p {
-      text-align: justify;
-      text-justify: inter-word;
-      margin: 0;
+      margin: 0.4em 0 0.8em;
+    }
+
+    /* Card Layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    /* Button Cards */
+    .button-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .button-card a {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #fff;
+      border: 1px solid #e4d9cf;
+      border-radius: 10px;
+      color: #1f1a17;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .button-card a:hover {
+      background: #f2ebe4;
+    }
+
+    /* Footer Navigation */
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- Fixed Banner -->
   <div class="top-header">
     <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Inquisitor Labs - the home of AI behavioural testing</h1>
+    <!-- HERO -->
+    <section class="section-card">
+      <h1>Inquisitor Labs</h1>
+      <p>
+        Inquisitor Labs evaluates how AI systems behave in real workflows. Benchmarks and synthetic tests do not reveal the failures, drifts and decision patterns that determine operational stability and regulatory exposure. Behaviour does. Our work focuses on operational reality and the evidence required for the EU AI Act.
+      </p>
+    </section>
 
-    <p>
-      We have developed the only approach that fully examines how AI systems actually behave in real workflows, not just how they perform on benchmarks. Everyone else measures AI by dashboards, audits, or synthetic tasks; we measure it by what really matters - behaviour, including the failures, drifts, and decision patterns that determine whether you survive real-world use and the EU AI Act.
-    </p>
-
-    <hr>
-
-    <div class="home-row">
-      <a class="nav-button" href="insights.html">Users</a>
-      <p>Help using unreliable AI tools effectively - work within the system's limits instead of fighting it all day.</p>
+    <!-- BUTTON SECTIONS -->
+    <div class="button-card">
+      <a href="insights.html">Users</a>
+      <p>Guidance for maintaining workflow stability when using unreliable AI systems.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="insights.html">Developers</a>
-      <p>Guidance on real failure modes, workflow stability, long-context issues, and problems you will not see in benchmarks or prompt testing.</p>
+    <div class="button-card">
+      <a href="insights.html">Developers</a>
+      <p>Behavioural failure modes and long-context issues that benchmarks cannot detect.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="insights.html">Management</a>
-      <p>Up to 95 percent of AI deployments fail in some way - what goes wrong, why it happens, and what to do about it.</p>
+    <div class="button-card">
+      <a href="insights.html">Management</a>
+      <p>Why AI deployments fail and how behavioural evidence reduces operational and regulatory risk.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="research.html">Research</a>
-      <p>Publicly available research papers published on Zenodo.</p>
+    <div class="button-card">
+      <a href="research.html">Research</a>
+      <p>Public research papers published on Zenodo.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="openuse.html">Open Use</a>
-      <p>Selectively released architectural and technical specifications for others to build on.</p>
+    <div class="button-card">
+      <a href="openuse.html">Open Use</a>
+      <p>Selected architectural and technical specifications for public use.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="services.html">Services</a>
-      <p>Evaluation based on real workflows and real system behaviour - not inferior prompt testing or prompt-mill (annotation) testing.</p>
+    <div class="button-card">
+      <a href="services.html">Services</a>
+      <p>Evaluation based on real workflows and real system behaviour.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="collaborations.html">Collaborations</a>
+    <div class="button-card">
+      <a href="collaborations.html">Collaborations</a>
       <p>Working with teams of any size, specialising in systems-agnostic architecture.</p>
     </div>
 
-    <div class="home-row">
-      <a class="nav-button" href="eu-ai-act.html">EU AI Act</a>
-      <p>Practical guidance that enables you to fulfil your documentary obligations and limit your liability with behavioural evidence.</p>
+    <div class="button-card">
+      <a href="eu-ai-act.html">EU AI Act</a>
+      <p>Behavioural evidence for documentary obligations and liability reduction.</p>
     </div>
 
-    <hr>
+    <div class="button-card">
+      <a href="training.html">Training</a>
+      <p>Structured training based on operational behavioural evaluation.</p>
+    </div>
 
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+    <div class="button-card">
+      <a href="aiobes.html">AIOBES</a>
+      <p>The Artificial Intelligence Operational Behaviour Evaluation Standards.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -150,7 +191,8 @@
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
       <a href="services.html">Services</a> ·
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
     <p style="text-align:center; font-size: 0.85rem; color:#555; margin-top:1rem;">
