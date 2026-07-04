@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Behavioural Testing vs Prompt Testing | Inquisitor Labs</title>
-  <meta name="description" content="The difference between behavioural testing and prompt testing for AI systems.">
+  <title>Behavioural Testing vs Prompt Testing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/testing-vs-prompt-testing.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
 
@@ -25,9 +23,12 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,51 +37,58 @@
     }
 
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    .container {
-      max-width: 900px;
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
 
-    .justified {
-      text-align: justify;
-    }
-    
     h1, h2 {
-      margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
     }
 
     ul {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
     }
 
-    li {
-      margin-bottom: 1rem;
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
     }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .footer-nav {
       text-align: center;
-    }
-
-    nav li {
-      display: inline;
-      margin: 0 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -88,135 +96,134 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Behavioural Testing vs Prompt Testing</h1>
+    <section class="section-card">
+      <h1>Behavioural Testing vs Prompt Testing</h1>
+      <p>
+        Behavioural testing and prompt testing measure different things. They are not competing methods. They answer different questions about how an AI system behaves. Most teams rely on prompt testing because it is simple and fast. Behavioural testing is required when the goal is stability, reliability and deployment level assurance.
+      </p>
+      <p>
+        This page explains:
+      </p>
 
-    <p>
-      Behavioural testing and prompt testing measure different things. They are not competing methods. They answer different questions about how an AI system behaves. Most teams rely on prompt testing because it is simple and fast. Behavioural testing is required when the goal is stability, reliability, and deployment level assurance.
-    </p>
+      <ul>
+        <li>the difference between prompt testing and behavioural testing</li>
+        <li>what each method can and cannot measure</li>
+        <li>why prompt testing is not enough for real workflows</li>
+        <li>why behavioural testing is required for compliance and risk management</li>
+      </ul>
+    </section>
+    <section class="section-card">
+      <h2>What Prompt Testing Measures</h2>
+      <p>
+        Prompt testing focuses on single interactions. It measures:
+      </p>
 
-    <p>
-      This page explains:
-    </p>
+      <ul>
+        <li>formatting</li>
+        <li>tone</li>
+        <li>short instruction following</li>
+        <li>simple factual responses</li>
+        <li>one‑off output quality</li>
+      </ul>
 
-    <ul>
-      <li>the difference between prompt testing and behavioural testing</li>
-      <li>what each method can and cannot measure</li>
-      <li>why prompt testing is not enough for real workflows</li>
-      <li>why behavioural testing is required for compliance and risk management</li>
-    </ul>
+      <p>
+        Prompt testing is useful for quick checks, demos and surface‑level evaluation. It does not measure how the system behaves over time.
+      </p>
+    </section>
 
-    <h2>What Prompt Testing Measures</h2>
+    <section class="section-card">
+      <h2>What Behavioural Testing Measures</h2>
+      <p>
+        Behavioural testing examines how an AI system behaves across sequences, workflows and realistic operational conditions. It measures:
+      </p>
 
-    <p>
-      Prompt testing focuses on single interactions. It measures:
-    </p>
+      <ul>
+        <li>stability</li>
+        <li>predictability</li>
+        <li>drift and divergence</li>
+        <li>behaviour under pressure or load</li>
+        <li>workflow integrity</li>
+        <li>user interaction patterns</li>
+      </ul>
 
-    <ul>
-      <li>formatting</li>
-      <li>tone</li>
-      <li>short instruction following</li>
-      <li>simple factual responses</li>
-      <li>one-off output quality</li>
-    </ul>
+      <p>
+        Behavioural testing reveals how the system actually behaves when used by real people in real situations.
+      </p>
+    </section>
 
-    <p>
-      Prompt testing is useful for quick checks, demos, and surface-level evaluation. It does not measure how the system behaves over time.
-    </p>
+    <section class="section-card">
+      <h2>Why Prompt Testing Cannot Replace Behavioural Testing</h2>
+      <p>Prompt testing cannot detect:</p>
 
-    <h2>What Behavioural Testing Measures</h2>
+      <ul>
+        <li>behaviour changing as context accumulates</li>
+        <li>behaviour degrading over time</li>
+        <li>behaviour collapsing under pressure</li>
+        <li>behaviour diverging across similar inputs</li>
+        <li>behaviour that contaminates workflows</li>
+      </ul>
 
-    <p>
-      Behavioural testing examines how an AI system behaves across sequences, workflows, and realistic operational conditions. It measures:
-    </p>
+      <p>
+        These effects only appear when the system is tested across time and across realistic sequences. Prompt testing is too narrow to reveal them.
+      </p>
+    </section>
 
-    <ul>
-      <li>stability</li>
-      <li>predictability</li>
-      <li>drift and divergence</li>
-      <li>behaviour under pressure or load</li>
-      <li>workflow integrity</li>
-      <li>user interaction patterns</li>
-    </ul>
+    <section class="section-card">
+      <h2>Why the Distinction Matters</h2>
+      <p>
+        Teams that rely only on prompt testing often encounter problems that prompt tests never revealed, including:
+      </p>
 
-    <p>
-      Behavioural testing reveals how the system actually behaves when used by real people in real situations.
-    </p>
+      <ul>
+        <li>instability during extended use</li>
+        <li>inconsistent behaviour across similar tasks</li>
+        <li>workflow contamination from subtle behavioural drift</li>
+        <li>users fighting the system instead of working with it</li>
+      </ul>
 
-    <h2>Why Prompt Testing Cannot Replace Behavioural Testing</h2>
+      <p>
+        Behavioural testing shows the limits of the system so teams can work within them, avoid failure patterns and reduce operational and legal risk.
+      </p>
 
-    <p>
-      Prompt testing cannot detect:
-    </p>
+      <p>
+        Prompt testing can tell you whether a response looks acceptable. Behavioural testing tells you whether the system can be trusted.
+      </p>
+    </section>
 
-    <ul>
-      <li>behaviour changing as context accumulates</li>
-      <li>behaviour degrading over time</li>
-      <li>behaviour collapsing under pressure</li>
-      <li>behaviour diverging across similar inputs</li>
-      <li>behaviour that contaminates workflows</li>
-    </ul>
+    <section class="section-card">
+      <h2>Regulatory Requirements</h2>
+      <p>
+        Legislation such as the EU AI Act requires evidence of system behaviour under realistic conditions. This includes:
+      </p>
 
-    <p>
-      These effects only appear when the system is tested across time and across realistic sequences. Prompt testing is too narrow to reveal them.
-    </p>
+      <ul>
+        <li>behaviour across time</li>
+        <li>behaviour across workflows</li>
+        <li>behaviour under operational pressure</li>
+        <li>behaviour that affects safety or reliability</li>
+      </ul>
 
-    <h2>Why the Distinction Matters</h2>
+      <p>
+        Prompt testing does not meet these requirements because it does not measure behaviour over time or across workflows.
+      </p>
 
-    <p>
-      Teams that rely only on prompt testing often encounter problems that prompt tests never revealed, including:
-    </p>
+      <p>
+        Behavioural testing is required for:
+      </p>
 
-    <ul>
-      <li>instability during extended use</li>
-      <li>inconsistent behaviour across similar tasks</li>
-      <li>workflow contamination from subtle behavioural drift</li>
-      <li>users fighting the system instead of working with it</li>
-    </ul>
-
-    <p>
-      Behavioural testing shows the limits of the system so teams can work within them, avoid failure patterns, and reduce operational and legal risk.
-    </p>
-
-    <p>
-      Prompt testing can tell you whether a response looks acceptable. Behavioural testing tells you whether the system can be trusted.
-    </p>
-
-    <h2>Regulatory Requirements</h2>
-
-    <p>
-      Legislation such as the EU AI Act requires evidence of system behaviour under realistic conditions. This includes:
-    </p>
-
-    <ul>
-      <li>behaviour across time</li>
-      <li>behaviour across workflows</li>
-      <li>behaviour under operational pressure</li>
-      <li>behaviour that affects safety or reliability</li>
-    </ul>
-
-    <p>
-      Prompt testing does not meet these requirements because it does not measure behaviour over time or across workflows.
-    </p>
-
-    <p>
-      Behavioural testing is required for:
-    </p>
-
-    <ul>
-      <li>compliance</li>
-      <li>risk management</li>
-      <li>deployment level assurance</li>
-      <li>legally defensible documentation</li>
-    </ul>
-
-    <hr>
-
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <ul>
+        <li>compliance</li>
+        <li>risk management</li>
+        <li>deployment‑level assurance</li>
+        <li>legally defensible documentation</li>
+      </ul>
+    </section>
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -226,7 +233,8 @@
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
       <a href="services.html">Services</a> ·
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
   </div>
