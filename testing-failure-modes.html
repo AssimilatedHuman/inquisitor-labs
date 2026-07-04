@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Behavioural Failure Modes | Inquisitor Labs</title>
-  <meta name="description" content="Understanding behavioural failure modes in AI systems and why prompt testing cannot detect them.">
+  <title>Behavioural Failure Modes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/testing-failure-modes.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
 
@@ -25,9 +23,12 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,51 +37,58 @@
     }
 
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    .container {
-      max-width: 900px;
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
 
-    .justified {
-      text-align: justify;
-    }
-    
     h1, h2 {
-      margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
     }
 
     ul {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
     }
 
-    li {
-      margin-bottom: 1rem;
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
     }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .footer-nav {
       text-align: center;
-    }
-
-    nav li {
-      display: inline;
-      margin: 0 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -88,98 +96,96 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Behavioural Failure Modes</h1>
+    <section class="section-card">
+      <h1>Behavioural Failure Modes</h1>
+      <p>
+        Behavioural failure modes are patterns of behaviour that appear when an AI system is used in real workflows. They do not show up in isolated prompt tests. They emerge when the system is under sustained interaction, shifting context or operational pressure.
+      </p>
+      <p>
+        A behavioural failure mode is not a single bad output. It is a repeatable pattern that reveals how the system changes, drifts or collapses over time. Understanding these patterns is central to AI behavioural testing.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>What Behavioural Failure Modes Are</h2>
+      <p>
+        Behavioural failure modes include patterns such as:
+      </p>
 
-    <p>
-      Behavioural failure modes are patterns of behaviour that appear when an AI system is used in real workflows. They do not show up in isolated prompt tests. They emerge when the system is under sustained interaction, shifting context, or operational pressure.
-    </p>
+      <ul>
+        <li>behaviour changing as context accumulates</li>
+        <li>behaviour diverging across similar inputs</li>
+        <li>behaviour collapsing under pressure or load</li>
+        <li>behaviour shifting after extended interaction</li>
+        <li>behaviour becoming unstable across workflows</li>
+      </ul>
 
-    <p>
-      A behavioural failure mode is not a single bad output. It is a repeatable pattern that reveals how the system changes, drifts, or collapses over time. Understanding these patterns is central to AI behavioural testing.
-    </p>
+      <p>
+        These patterns reflect the underlying behaviour of the model, not the quality of a single response.
+      </p>
+    </section>
 
-    <h2>What Behavioural Failure Modes Are</h2>
+    <section class="section-card">
+      <h2>Why They Matter</h2>
+      <p>
+        Behavioural failure modes determine whether an AI system can be trusted in real environments. They affect:
+      </p>
 
-    <p>
-      Behavioural failure modes include patterns such as:
-    </p>
+      <ul>
+        <li>stability</li>
+        <li>predictability</li>
+        <li>workflow reliability</li>
+        <li>user safety</li>
+        <li>legal exposure</li>
+      </ul>
 
-    <ul>
-      <li>behaviour changing as context accumulates</li>
-      <li>behaviour diverging across similar inputs</li>
-      <li>behaviour collapsing under pressure or load</li>
-      <li>behaviour shifting after extended interaction</li>
-      <li>behaviour becoming unstable across workflows</li>
-    </ul>
+      <p>
+        Understanding these patterns helps teams work with AI systems instead of fighting against them. When limits are known, workflows can be designed to stay within those limits, avoid workflow contamination and reduce the risk of incorrect information creating operational or legal liability.
+      </p>
 
-    <p>
-      These patterns reflect the underlying behaviour of the model, not the quality of a single response.
-    </p>
+      <p>
+        An AI system can pass prompt tests and still fail in real use because prompt testing does not measure behaviour over time.
+      </p>
+    </section>
 
-    <h2>Why They Matter</h2>
+    <section class="section-card">
+      <h2>Why Prompt Testing Cannot Detect Them</h2>
+      <p>Prompt testing only measures surface responses. It cannot show:</p>
 
-    <p>
-      Behavioural failure modes determine whether an AI system can be trusted in real environments. They affect:
-    </p>
+      <ul>
+        <li>how behaviour evolves</li>
+        <li>how behaviour degrades</li>
+        <li>how behaviour diverges</li>
+        <li>how behaviour collapses under load</li>
+        <li>how behaviour interacts with workflow context</li>
+      </ul>
 
-    <ul>
-      <li>stability</li>
-      <li>predictability</li>
-      <li>workflow reliability</li>
-      <li>user safety</li>
-      <li>legal exposure</li>
-    </ul>
+      <p>
+        Behavioural failure modes require behavioural testing. They only appear when the system is tested across time, across sequences and under realistic operational conditions.
+      </p>
+    </section>
 
-    <p>
-      Understanding these patterns also helps users work with AI systems instead of fighting against them. When teams know the limits of a system, they can design workflows that stay within those limits, avoid workflow contamination, and reduce the risk of incorrect information creating operational or legal liability.
-    </p>
+    <section class="section-card">
+      <h2>Regulatory Impact</h2>
+      <p>
+        Behavioural failure modes are central to compliance. Legislation such as the EU AI Act requires evidence of system behaviour under realistic conditions. Prompt testing cannot meet this requirement because it does not reveal behavioural patterns or stability over time.
+      </p>
+      <p>
+        Behavioural testing is required to identify, document and mitigate behavioural failure modes in a legally defensible way.
+      </p>
+    </section>
 
-    <p>
-      An AI system can pass prompt tests and still fail in real use because prompt testing does not measure behaviour over time.
-    </p>
-
-    <h2>Why Prompt Testing Cannot Detect Them</h2>
-
-    <p>
-      Prompt testing only measures surface responses. It cannot show:
-    </p>
-
-    <ul>
-      <li>how behaviour evolves</li>
-      <li>how behaviour degrades</li>
-      <li>how behaviour diverges</li>
-      <li>how behaviour collapses under load</li>
-      <li>how behaviour interacts with workflow context</li>
-    </ul>
-
-    <p>
-      Behavioural failure modes require behavioural testing. They only appear when the system is tested across time, across sequences, and under realistic operational conditions.
-    </p>
-
-    <h2>Regulatory Impact</h2>
-
-    <p>
-      Behavioural failure modes are central to compliance. Legislation such as the EU AI Act requires evidence of system behaviour under realistic conditions. Prompt testing cannot meet this requirement because it does not reveal behavioural patterns or stability over time.
-    </p>
-
-    <p>
-      Behavioural testing is required to identify, document, and mitigate behavioural failure modes in a legally defensible way.
-    </p>
-
-    <h2>Next Steps</h2>
-
-    <p>
-      To understand how behavioural testing identifies and evaluates these patterns, see the main Testing page and the LLM INQUISITOR Methodology.
-    </p>
-
-    <hr>
-
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+    <section class="section-card">
+      <h2>Next Steps</h2>
+      <p>
+        To understand how behavioural testing identifies and evaluates these patterns, see the main Testing page and the LLM INQUISITOR methodology.
+      </p>
+    </section>
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -189,7 +195,8 @@
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
       <a href="services.html">Services</a> ·
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
   </div>
