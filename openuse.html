@@ -2,55 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>Open Use & Open Build | Inquisitor Labs</title>
-
-  <meta name="description" content="Inquisitor Labs’ Open Use and Open Build resources provide system-agnostic architectural and technical specifications, licensing information, and development philosophy for next-generation AI systems.">
-
+  <title>Open Use and Open Build – Inquisitor Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/openuse.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525; /* slightly heavier, still not bold */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
+
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
-    .container {
-      max-width: 900px;
+
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
-    .justified {
-      text-align: justify;
+
+    h1, h2 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .resource-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .resource-card img {
+      width: 200px;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #e4d9cf;
+      display: block;
+      margin: 1rem 0;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -58,85 +107,106 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Open Use & Open Build</h1>
+    <section class="section-card">
+      <h1>Open Use and Open Build</h1>
+      <p>
+        Inquisitor Labs is always asking what comes next in the development of AI systems. We strive to make current systems more capable, and we actively design the next generation of architectures and components that will supersede many of those available today.
+      </p>
+    </section>
 
-    <p class="justified">
-      Inquisitor Labs is always asking “what comes next” - especially in the development of AI and AI systems. We strive to make the systems we have today more capable, and we are actively developing the next generation of systems architecture and components that will supersede many of those available today.
+    <section class="section-card">
+      <h2>An Open Challenge to You</h2>
+      <p>
+        We design revolutionary systems at the architectural level. We challenge anyone to build them.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Our Designs</h2>
+      <p>
+        Our work typically consists of two papers: an Architectural Specification and a Technical Specification. We define the behaviour, structure, and expectations of a system, and leave the implementation to anyone willing to take it on.
+      </p>
+      <p>
+        If you can build it, build it.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>The Systems Architecture Level</h2>
+      <p>
+        Inquisitor Labs works at the systems architecture level. We define how a system should behave, not how to code it. A sufficiently competent developer or development team should be able to build a working system from our designs.
+      </p>
+      <p>
+        Our concepts sit above any specific operating system or framework, so they can be adopted, adapted, and implemented in many runtime environments.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>A Unique Resource for You</h2>
+      <p>
+        Here you will find Open Use and Open Build resources developed exclusively by us. These resources are unique at the time of publication and offer significant development and commercial opportunities, as well as less tangible benefits for those who can successfully integrate them into wider systems.
+      </p>
+      <p>
+        To understand how to use our specifications, read our
+        <a href="https://assimilatedhuman.github.io/inquisitor-labs/general-specification-usage-guide.pdf">General Specification Usage Guide</a>.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Collaboration</h2>
+      <p>
+        We are open to collaboration. Architectural discussion and joint commercial ventures are welcome. We do not provide support for system specific issues such as coding, documentation, troubleshooting, or tech support, and especially not on an ad hoc basis.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Licensing and Availability</h2>
+      <p>
+        Open Use and Open Build describe a publishing model where architectural and technical specifications are made available for anyone to study, develop, and build upon. These specifications are system agnostic and do not depend on any particular model, operating system, coding language, or runtime environment.
+      </p>
+      <p>
+        Documents that include their own licence operate under those terms. Where a document is published without an explicit licence, the Apache 2.0 licence applies by default. Apache 2.0 permits free use, modification, distribution, and commercial implementation, requires attribution and preservation of notices, includes an explicit patent licence, and contains a patent retaliation clause to prevent misuse.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Open Use / Open Build Resources</h2>
+    </section>
+
+    <section class="resource-card">
+      <h2>MOOD SHOT – AI Persona Modulation for End Users</h2>
+      <img src="moodshot.png" alt="Mood Shot Diagram">
+      <p>
+        Imagine adjusting how a local LLM behaves with the simplicity of moving a slider. Interaction style becomes a user defined parameter rather than a hidden internal state. Explicit, transparent, and reversible.
+      </p>
+      <p>
+        MOOD SHOT provides deterministic, user controlled persona modulation for local and potentially distributed LLMs. It uses operator defined mappings and a minimal slider interface to expose behaviour shaping as a clear, inspectable mechanism.
+      </p>
+      <p>
+        Instead of guessing how the model will respond, you set the behaviour directly. Instead of a small fixed selection, you get a range.
+      </p>
+      <p>
+        <a href="mood-shot-architecture-specification.pdf">Mood Shot Architecture Specification (PDF)</a><br>
+        <a href="mood-shot-technical-specification.pdf">Mood Shot Technical Specification (PDF)</a>
+      </p>
+    </section>
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
-
-    <h2>An Open Challenge To You.</h2>
-    <p class="justified">
-      We design revolutionary systems great and small, at the architectural level. We challenge anyone to build them.
-    </p>
-
-    <h2>Our Designs.</h2>
-    <p class="justified">
-      Usually they consist of two papers- an Architectural Specification and a Technical Specification. We define the behaviour, the structure, and the expectations of a system - and leave the implementation to anyone willing to take it on. If you can build it, build it!
-    </p>
-
-    <h2>The Systems Architecture Level.</h2>
-    <p class="justified">
-      Inquisitor Labs works at the system architecture level. We define how a system should behave, not how to code it. That said, a sufficiently competent developer or development team should be able to code a working system from our designs. Our concepts sit above any specific operating system or framework, so they can be adopted, adapted, and implemented in many runtime environments.
-    </p>
-
-    <h2>A Unique Resource For You</h2>
-    <p class="justified">
-      Here you will find Open Use and Open Build resources developed exclusively by us. We believe these resources are unique at the time of publication and offer significant development and commercial opportunities, as well as less tangible benefits to those who can successfully integrate them into wider systems.
-    </p>
-
-    <h2>Collaboration</h2>
-    <p class="justified">
-      We are always open to collaboration. Architectural discussion and joint commercial ventures are welcome, but we do not provide support for system specific issues such as coding, documentation, troubleshooting or tech support. And especially not on an ad-hoc basis.
-    </p>
-
-<p class="justified">
-  To understand how to use our specifications, read our <a href="https://assimilatedhuman.github.io/inquisitor-labs/general-specification-usage-guide.pdf">General Specification Usage Guide</a>.
-</p>
-    
-    <h2>Licensing and Availability</h2>
-    <p class="justified">
-      Open Use and Open Build describe a publishing model where architectural and technical specifications are made available for anyone to study, develop, and build upon. These specifications are system agnostic and do not depend on any particular model, operating system, coding language, or runtime environment. Documents that include their own licence operate under those terms; where a document is published without an explicit licence, the Apache 2.0 licence applies by default. Apache 2.0 permits free use, modification, distribution, and commercial implementation, requires attribution and preservation of notices, includes an explicit patent licence, and contains a patent retaliation clause to prevent misuse.
-    </p>
-
-    <h2 style="text-decoration: underline;">OPEN USE / OPEN BUILD RESOURCES</h2>
-
-<h2>MOOD SHOT - AI Persona Modulation For End Users</h2>
-
-<img src="moodshot.png" alt="Mood Shot Diagram" 
-     style="width:200px; height:auto; display:block; margin:1rem 0;">
-
-    <p class="justified">
-      Imagine if you could adjust how a local LLM behaves with the same simplicity as moving a slider control. Where interaction style is not a hidden internal state, but a user defined parameter - explicit, transparent, and reversible.
-    </p>
-
-    <p class="justified">
-      MOOD SHOT provides deterministic, user controlled persona modulation for local (and potentially distributed) LLMs. It uses operator defined mappings and a minimal slider interface to expose behaviour shaping as a clear, inspectable mechanism. Instead of guessing how the model will respond, you set the behaviour directly. Instead of a small fixed selection you get a range.
-    </p>
-
-    <p>
-      <a href="mood-shot-architecture-specification.pdf">Mood Shot Architecture Specification (PDF)</a><br>
-      <a href="mood-shot-technical-specification.pdf">Mood Shot Technical Specification (PDF)</a>
-    </p>
-
-    <hr>
-
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="testing.html">Testing</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a> .
-  <a href="eu-ai-act.html">EU AI Act</a>
-</p>
 
   </div>
 
