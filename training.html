@@ -2,63 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>Products & Reference Materials | Inquisitor Labs</title>
-  <meta name="description" content="Books, courses and reference materials from Inquisitor Labs.">
+  <title>Products and Reference Materials – Inquisitor Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/training.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
+
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
-    .container {
-      max-width: 900px;
+
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
-    .product-block {
-      margin-bottom: 3rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #ddd;
+
+    h1, h2 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
-    .product-block img {
-      width:180px;
-      height:auto;
-      object-fit:contain;
-      display:block;
-      margin-bottom:1rem;
-      border:1px solid #ccc;
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .product-card {
+      margin-top: 18px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .product-card img {
+      width: 160px;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #e4d9cf;
+      object-fit: contain;
+    }
+
+    .product-card a {
+      color: #1f1a17;
+      text-decoration: none;
+    }
+
+    .product-card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -66,110 +118,79 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Products & Reference Materials</h1>
-
-    <p>
-      Practical books, courses and reference materials from Inquisitor Labs.  
-      All products link to external platforms such as Gumroad or Leanpub.  
-      Prices are not listed here, as they may vary slightly between platforms.
-    </p>
-
-    <hr>
-
-    <!-- PRODUCT 1: EU AI Act Compliance Checker -->
-
-    <div class="product-block">
-      <img src="checker-cover.JPG" alt="EU AI Act Compliance Checker Cover">
-
-      <h2>EU AI Act Compliance Checker</h2>
-
+    <section class="section-card">
+      <h1>Products and Reference Materials</h1>
       <p>
-        A structured, question‑driven tool to determine whether the EU AI Act applies to your system and what obligations follow.
+        Practical books, courses, and reference materials from Inquisitor Labs.  
+        All products link to external platforms such as Gumroad or Leanpub.  
+        Prices are not listed here, as they may vary between platforms.
       </p>
+    </section>
 
-      <p>
-        <a href="eu-ai-act-checker.html" target="_blank">Open product page</a>
-      </p>
-    </div>
-    
-<hr style="margin: 2rem 0; border: 0; border-top: 1px solid #bbb;">
+    <section class="section-card">
+      <h2>Available Products</h2>
 
-    <!-- PRODUCT 2: EU AI Act Compliance Starter Pack -->
+      <div class="product-card">
+        <img src="checker-cover.JPG" alt="EU AI Act Compliance Checker Cover">
+        <div>
+          <h3>EU AI Act Compliance Checker</h3>
+          <p>
+            A structured, question driven tool to determine whether the EU AI Act applies to your system and what obligations follow.
+          </p>
+          <p><a href="eu-ai-act-checker.html" target="_blank">Open product page</a></p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="starter-pack-cover.jpg" alt="EU AI Act Compliance Starter Pack Cover">
+        <div>
+          <h3>EU AI Act Compliance Starter Pack</h3>
+          <p>
+            A practical, fast start guide covering system categories, documentation requirements, organisational readiness, and real world obligations.
+          </p>
+          <p><a href="https://leanpub.com/eu-ai-act" target="_blank">Open on Leanpub</a></p>
+        </div>
+      </div>
 
-    <div class="product-block">
-      <img src="starter-pack-cover.jpg" alt="EU AI Act Compliance Starter Pack Cover">
+      <div class="product-card">
+        <img src="cover-inquisitor.JPG" alt="Evaluating and Testing AI Using Real-World Work">
+        <div>
+          <h3>Evaluating and Testing AI Using Real World Work</h3>
+          <p>
+            A complete methodology for behaviourally evaluating AI systems using real world workflows, scenarios, and failure analysis.
+          </p>
+          <p><a href="https://leanpub.com/llm-inquisitor" target="_blank">Open on Leanpub</a></p>
+        </div>
+      </div>
 
-      <h2>EU AI Act Compliance Starter Pack</h2>
+      <div class="product-card">
+        <img src="rollouts-image.jpg" alt="Surviving AI Rollouts in the Workplace Thumbnail">
+        <div>
+          <h3>Surviving AI Rollouts in the Workplace</h3>
+          <p>
+            A clear eyed guide to the messy reality of AI rollouts: the hype, the pressure, the unstable systems, and the impact on real people trying to get their work done.
+          </p>
+          <p><a href="https://books2read.com/u/388QRd" target="_blank">Available at most digital bookshops</a></p>
+        </div>
+      </div>
 
-      <p>
-        A practical, fast‑start guide covering system categories, documentation requirements, organisational readiness, and real‑world obligations.
-      </p>
+      <div class="product-card">
+        <img src="thumb-ai-failure-at-work.png" alt="AI Failure At Work Thumbnail">
+        <div>
+          <h3>AI Failure At Work – It’s Not Your Fault</h3>
+          <p>
+            Most people struggle with AI at work not because they lack ability, but because the systems behave unpredictably, drift, and break in ways nobody has been trained to recognise.
+          </p>
+          <p><a href="https://pureselfdev.gumroad.com/l/ai-failure-at-work-course" target="_blank">Open on Gumroad</a></p>
+        </div>
+      </div>
+    </section>
 
-      <p>
-        <a href="https://leanpub.com/eu-ai-act" target="_blank">Open on Leanpub</a>
-      </p>
-    </div>
-
-<hr style="margin: 2rem 0; border: 0; border-top: 1px solid #bbb;">
-    
-    <!-- PRODUCT 3: Evaluating & Testing AI Using Real‑World Work -->
-
-    <div class="product-block">
-      <img src="cover-inquisitor.JPG" alt="Evaluating and Testing AI Using Real-World Work">
-
-      <h2>Evaluating and Testing AI Using Real‑World Work</h2>
-
-      <p>
-        A complete methodology for behaviourally evaluating AI systems using real‑world workflows, scenarios and failure analysis.
-      </p>
-
-      <p>
-        <a href="https://leanpub.com/llm-inquisitor" target="_blank">Open on Leanpub</a>
-      </p>
-    </div>
-
-    <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #bbb;">
-
-    <!-- PRODUCT 4: Surviving AI Rollouts in the Workplace -->
-
-    <div class="product-block">
-      <img src="rollouts-image.jpg" alt="Surviving AI Rollouts in the Workplace Thumbnail">
-
-      <h2>Surviving AI Rollouts in the Workplace</h2>
-
-      <p>
-        A clear‑eyed guide to the messy reality of AI rollouts: the hype, the pressure, the unstable systems, and the impact on real people trying to get their work done.
-      </p>
-
-      <p>
-        <a href="https://books2read.com/u/388QRd" target="_blank">Available At Most Digital Bookshops</a>
-      </p>
-    </div>
-
-    <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #bbb;">
-
-    <!-- PRODUCT 5: AI Failure At Work – It’s Not Your Fault -->
-
-    <div class="product-block">
-      <img src="thumb-ai-failure-at-work.png" alt="AI Failure At Work Thumbnail">
-
-      <h2>AI Failure At Work – It’s Not Your Fault</h2>
-
-      <p>
-        Most people struggle with AI at work not because they lack ability, but because the systems behave unpredictably, drift, and break in ways nobody has been trained to recognise.
-      </p>
-
-      <p>
-        <a href="https://pureselfdev.gumroad.com/l/ai-failure-at-work-course" target="_blank">Open on Gumroad</a>
-      </p>
-    </div>
-
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -179,7 +200,8 @@
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
       <a href="services.html">Services</a> ·
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
   </div>
