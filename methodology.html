@@ -3,84 +3,105 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>LLM Inquisitor Methodology | AI Behaviour Testing & Deployment Stability</title>
-  <meta name="description" content="LLM Inquisitor Methodology: a comprehensive AI behaviour testing framework for real-world workflows, stability analysis, drift detection and AI deployment risk mitigation.">
-  <meta name="keywords" content="AI testing, AI behaviour, AI deployment failures, drift detection, AI methodology, LLM testing, AI stability, Inquisitor Labs">
-  <meta name="author" content="William Argo">
-  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/methodology.html">
-
-  <meta property="og:title" content="LLM Inquisitor Methodology">
-  <meta property="og:description" content="A comprehensive AI behaviour testing method for real-world workflows under pressure.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://assimilatedhuman.github.io/inquisitor-labs/inquisitor_lab_logo_header.png">
-
+  <title>LLM INQUISITOR METHODOLOGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/methodology.html">
 
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525; /* slightly heavier, still not bold */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
+
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
-    .container {
-      max-width: 900px;
+
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
-.bottom-banner {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  height: 140px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin: 3rem 0 2rem 0;
-}
-.bottom-banner img {
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  display: block;
-}
+
     h1, h2 {
-      margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b; /* Rich Brown */
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
     ul {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+
+    .banner {
+      width: 100%;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .banner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
     }
   </style>
 </head>
@@ -88,93 +109,115 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>The Problem With AI Deployment</h1>
+    <section class="section-card">
+      <h1>LLM INQUISITOR METHODOLOGY</h1>
+      <p>
+        The industry rushed into AI deployment without preparation. Teams shipped models under pressure, without standards, without behavioural testing, and without understanding how these systems behave under real‑world conditions. Most organisations are still testing the wrong things - clean prompts, short examples and idealised scenarios that never appear in production.
+      </p>
+      <p>
+        This is why 85% to 95% of AI deployments fail. Not because teams are incompetent, but because the industry skipped the preparation layer entirely.
+      </p>
+      <p>
+        <strong>LLM INQUISITOR METHODOLOGY</strong> provides that missing layer: a structured, repeatable and legally defensible behavioural testing framework designed for real workflows under pressure.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>The Problem With AI Deployment</h2>
+      <p>
+        AI arrived fast. Companies rushed to integrate it under pressure. Deadlines tightened, competitors shipped features weekly and leadership demanded AI adoption whether teams were ready or not.
+      </p>
+      <p>
+        The industry had no time to build standards or testing practices. Teams deployed models they did not fully understand. Most are still testing the wrong things - clean prompts, short examples and idealised conditions that never appear in production.
+      </p>
+      <p>
+        This is why 85–95% of AI deployments fail. Not because teams are incompetent, but because the industry was pushed into a race without preparation.
+      </p>
+    </section>
 
-<p>AI arrived fast. Companies rushed to integrate it under pressure. Deadlines tightened, competitors shipped features weekly, and leadership demanded AI adoption whether teams were ready or not.</p>
+    <section class="section-card">
+      <h2>AI Evaluation and the EU AI Act</h2>
+      <p>
+        The EU AI Act now requires organisations to evaluate AI systems using rigorous, repeatable and real‑world testing. High‑risk AI must demonstrate robustness, stability, transparency and effective human oversight. Prompt testing and curated demos are no longer acceptable.
+      </p>
 
-<p>The industry had no time to build standards or testing practices. Teams deployed models they did not fully understand. Most are still testing the wrong things - clean prompts, short examples and idealised conditions that never appear in production.</p>
+      <p>Compliance requires:</p>
+      <ul>
+        <li>repeatable, documented testing</li>
+        <li>scenario‑based evaluation that reflects real workflows</li>
+        <li>identification of failure modes and behavioural risks</li>
+        <li>continuous monitoring for drift and instability</li>
+        <li>traceability and auditability of AI behaviour</li>
+      </ul>
 
-<p>This is why 85 to 95 percent of AI deployments fail. Not because teams are incompetent, but because the industry was pushed into a race without preparation.</p>
+      <p>
+        The EU AI Act exposes the core issue: prompt testing cannot meet regulatory expectations or surface real‑world behaviour. Other jurisdictions are already drafting similar requirements, and global alignment is inevitable.
+      </p>
+    </section>
 
-<h2>AI Evaluation and the EU AI Act</h2>
+    <section class="section-card">
+      <h2>The Solution: LLM INQUISITOR METHODOLOGY</h2>
+      <p>
+        <strong>LLM INQUISITOR METHODOLOGY</strong> gives teams the preparation layer the industry skipped. It provides a structured, repeatable and legally defensible behavioural testing framework designed for real workflows under pressure.
+      </p>
 
-<p>The EU AI Act now requires organisations to evaluate AI systems using rigorous, repeatable and real‑world testing. High‑risk AI must demonstrate robustness, stability, transparency and effective human oversight. Prompt testing and curated demos are no longer acceptable.</p>
+      <p>The methodology includes:</p>
+      <ul>
+        <li>real‑world behavioural testing</li>
+        <li>stress and edge‑case evaluation</li>
+        <li>drift and instability detection</li>
+        <li>stability and consistency checks</li>
+        <li>workflow‑aligned risk identification</li>
+      </ul>
 
-<p>Compliance requires:</p>
+      <p>
+        Understanding the system’s behaviour is the only way to manage the financial, legal, reputational and operational risks that AI introduces.
+      </p>
+    </section>
 
-<ul>
-  <li>repeatable, documented testing</li>
-  <li>scenario‑based evaluation that reflects real workflows</li>
-  <li>identification of failure modes and behavioural risks</li>
-  <li>continuous monitoring for drift and instability</li>
-  <li>traceability and auditability of AI behaviour</li>
-</ul>
+    <section class="section-card">
+      <h2>The Right Tool For the Right Job</h2>
+      <div style="margin: 20px 0; display: flex; align-items: flex-start; gap: 20px;">
+        <a href="https://leanpub.com/llm-inquisitor" target="_blank">
+          <img src="cover-inquisitor.JPG" alt="Evaluating and Testing AI Using Real-World Work" style="max-width: 180px; height: auto; border: 1px solid #ccc; border-radius: 6px;">
+        </a>
+        <div>
+          <p><strong>For the full, expanded methodology and real‑world evaluation framework, read the book:</strong></p>
+          <p><a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a></p>
+        </div>
+      </div>
 
-<p>The EU AI Act exposes the core issue: prompt testing cannot meet regulatory expectations or surface real‑world behaviour. Other jurisdictions are already drafting similar requirements, and global alignment is inevitable.</p>
+      <p>
+        <strong>LLM INQUISITOR METHODOLOGY</strong> is currently free to download and use, including a quick start guide and a practitioner guide.
+      </p>
 
-<h2>The Solution: LLM INQUISITOR METHODOLOGY</h2>
+      <p><a href="llm-inquisitor-methodology-github-edition1-1.pdf">Download LLM Inquisitor Methodology (PDF)</a></p>
+      <p><a href="llm-inquisitor-quick-start-guide1-1.pdf">Download Quick Start Guide (PDF)</a></p>
+      <p><a href="llm-inquisitor-practitioners-guide1-1.pdf">Download Practitioner Guide (PDF)</a></p>
 
-<p><strong>LLM INQUISITOR METHODOLOGY</strong> gives teams the preparation layer the industry skipped:</p>
+      <p><strong>Get ahead of the competition. Be part of the 15% that deliver.</strong></p>
 
-<ul>
-  <li>real‑world behavioural testing</li>
-  <li>stress and edge‑case evaluation</li>
-  <li>drift and instability detection</li>
-  <li>stability and consistency checks</li>
-  <li>workflow‑aligned risk identification</li>
-</ul>
-
-<p>Understanding the system’s behaviour is the only way to manage the financial, legal, reputational and operational risks that AI introduces.</p>
-
-<h2>The Right Tool For the Right Job</h2>
-
-<div style="margin: 20px 0; display: flex; align-items: flex-start; gap: 20px;">
-  <a href="https://leanpub.com/llm-inquisitor" target="_blank">
-    <img src="cover-inquisitor.JPG" alt="Evaluating and Testing AI Using Real-World Work" style="max-width: 180px; height: auto; border: 1px solid #ccc;">
-  </a>
-  <div>
-    <p><strong>For the full, expanded methodology and real-world evaluation framework, read the book:</strong></p>
-    <p><a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real-World Work</a></p>
-  </div>
-</div>
-    
-<p><strong>LLM INQUISITOR METHODOLOGY</strong> is currently free to download and use, including a quick start guide and a practitioner guide.</p>
-
-<p><strong>Get ahead of the competition. Be part of the 15% that deliver.</strong></p>
-
-    <p><strong>LLM INQUISITOR METHODOLOGY</strong> is currently free to download and use, including a quick start guide and a practitioner guide. At the time of writing, it is the only known comprehensive AI behaviour testing method designed for evaluating LLMs in real workflows under pressure.</p>
-
-    <p><a href="llm-inquisitor-methodology-github-edition1-1.pdf">Download LLM Inquisitor Methodology (PDF)</a></p>
-    <p><a href="llm-inquisitor-quick-start-guide1-1.pdf">Download Quick Start Guide (PDF)</a></p>
-    <p><a href="llm-inquisitor-practitioners-guide1-1.pdf">Download Practitioner Guide (PDF)</a></p>
-
-    <p><strong>Get ahead of the competition. Be part of the 15% that deliver.</strong></p>
-<div class="bottom-banner">
-  <img src="llm-inquisitor-logo-banner.png" alt="LLM Inquisitor Logo Banner">
-</div>
-
-    <hr>
-
-   <hr>
-
-<p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="testing.html">Testing</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a> .
-  <a href="eu-ai-act.html">EU AI Act</a>
-</p>
-    <p>(C) William Argo</p>
+      <div class="banner">
+        <img src="llm-inquisitor-logo-banner.png" alt="LLM Inquisitor Logo Banner">
+      </div>
+    </section>
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
 
   </div>
 
