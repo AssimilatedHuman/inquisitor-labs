@@ -2,85 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>EU AI Act | Practical Testing, Evaluation & Real‑World Compliance</title>
-  <meta name="description" content="A practical, real‑world guide to EU AI Act testing, evaluation, documentation and behavioural evidence. Learn how to meet regulatory expectations using workflow‑based AI testing.">
-  <meta name="keywords" content="EU AI Act, AI compliance, AI testing, high‑risk AI, AI evaluation, AI documentation, LLM testing, Inquisitor Labs">
-  <meta name="author" content="William Argo">
-  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act.html">
-
-  <meta property="og:title" content="EU AI Act Compliance">
-  <meta property="og:description" content="A practical guide to EU AI Act testing and evaluation requirements.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://assimilatedhuman.github.io/inquisitor-labs/inquisitor_lab_logo_header.png">
-
+  <title>EU AI Act – Practical Testing, Evaluation and Real‑World Compliance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act.html">
 
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
+
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
-    .container {
-      max-width: 900px;
+
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
-    .bottom-banner {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 900px;
-      height: 140px;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      margin: 3rem 0 2rem 0;
-    }
-    .bottom-banner img {
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      display: block;
-    }
+
     h1, h2 {
-      margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
     ul {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .resource-block {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      align-items: flex-start;
+    }
+
+    .resource-block img {
+      width: 160px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -88,135 +109,183 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>EU AI Act: What Organisations Must Now Do</h1>
+    <section class="section-card">
+      <h1>EU AI Act: What Organisations Must Now Do</h1>
+      <p>
+        The EU AI Act is the first major regulation that requires organisations to test, evaluate and document AI systems using real‑world conditions. It is no longer acceptable to rely on prompt testing, curated demos or idealised examples. The Act requires evidence, not assumptions.
+      </p>
+      <p>
+        Any organisation deploying high‑risk AI must now prove:
+      </p>
+      <ul>
+        <li>robustness and stability under real‑world workflows</li>
+        <li>behavioural consistency across tasks and scenarios</li>
+        <li>identification and mitigation of failure modes</li>
+        <li>traceability and auditability of system behaviour</li>
+        <li>ongoing monitoring for drift, degradation and instability</li>
+      </ul>
+      <p>
+        These requirements cannot be met with traditional testing. They demand workflow‑based evaluation that reflects how AI is actually used by real people, under real pressure, in real environments.
+      </p>
+    </section>
 
-    <p>The EU AI Act is the first major regulation that forces organisations to test, evaluate and document AI systems using real‑world conditions. It is no longer acceptable to rely on prompt testing, curated demos or idealised examples. The Act requires evidence — not assumptions.</p>
+    <section class="section-card">
+      <h2>Why Real‑World Testing Matters</h2>
+      <p>
+        The Act exposes a fundamental industry problem: most AI systems are tested in conditions that do not resemble production. This creates a gap between expected behaviour and actual behaviour — the gap where failures, liabilities and regulatory breaches occur.
+      </p>
+      <p>
+        Real‑world testing closes that gap. It reveals:
+      </p>
+      <ul>
+        <li>behavioural drift over time</li>
+        <li>instability under stress or ambiguity</li>
+        <li>unexpected failure modes</li>
+        <li>workflow‑specific risks</li>
+        <li>inconsistencies across similar tasks</li>
+      </ul>
+      <p>
+        This is the level of evidence regulators expect, and the level organisations must produce to remain compliant.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>A Practical Framework for EU AI Act Compliance</h2>
+      <p>
+        The <strong>LLM Inquisitor Methodology</strong> provides a practical, repeatable and workflow‑aligned approach to testing AI systems in ways that meet the Act’s expectations. It is designed for real‑world evaluation.
+      </p>
+      <p>
+        The methodology supports compliance by enabling:
+      </p>
+      <ul>
+        <li>scenario‑based behavioural testing</li>
+        <li>stress and edge‑case evaluation</li>
+        <li>drift and instability detection</li>
+        <li>evidence‑based documentation</li>
+        <li>ongoing monitoring and review</li>
+      </ul>
+      <p>
+        It gives organisations the evidence they need to deploy AI safely, legally and with confidence.
+      </p>
+    </section>
 
-    <p>Any organisation deploying high‑risk AI must now prove:</p>
+    <section class="section-card">
+      <h2>EU AI Act Resources</h2>
+      <p>Organisations preparing for compliance can use the following practical resources from Inquisitor Labs:</p>
 
-    <ul>
-      <li>robustness and stability under real‑world workflows</li>
-      <li>behavioural consistency across tasks and scenarios</li>
-      <li>identification and mitigation of failure modes</li>
-      <li>traceability and auditability of system behaviour</li>
-      <li>ongoing monitoring for drift, degradation and instability</li>
-    </ul>
-
-    <p>These requirements cannot be met with traditional testing. They demand workflow‑based evaluation that reflects how AI is actually used by real people, under real pressure, in real environments.</p>
-
-    <h2>Why Real‑World Testing Matters</h2>
-
-    <p>The Act exposes a fundamental industry problem: most AI systems are tested in conditions that do not resemble production. This creates a gap between expected behaviour and actual behaviour — the gap where failures, liabilities and regulatory breaches occur.</p>
-
-    <p>Real‑world testing closes that gap. It reveals:</p>
-
-    <ul>
-      <li>behavioural drift over time</li>
-      <li>instability under stress or ambiguity</li>
-      <li>unexpected failure modes</li>
-      <li>workflow‑specific risks</li>
-      <li>inconsistencies across similar tasks</li>
-    </ul>
-
-    <p>This is the level of evidence regulators expect — and the level organisations must produce to remain compliant.</p>
-
-    <h2>A Practical Framework for EU AI Act Compliance</h2>
-
-    <p>The <strong>LLM INQUISITOR METHODOLOGY</strong> provides a practical, repeatable and workflow‑aligned approach to testing AI systems in ways that meet the Act’s expectations. It is designed for real‑world evaluation.</p>
-
-    <p>The methodology supports compliance by enabling:</p>
-
-    <ul>
-      <li>scenario‑based behavioural testing</li>
-      <li>stress and edge‑case evaluation</li>
-      <li>drift and instability detection</li>
-      <li>evidence‑based documentation</li>
-      <li>ongoing monitoring and review</li>
-    </ul>
-
-    <p>It gives organisations the evidence they need to deploy AI safely, legally and with confidence.</p>
-
-    <h2>The Right Tool For the Right Job</h2>
-
-<h2>EU AI Act Resources</h2>
-
-<p>Organisations preparing for compliance can use the following practical resources from Inquisitor Labs:</p>
-
-<div style="display:flex; gap:1.5rem; margin:2rem 0;">
-  <img src="checker-cover.JPG" alt="EU AI Act Compliance Checker Cover" style="width:160px; height:auto; border:1px solid #ccc;">
-  <div>
-    <p><strong><a href="eu-ai-act-checker.html">EU AI Act Compliance Checker</a></strong></p>
-    <p>A structured, question‑driven tool to determine whether the Act applies to your system and what obligations follow.</p>
-  </div>
-</div>
-
-<div style="display:flex; gap:1.5rem; margin:2rem 0;">
-  <img src="starter-pack-cover.jpg" alt="EU AI Act Compliance Starter Pack Cover" style="width:160px; height:auto; border:1px solid #ccc;">
-  <div>
-    <p><strong><a href="https://leanpub.com/eu-ai-act">EU AI Act Compliance Starter Pack</a></strong></p>
-    <p>A practical, fast‑start guide covering system categories, documentation requirements, organisational readiness, and real‑world obligations.</p>
-  </div>
-</div>
-   
-    <div style="margin: 20px 0; display: flex; align-items: flex-start; gap: 20px;">
-      <a href="https://leanpub.com/llm-inquisitor" target="_blank">
-        <img src="cover-inquisitor.JPG" alt="Evaluating and Testing AI Using Real-World Work" style="max-width: 180px; height: auto; border: 1px solid #ccc;">
-      </a>
-      <div>
-        <p><strong>To behaviourally evaluate your AI, read the book:</strong></p>
-        <p><a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a></p>
+      <div class="resource-block">
+        <img src="checker-cover.JPG" alt="EU AI Act Compliance Checker Cover">
+        <div>
+          <p><strong><a href="eu-ai-act-checker.html">EU AI Act Compliance Checker</a></strong></p>
+          <p>A structured, question‑driven tool to determine whether the Act applies to your system and what obligations follow.</p>
+        </div>
       </div>
+
+      <div class="resource-block">
+        <img src="starter-pack-cover.jpg" alt="EU AI Act Compliance Starter Pack Cover">
+        <div>
+          <p><strong><a href="https://leanpub.com/eu-ai-act">EU AI Act Compliance Starter Pack</a></strong></p>
+          <p>A practical, fast‑start guide covering system categories, documentation requirements, organisational readiness and real‑world obligations.</p>
+        </div>
+      </div>
+
+      <div class="resource-block">
+        <a href="https://leanpub.com/llm-inquisitor" target="_blank">
+          <img src="cover-inquisitor.JPG" alt="Evaluating and Testing AI Using Real-World Work">
+        </a>
+        <div>
+          <p><strong>To behaviourally evaluate your AI, read the book:</strong></p>
+          <p><a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a></p>
+        </div>
+      </div>
+
+      <p>This book provides the complete methodology, detailed examples and practical guidance for meeting the Act’s testing, documentation and monitoring requirements.</p>
+    </section>
+
+    <section class="section-card">
+      <h2>Why Companies Think They Are Exempt</h2>
+      <p>
+        Many organisations believe the EU AI Act does not apply to them. This is almost always due to the wording used in headlines and summaries. Terms like high risk, critical infrastructure or financial services lead people to assume that only specialised industries are affected.
+      </p>
+      <p>
+        The reality is far simpler. If AI is knowingly or unknowingly used in making a decision that affects an EU citizen, the organisation is in scope. It does not matter whether the company is in a regulated sector or whether the AI system is formally deployed.
+      </p>
+      <p>
+        Common examples include sorting CVs, drafting appraisal emails, preparing internal reviews or submitting almost any kind of formal application or assessment. If AI touches the workflow, the Act applies.
+      </p>
+      <p>
+        The obligations come from the decisions AI influences, not the sector you operate in.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Shadow Workflows</h2>
+      <p>
+        Shadow workflows occur when employees use AI informally, casually or privately to make their work faster or easier. This includes freely available chatbots, browser extensions, mobile apps or any AI tool used outside official channels.
+      </p>
+      <p>
+        Most organisations have no idea this is happening. Fewer still have asked their staff directly. Even fewer have checked whether AI is being used in ways that create legal exposure under the EU AI Act.
+      </p>
+      <p>
+        The risk is simple. If an employee uses AI to help produce or influence a decision that affects an EU citizen, the organisation is in scope - even if management did not approve the AI, did not know it was being used or did not intend for AI to be part of the workflow.
+      </p>
+      <p>
+        The solution is equally simple. Ask employees whether they use AI informally. Document the answers. Test the workflows for accuracy and compliance. If everything is documented and the workflows are robustly evaluated, the organisation will meet its obligations under the Act.
+      </p>
+      <p>
+        Shadow workflows are not a technical problem. They are a behavioural and organisational one. They are also a major product opportunity.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Global Alignment Is Coming</h2>
+      <p>
+        The EU AI Act is the first major regulation of its kind, but it will not be the last. The UK, US and Canada are already drafting legislation that mirrors its focus on testing, evaluation, documentation and oversight.
+      </p>
+      <p>
+        Preparing for the EU AI Act prepares you for global compliance.
+      </p>
+    </section>
+
+    <div class="section-card" style="text-align:center;">
+      <img src="llm-inquisitor-logo-banner.png" alt="LLM Inquisitor Logo Banner" style="max-width:100%; height:auto; border-radius:6px;">
     </div>
 
-    <p>This book provides the complete methodology, detailed examples and practical guidance for meeting the Act’s testing, documentation and monitoring requirements.</p>
+    <section class="section-card">
+      <h2>Further EU AI Act Resources</h2>
+      <p>For deeper, practical guidance on specific parts of the Act, see the following pages:</p>
+      <ul>
+        <li><a href="eu-ai-act-checker.html">Check if the EU AI Act Applies to You</a></li>
+        <li><a href="eu-ai-act-fines.html">Fines and Penalties</a></li>
+        <li><a href="eu-ai-act-categories.html">AI System Categories</a></li>
+        <li><a href="eu-ai-act-obligations.html">Developer Obligations</a></li>
+        <li><a href="eu-ai-act-help.html">Get Compliant Now</a></li>
+      </ul>
+      <p>Each page provides focused, practical guidance designed for developers and organisations preparing for compliance.</p>
+    </section>
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
 
-    <h2>Global Alignment Is Coming</h2>
+    <p style="text-align:center; font-size:0.85rem; color:#666; margin-top:1rem;">
+      (C) William Argo
+    </p>
 
-    <p>The EU AI Act is the first major regulation of its kind — but it will not be the last. The UK, US and Canada are already drafting legislation that mirrors its focus on testing, evaluation, documentation and oversight.</p>
-
-    <p>Preparing for the EU AI Act prepares you for global compliance.</p>
-
-    <div class="bottom-banner">
-  <img src="llm-inquisitor-logo-banner.png" alt="LLM Inquisitor Logo Banner">
-</div>
-
-<h2>Further EU AI Act Resources</h2>
-
-<p>For deeper, practical guidance on specific parts of the Act, see the following pages:</p>
-
-<ul>
-  <li><a href="eu-ai-act-checker.html">Check if the EU AI Act Applies to You</a></li>
-  <li><a href="eu-ai-act-fines.html">Fines and Penalties</a></li>
-  <li><a href="eu-ai-act-categories.html">AI System Categories</a></li>
-  <li><a href="eu-ai-act-obligations.html">Developer Obligations</a></li>
-  <li><a href="eu-ai-act-help.html">Get Compliant Now</a></li>
-</ul>
-
-<p>Each page provides focused, practical guidance designed for developers and organisations preparing for compliance.</p>
-
-<hr>
-
-<p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="testing.html">Testing</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a> ·
-  <a href="eu-ai-act.html">EU AI Act</a>
-</p>
-
-<p>(C) William Argo</p>
-
-</div>
+  </div>
 
 </body>
 </html>
