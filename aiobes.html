@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIOBES – Artificial Intelligence Operational Behaviour Evaluation Standards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Artificial Intelligence Operational Behaviour Evaluation Standards (AIOBES). The first comprehensive behavioural evaluation standard for AI systems.">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #faf7f4;
+      line-height: 1.6;
+    }
+
+ /* Fixed Header */
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 960px;
+  height: 140px;
+  background: #000;
+  border-radius: 10px;
+  border: 1px solid #e4d9cf;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.top-header img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+
+
+    /* Main Page Container */
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      padding-top: 180px; /* space for fixed header */
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.4em 0 0.8em;
+    }
+
+    li {
+      margin-bottom: 0.25em;
+    }
+
+    /* Card Layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    /* Hero Block */
+    .hero {
+      margin-top: 24px;
+      padding: 20px 18px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .hero-title {
+      font-size: 1.6rem;
+      margin-bottom: 0.6em;
+    }
+
+    /* Footer Navigation */
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Fixed Banner -->
+  <div class="top-header">
+    <img src="aiobes-banner.png" alt="AIOBES logo header">
+  </div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="hero-title">Artificial Intelligence Operational Behaviour Evaluation Standards (AIOBES)</h1>
+
+      <p>
+        AIOBES is the first comprehensive behavioural evaluation standard for Artificial Intelligence systems. 
+        It focuses on how AI actually behaves when people use it - in real tasks, real workflows, and real conversations.
+      </p>
+
+      <p>
+        It is the first standard built specifically to evaluate operational behaviour rather than isolated prompt testing. 
+        AIOBES identifies critical failures that create regulatory, legal, operational and reputational exposure.
+      </p>
+    </section>
+
+    <!-- WHAT AIOBES EVALUATES -->
+    <section class="section-card">
+      <h2>What AIOBES Evaluates</h2>
+
+      <p>AIOBES focuses on behavioural failure modes that appear under real use such as:</p>
+
+      <ul>
+        <li>context collapse</li>
+        <li>misaligned or inconsistent guardrails</li>
+        <li>hallucinated content</li>
+        <li>contradictory or unstable outputs</li>
+        <li>incorrect refusals</li>
+        <li>misaligned responses in regulated workflows</li>
+        <li>tone instability</li>
+      </ul>
+
+      <p>
+        These failure modes directly cause workflow contamination - where incorrect, unsafe or non‑compliant outputs 
+        spread through processes and systems.
+      </p>
+    </section>
+
+    <!-- OPERATIONAL EFFECTS -->
+    <section class="section-card">
+      <h2>Operational Effects Exposed by AIOBES</h2>
+
+      <p>When these failure modes occur, organisations face:</p>
+
+      <ul>
+        <li>workflow collapse</li>
+        <li>workflow contamination</li>
+        <li>regulatory non‑compliance</li>
+        <li>fines & sanctions</li>
+        <li>legal liability exposure</li>
+        <li>operational disruption</li>
+        <li>reputational damage</li>
+      </ul>
+
+      <p>AIOBES documents these effects clearly, repeatably, and without ambiguity.</p>
+    </section>
+
+    <!-- METHODOLOGIES -->
+    <section class="section-card">
+      <h2>Methodologies</h2>
+
+      <p>
+        AIOBES currently uses two operational methodologies to expose how AI behaves under real conditions. 
+        They show how specific failure modes lead directly to workflow contamination, workflow collapse, 
+        and the resulting regulatory, legal, operational and reputational exposure.
+      </p>
+
+      <h3>LLM Inquisitor</h3>
+      <p>
+        Evaluates how AI behaves during long‑form work using real tasks, real documents and real operational content. 
+        It exposes long‑form collapse - where the AI loses structure, drifts from requirements, rewrites instead of editing, 
+        contaminates the work, or breaks the task over time. It shows whether the AI can maintain stability, alignment and 
+        continuity across extended, multi‑step real‑world work without introducing errors, hallucinations or workflow contamination.
+      </p>
+
+      <h3>Vectored Conversational AI Testing</h3>
+      <p>
+        Evaluates AI behaviour across real conversational interactions - text, verbal, and other chatbot inputs/outputs. 
+        It examines how the system responds under varied interaction patterns, phrasing, formats and multimodal triggers. 
+        It reveals whether the AI maintains coherence, correctness and alignment when engaged through natural user communication, 
+        and whether conversational instability contaminates downstream workflows.
+      </p>
+    </section>
+
+    <!-- REFERENCE MATERIALS -->
+    <section class="section-card">
+      <h2>Reference Materials</h2>
+
+      <p>AIOBES is supported by two core reference books – one for each methodology:</p>
+
+      <ul>
+        <li>
+          <strong>Evaluating & Testing AI Using Real World Work (The LLM Inquisitor Field Manual)</strong><br>
+          Covers long‑form work collapse, real task evaluation, and contamination detection in extended operational work.<br>
+          <em>Available here: <a href="https://leanpub.com/llm-inquisitor" target="_blank" rel="noopener">Leanpub link</a></em>
+        </li>
+
+        <li>
+          <strong>Vectored Conversational AI Testing Guide</strong><br>
+          Covers behavioural evaluation across real conversational interactions and how conversational instability 
+          contaminates downstream workflows.<br>
+          <em>Available here: coming soon to Leanpub</em>
+        </li>
+      </ul>
+
+      <p>These two guides form the baseline for applying AIOBES correctly.</p>
+    </section>
+
+    <!-- TRAINING -->
+    <section class="section-card">
+      <h2>Training (Coming Soon)</h2>
+      <p>Practical training for applying AIOBES in real workflows and real interactions. Focused on operational execution.</p>
+    </section>
+
+    <!-- CERTIFICATION -->
+    <section class="section-card">
+      <h2>Certification (Coming Soon)</h2>
+      <p>Formal practitioner certification aligned to the two methodologies. Validates correct application of AIOBES and production of audit‑ready behavioural evidence.</p>
+    </section>
+
+    <!-- COMPLIANCE -->
+    <section class="section-card">
+      <h2>Compliance (Q4 2026)</h2>
+      <p>Organisational compliance framework based on AIOBES. Provides a structured way to demonstrate behavioural evaluation controls to regulators.</p>
+    </section>
+
+    <!-- FOOTER NAVIGATION -->
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
