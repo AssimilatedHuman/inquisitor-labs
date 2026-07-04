@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Vectored Conversations | Inquisitor Labs</title>
-  <meta name="description" content="How vectored conversations reveal AI behaviour that does not appear in linear or prompt-based testing.">
+  <title>Vectored Conversational AI Testing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/testing-vectored.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
 
@@ -25,9 +23,12 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,51 +37,58 @@
     }
 
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    .container {
-      max-width: 900px;
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
 
-    .justified {
-      text-align: justify;
-    }
-    
     h1, h2 {
-      margin-top: 2rem;
       font-weight: 600;
-      color: #5a3e2b;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
     }
 
     ul {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
     }
 
-    li {
-      margin-bottom: 1rem;
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
     }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .footer-nav {
       text-align: center;
-    }
-
-    nav li {
-      display: inline;
-      margin: 0 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -88,146 +96,142 @@
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Vectored Conversations</h1>
+    <section class="section-card">
+      <h1>Vectored Conversational AI Testing</h1>
+      <p>
+        Vectored Conversational AI Testing begins on a predefined path, follows the behavioural trajectory chosen by the AI, and evaluates the system against fixed structural points that determine whether it is passing or failing while the test is in progress.
+      </p>
+      <p>
+        This method is structured, repeatable and evaluatable, even though the behaviour itself is emergent and non‑deterministic. The evaluator defines the starting conditions. The AI determines the trajectory. The structural points along that trajectory reveal stability, drift, divergence and behavioural collapse.
+      </p>
+      <p>
+        This page explains what vectored conversations are, why they matter, and how they expose behavioural patterns that never appear in prompt testing or scripted evaluation.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>What Vectored Conversations Are</h2>
+      <p>
+        A vectored conversation begins on a predefined path. The evaluator sets the starting conditions, but the AI system determines the behavioural trajectory. Each emerging direction is a vector - a behavioural path revealed by the model, not chosen by the evaluator.
+      </p>
 
-    <p>
-      Vectored conversations test how an AI system behaves when a single interaction branches into multiple directions. Instead of following one linear path, vectored testing explores how the system responds when user intent shifts, diverges, or evolves across different conversational routes.
-    </p>
+      <p>
+        Vectors expose how the system behaves when the interaction develops in ways that are not scripted, linear or predictable. They reveal:
+      </p>
 
-    <p>
-      This method reveals behavioural patterns that never appear in prompt testing or simple sequential testing. It shows how the system handles divergence, ambiguity, and user-driven variation.
-    </p>
+      <ul>
+        <li>the same starting point producing different behavioural trajectories</li>
+        <li>the model reframing or reinterpreting earlier context</li>
+        <li>behaviour shifting as conversational pressure accumulates</li>
+        <li>the model adapting to subtle changes in user intent</li>
+        <li>stability or instability across emerging trajectories</li>
+      </ul>
 
-    <p>
-      This page explains what vectored conversations are, why they matter, and why they are essential for understanding real system behaviour.
-    </p>
+      <p>
+        A vector is not a branch. It is a behavioural trajectory shaped by the model.
+      </p>
+    </section>
 
-    <h2>What Vectored Conversations Are</h2>
+    <section class="section-card">
+      <h2>Why Vectored Testing Is Structured and Repeatable</h2>
+      <p>
+        Vectored Conversational AI Testing is structured because the starting point, evaluation criteria and termination conditions are fixed. It is repeatable because every test begins with the same initial conditions, even though the behaviour that follows is emergent.
+      </p>
 
-    <p>
-      A vectored conversation begins with a shared starting point. From there, the interaction splits into multiple branches. Each branch is a vector, and each vector exposes a different behavioural pattern.
-    </p>
+      <p>
+        The evaluator understands the conversational space - where the conversation could go, where it must not go, and where it should go under stable behaviour. Structural points along the trajectory act as behavioural checkpoints that determine whether the AI is passing or failing while the test is in progress.
+      </p>
 
-    <ul>
-      <li>the same conversation taken in different directions</li>
-      <li>user intent shifting mid-interaction</li>
-      <li>context being reused or reinterpreted</li>
-      <li>the system adapting to conflicting signals</li>
-      <li>behaviour under branching pressure</li>
-    </ul>
+      <p>
+        This combination of fixed structure and emergent behaviour is what makes vectored testing uniquely powerful.
+      </p>
+    </section>
 
-    <p>
-      These branches reveal how the system behaves when the conversation does not follow the expected path.
-    </p>
+    <section class="section-card">
+      <h2>Why Vectored Testing Cannot Be Scripted</h2>
+      <p>
+        Vectored testing cannot be automated or predefined because each vector depends on the model’s own behaviour. The evaluator does not choose the direction. The model reveals it.
+      </p>
 
-    <h2>Why Vectored Testing Cannot Be Scripted</h2>
+      <p>
+        This makes vectored testing a direct measurement of behaviour, not a simulation of it. Scripted tests measure compliance. Vectored tests measure stability, drift, divergence and collapse.
+      </p>
+    </section>
 
-    <p>
-      Vectored testing cannot be automated or predefined. Each branch depends on the AI system’s own responses. The direction of the conversation is shaped by the model, not by a script.
-    </p>
+    <section class="section-card">
+      <h2>Why Internal Teams Miss These Issues</h2>
+      <p>
+        Internal teams often interact with the system from a position of familiarity. They know how it is “supposed” to behave and unconsciously avoid unstable or ambiguous conversational paths. This prevents them from seeing behavioural instability, drift or divergence.
+      </p>
 
-    <p>
-      This makes vectored testing a direct measurement of behaviour, not a simulation of it.
-    </p>
+      <p>
+        Vectored testing exposes these hidden behaviours because the evaluator does not share the team’s assumptions or blind spots. The model is allowed to reveal its own behavioural tendencies.
+      </p>
+    </section>
 
-    <h2>Why Internal Teams Miss These Issues</h2>
+    <section class="section-card">
+      <h2>Why Vectored Testing Matters</h2>
+      <p>
+        Vectored testing shows how an AI system handles real conversational conditions, including:
+      </p>
 
-    <p>
-      Internal teams often miss behavioural issues because they interact with the system from a position of familiarity. They know how it is supposed to behave, they unconsciously avoid unstable or awkward conversational paths, and they rarely push the model into areas where behaviour becomes unpredictable.
-    </p>
+      <ul>
+        <li>ambiguity and reinterpretation</li>
+        <li>conflicting or shifting user signals</li>
+        <li>behavioural drift across trajectories</li>
+        <li>stability under conversational pressure</li>
+        <li>emergent divergence from the expected path</li>
+      </ul>
 
-    <p>
-      Vectored testing exposes these hidden patterns because the evaluator does not share the team’s assumptions or blind spots.
-    </p>
+      <p>
+        These are the conditions real users create every day — and the conditions where AI systems most often fail.
+      </p>
+    </section>
 
-    <h2>Why Vectored Testing Matters</h2>
+    <section class="section-card">
+      <h2>What Prompt Testing Misses</h2>
+      <p>
+        Prompt testing measures a single moment. It cannot show:
+      </p>
 
-    <p>
-      Vectored testing shows how an AI system handles:
-    </p>
+      <ul>
+        <li>how behaviour evolves across a trajectory</li>
+        <li>how the system handles conflicting signals</li>
+        <li>how context is reused, reframed or misinterpreted</li>
+        <li>how behaviour diverges from the expected path</li>
+      </ul>
 
-    <ul>
-      <li>ambiguity</li>
-      <li>branching logic</li>
-      <li>conflicting user signals</li>
-      <li>reinterpretation of earlier context</li>
-      <li>shifts in tone or intent</li>
-    </ul>
+      <p>
+        Vectored testing exposes these behavioural patterns directly.
+      </p>
+    </section>
 
-    <p>
-      These are the conditions real users create every day. They are also the conditions where AI systems most often fail.
-    </p>
+    <section class="section-card">
+      <h2>How Vectored Testing Supports Behavioural Assurance</h2>
+      <p>
+        Vectored conversations provide evidence of:
+      </p>
 
-    <h2>What Prompt Testing Misses</h2>
+      <ul>
+        <li>behavioural stability</li>
+        <li>behavioural drift</li>
+        <li>behavioural divergence</li>
+        <li>behavioural collapse under conversational pressure</li>
+      </ul>
 
-    <p>
-      Prompt testing measures a single moment. It cannot show:
-    </p>
+      <p>
+        This evidence is essential for workflow design, risk management, safety analysis and deployment assurance. It also supports compliance with legislation such as the EU AI Act, which requires evidence of system behaviour under realistic and variable conditions.
+      </p>
 
-    <ul>
-      <li>how behaviour changes when the conversation branches</li>
-      <li>how the system handles conflicting signals</li>
-      <li>how context is reused or misused</li>
-      <li>how behaviour diverges across similar paths</li>
-    </ul>
-
-    <p>
-      Vectored testing exposes these patterns directly.
-    </p>
-
-    <h2>Where Vectored Testing Fits Into Our Work</h2>
-
-    <p>
-      Vectored testing is one of the core methods used in our AI Evaluation Service. Most teams cannot run vectored testing internally because it cannot be scripted or automated. Each branch depends on the AI system’s own responses, and every vector must be explored, interpreted, and documented by a human evaluator.
-    </p>
-
-    <p>
-      We use vectored testing to identify issues that internal teams often miss. Familiarity with the system leads developers to avoid unstable or ambiguous conversational paths without realising it. Vectored testing reveals these hidden behaviours by exploring the full space of possible interactions.
-    </p>
-
-    <p>
-      Our evaluation work uses vectored testing to map behavioural stability, identify drift and divergence, and reveal failure patterns that only appear under realistic conversational variation.
-    </p>
-
-    <h2>How Vectored Testing Supports Behavioural Assurance</h2>
-
-    <p>
-      Vectored conversations provide evidence of:
-    </p>
-
-    <ul>
-      <li>behavioural stability</li>
-      <li>behavioural divergence</li>
-      <li>behavioural drift</li>
-      <li>behavioural collapse under branching pressure</li>
-    </ul>
-
-    <p>
-      This evidence is essential for workflow design, risk management, safety analysis, and deployment assurance.
-    </p>
-
-    <p>
-      It also supports compliance with legislation such as the EU AI Act, which requires evidence of system behaviour under realistic and variable conditions.
-    </p>
-
-    <h2>Real Conversations Expose Real Behaviour  </h2>
-
-    <p>
-      Vectored testing completes the behavioural picture. It shows how the system behaves when the user changes direction, not just when everything stays on the expected path.
-    </p>
-
-    <p>
-  Download <a href="vectored-conversational-AI-testing-v1.pdf">Vectored Conversational AI Testing Methodology (PDF)</a>.
-</p>
-
-    <hr>
-
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+      <p>
+        Download <a href="vectored-conversational-AI-testing-v1.pdf">Vectored Conversational AI Testing Methodology (PDF)</a>.
+      </p>
+    </section>
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -237,7 +241,8 @@
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
       <a href="services.html">Services</a> ·
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
   </div>
