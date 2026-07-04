@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>AI & UX Evaluation Service | Inquisitor Labs</title>
-  <meta name="description" content="AI evaluation and UX review services from Inquisitor Labs.">
+  <title>AI and UX Evaluation Service – Inquisitor Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/services.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 500;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
 
@@ -25,9 +22,12 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,154 +36,150 @@
     }
 
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    .container {
-      max-width: 900px;
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
 
     h1, h2 {
-      margin-top: 0;        /* no space above heading */
-      margin-bottom: 1rem;  /* keep space below heading */
       font-weight: 600;
-      color: #5a3e2b; /* Rich Brown */
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
 
-    hr {
-    margin-top: 1rem;      /* small space above the line */
-    margin-bottom: 1.5rem; /* space between line and next heading */
-    border: none;
-    border-top: 1px solid #ccc;
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
     }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    ul {
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .enquiry-button {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      background: #1f1a17;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid #e4d9cf;
+      margin-top: 1rem;
+    }
+
+    .enquiry-button:hover {
+      background: #000;
+    }
+
+    .footer-nav {
       text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
-
-    nav li {
-      display: inline;
-      margin: 0 0.5rem;
-    }
-
-/* Enquiry Button */
-a.cta {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  background: #5a3e2b; /* Rich Brown */
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid #3a2a20; /* darker brown edge */
-  margin-top: 1.5rem;
-}
-a.cta:hover {
-  background: #4a3324; /* slightly darker on hover */
-}
-
   </style>
 </head>
 
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>AI & UX Evaluation Service</h1>
+    <section class="section-card">
+      <h1>AI and UX Evaluation Service</h1>
+      <p>
+        Evaluation based on real work, real interactions, and real workflows. This approach exposes failure modes that prompt mill testing will never surface, using the latest behavioural evaluation methodology.
+      </p>
+      <p>
+        UX evaluation is carried out across multiple levels of usability, from surface clarity and navigation to checkout mechanics and full task flows. All work is done from the customer’s perspective.
+      </p>
+    </section>
 
-    <p>
-      AI (and systems) evaluation based on the real work the system is expected to handle. Real interactions, real tasks, real workflows. This approach exposes failure modes that prompt mill testing will never surface, using the latest evaluation methodology.
-    </p>
+    <section class="section-card">
+      <h2>AI Evaluation</h2>
+      <p>
+        AI evaluation based on real work, not prompt engineering. Independent studies show the same pattern: systems that appear stable under prompt tests often fail when exposed to real users, real workflows, and real ambiguity.
+      </p>
+      <p>
+        Inquisitor Labs evaluates AI the way it is actually used. This exposes brittle reasoning, workflow drift, hallucinated steps, silent errors, and behaviour that only appears under realistic pressure.
+      </p>
+      <p>
+        Prompt engineering creates the appearance of stability. Real work evaluation shows whether the system will hold up when it matters.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>UX Evaluation</h2>
+      <p>
+        UX evaluation is carried out across multiple levels of usability. This can include surface clarity, navigation, checkout mechanics, task flows, or full site exploration. What is covered depends on how long you book, how complex your site is, and what you want us to concentrate on.
+      </p>
+      <p>
+        A half day typically covers surface clarity and checkout mechanics. A full day allows for deeper flow analysis or broader site exploration.
+      </p>
+      <p>
+        You will receive a written report containing all insights surfaced during the evaluation, including issues outside the original brief.
+      </p>
+    </section>
 
-    <p>
-      UX evaluation across multiple levels of usability. From surface clarity and navigation, through checkout and task flows, to full site usability. Done with time and care from the customer’s perspective — not a box ticking exercise.
-    </p>
+    <section class="section-card">
+      <h2>How to Book</h2>
+      <p>
+        To request an evaluation, email us with your site link, what you want us to look at, and how long you want to book. We will reply with availability and next steps.
+      </p>
+    </section>
 
-    <hr>
+    <section class="section-card">
+      <h2>Scope and Rates</h2>
+      <p>
+        Scope is agreed in advance and costed as either a half day (£250 for 3.5 hours) or a full day (£450 for 7 hours). Delivery is scheduled separately.
+      </p>
+    </section>
 
-    <h2>AI Evaluation</h2>
-
-    <p>
-      AI evaluation based on real work, not “prompt engineering”. Independent studies — including MIT’s finding that up to 95 percent of workplace AI deployments fail in some way — show the same pattern: systems that look adequate under “prompt engineering” tests fall apart the moment they meet real users, real workflows, and real ambiguity.
-    </p>
-
-    <p>
-      Inquisitor Labs evaluates AI the way it is actually used: real tasks, real interactions, real context. This exposes failure modes that “prompt engineering” test mills never reveal — brittle reasoning, workflow drift, hallucinated steps, silent errors, and behaviour that only appears under realistic pressure.
-    </p>
-
-    <p>
-      “Prompt engineering” creates the appearance of stability. Real work evaluation shows whether the system will hold up when it matters.
-    </p>
-
-    <hr>
-
-    <h2>UX Evaluation</h2>
-
-    <p>
-      UX evaluation across multiple levels of usability. This can include surface clarity, navigation, checkout mechanics, task flows, or full site exploration. What’s covered depends on how long you book, how complex your site is, and what you want us to concentrate on. For example: a half day typically covers surface level clarity and checkout mechanics; a full day allows for deeper flow analysis or broader site exploration.
-    </p>
-
-    <p>
-      We will produce a written report containing all insights surfaced during the evaluation — including issues outside the original brief.
-    </p>
-
-    <hr>
-
-    <h2>How to Book</h2>
-
-    <p>
-      If you want an evaluation, use the email link below. Include your site (if available), what you want us to look at, and how long you want to book. We’ll reply with availability and next steps.
-    </p>
-
-    <hr>
-
-    <h2>Scope and Rates</h2>
-
-    <p>
-      Scope is agreed in advance and costed as either a half day (£250 for 3.5 hours) or a full day (£450 for 7 hours). Delivery is scheduled separately.
-    </p>
-
-    <hr>
-
-    <h2>Enquiry</h2>
-
-    <p>
-      To request an evaluation, email us directly. Please include:
-    </p>
-
-    <ul>
-      <li><strong>Contact details</strong> name, position, organisation</li>
-      <li><strong>A working link</strong> to the system or site you want evaluated</li>
-      <li><strong>What you want tested</strong> — AI behaviour, UX flows, or both</li>
-      <li><strong>The depth of evaluation</strong> you want (surface clarity, checkout mechanics, task flows, full exploration)</li>
-      <li><strong>How long you want to book</strong> — half day (3.5 hours) or full day (7 hours)</li>
-    </ul>
-
-    <p>
-      We’ll reply to confirm scope and availability.
-    </p>
-
-    <p>
-      <a href="mailto:william.argo@proton.me" class="cta">Open Enquiry Email</a>
-    </p>
-
-    <hr>
-
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+    <section class="section-card">
+      <h2>Enquiry</h2>
+      <p>Please include:</p>
+      <ul>
+        <li><strong>Contact details</strong> name, position, organisation</li>
+        <li><strong>A working link</strong> to the system or site you want evaluated</li>
+        <li><strong>What you want tested</strong> AI behaviour, UX flows, or both</li>
+        <li><strong>The depth of evaluation</strong> surface clarity, checkout mechanics, task flows, full exploration</li>
+        <li><strong>How long you want to book</strong> half day (3.5 hours) or full day (7 hours)</li>
+      </ul>
+      <p>We will reply to confirm scope and availability.</p>
+      <p>
+        <a href="mailto:william.argo@proton.me" class="enquiry-button">Open Enquiry Email</a>
+      </p>
+    </section>
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -192,8 +188,9 @@ a.cta:hover {
       <a href="openuse.html">Open Use</a> ·
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
-      <a href="services.html">Services</a> .
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
   </div>
