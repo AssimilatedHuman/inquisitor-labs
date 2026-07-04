@@ -3,209 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <title>EU AI Act – Check if the EU AI Act Applies to You</title>
-  <meta name="description" content="A practical liability checker to see whether your AI system is caught by the EU AI Act.">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act-checker.html">
-  
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      color: #222;
+      background-color: #faf7f4;
+      line-height: 1.6;
     }
 
-    /* Top header (Inquisitor Labs logo) */
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
 
-    /* Spacer to push content below fixed header */
-    .header-spacer {
-      height: 140px;
-      width: 100%;
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      padding-top: 180px;
     }
-
-       /* Main container */
-    .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  padding-top: 180px;
-  background: #dfeff0 url('brushed-alum.png') repeat;
-  box-sizing: border-box;
-}
 
     h1, h2, h3 {
-      color: #222;
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
     }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
     ul, ol {
-      margin-left: 20px;
+      margin: 0.4em 0 0.8em;
+      padding-left: 1.2em;
     }
-    a {
-      color: #0077cc;
-      text-decoration: none;
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Inquisitor Labs fixed header -->
   <div class="top-header">
     <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Check if the EU AI Act Applies to You</h1>
+    <section class="section-card">
+      <h1>Check if the EU AI Act Applies to You</h1>
+      <p>
+        Most developers underestimate how aggressively the EU AI Act reaches across borders. The definitions are broad, the scope is wide, and regulators assume your system is covered unless you can prove otherwise.
+      </p>
+      <p>
+        It does not matter where you are based, what you intended or how small your operation is. If your system touches the EU in any meaningful way, you are treated as within the framework.
+      </p>
+      <p>
+        The questions below map directly to the triggers regulators use. Answer them based on operational reality and you will know whether you are facing a minor administrative task or a full compliance burden you cannot ignore.
+      </p>
+    </section>
+    <section class="section-card">
+      <h2>The Quick Checker</h2>
+      <p>
+        The EU assesses AI systems based on impact, jurisdiction and accessibility. Their criteria are expansive and applied without regard to your size, location or business model. If your system interacts with the EU in any operational way, it is treated as within their authority.
+      </p>
+      <p>
+        These are the triggers regulators use to determine liability under the EU AI Act. Answer them based on how your system actually operates.
+      </p>
 
-    <p>
-      Most developers and development companies underestimate how aggressively the EU AI Act reaches across borders.
-      The definitions are broad, the scope is wide, and regulators assume your system is covered unless you can prove otherwise.
-      It does not matter where you are based, what you intended, or how small your operation is—if your system touches the EU in any meaningful way, you are treated as within the framework.
+      <ol>
+        <li><strong>Use in the EU:</strong> Is anyone in the EU using your system, directly or indirectly?</li>
+        <li><strong>Outputs into the EU:</strong> Do your outputs reach people or organisations in the EU, even through another product?</li>
+        <li><strong>EU deployment:</strong> Is your system deployed by an EU based team, client, partner or contractor?</li>
+        <li><strong>Decisions about individuals:</strong> Does your system influence decisions about individuals in the EU?</li>
+        <li><strong>EU related data:</strong> Does your model process data relating to EU citizens or residents?</li>
+        <li><strong>EU available products:</strong> Is your system integrated into a product or service available in the EU market?</li>
+        <li><strong>Accessible endpoints:</strong> Do you provide an API, model endpoint or tool that EU users can access?</li>
+        <li><strong>Significant effects:</strong> Does your system support or automate decisions with legal or significant effects?</li>
+        <li><strong>Scoring and assessment:</strong> Does your system classify, score, predict or assess individuals?</li>
+        <li><strong>Influence and impersonation:</strong> Does your system generate content that could mislead, impersonate or influence behaviour?</li>
+      </ol>
+    </section>
+
+    <section class="section-card">
+      <h2>What Your Answers Mean</h2>
+
+      <h3>If you answered YES to anything in 1–7</h3>
+      <p>
+        You are <strong>liable under the EU AI Act</strong>. Your system falls within the EU’s regulatory perimeter. This does not depend on your intention, size or jurisdiction.
+      </p>
+
+      <h3>If you answered YES to anything in 8–10</h3>
+      <p>
+        You may be <strong>liable for additional risk based obligations</strong>, including documentation, testing and behavioural evidence. The more your system affects individuals and decisions, the heavier the expected controls.
+      </p>
+
+      <h3>If you answered NO to everything</h3>
+      <p>
+        You are <strong>not currently liable</strong> under the EU AI Act. However, liability begins the moment your system, its outputs or its endpoints enter the EU ecosystem in any form. Treat this as a point in time assessment, not a permanent exemption.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>What Happens Next</h2>
+      <p>If this checker indicates liability, regulators will expect you to determine and document at least the following:</p>
+
+      <ul>
+        <li><strong>Your AI system category</strong> under the EU AI Act framework.</li>
+        <li><strong>Your role</strong> provider, deployer, importer, distributor or a combination.</li>
+        <li><strong>Evidence of real‑world behaviour</strong>, not just design intent or marketing claims.</li>
+        <li><strong>How you manage risk, drift, misuse and unexpected outputs</strong>.</li>
+        <li><strong>How you will demonstrate compliance</strong> during audits, investigations or enforcement actions.</li>
+      </ul>
+
+      <p>
+        None of this is optional once you are liable. The only question is whether you define this structure yourself or have it defined for you under pressure.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Get Compliant Now</h2>
+      <p>
+        If this page has made it clear that you are liable under the EU AI Act, the next step is not to read more theory. You need a structured, practical route to compliance that matches how your system actually behaves in the real world.
+      </p>
+      <p>
+        The <a href="eu-ai-act-help.html">Get Compliant Now</a> page outlines a concrete path focused on testing, evaluation and behavioural evidence that stands up when regulators ask difficult questions.
+      </p>
+      <p>You do not have to deal with this alone. But you do have to deal with it.</p>
+    </section>
+
+    <section class="section-card">
+      <h2>Further EU AI Act Resources</h2>
+      <ul>
+        <li><a href="eu-ai-act-checker.html">Check if the EU AI Act Applies to You</a></li>
+        <li><a href="eu-ai-act-fines.html">Fines and Penalties</a></li>
+        <li><a href="eu-ai-act-categories.html">AI System Categories</a></li>
+        <li><a href="eu-ai-act-obligations.html">Developer Obligations</a></li>
+        <li><a href="eu-ai-act-help.html">Get Compliant Now</a></li>
+      </ul>
+    </section>
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
-    <p>
-      This page gives you a clear, practical way to understand how the Act sees you.
-      Not how you see yourself. Not how you would prefer to be classified.
-      How regulators will classify you when your system crosses their threshold.
+    <p style="text-align:center; font-size:0.85rem; color:#666; margin-top:1rem;">
+      (C) William Argo
     </p>
 
-    <p>
-      The questions below map directly to the kinds of triggers regulators use.
-      Answer them based on operational reality and you will know whether you are facing a minor administrative task or a full compliance burden you cannot ignore.
-    </p>
-
-    <h2>The Quick Checker</h2>
-
-    <p>
-      The EU assesses AI systems based on impact, jurisdiction, and accessibility.
-      Their criteria are expansive and applied without regard to your size, location, or business model.
-      If your system interacts with the EU in any operational way, it is treated as within their authority.
-    </p>
-
-    <p>These are the kinds of triggers used to determine liability under the EU AI Act. Answer them based on how your system actually operates.</p>
-
-    <ol>
-      <li><strong>Use in the EU:</strong> Is anyone in the EU using your system, directly or indirectly?</li>
-      <li><strong>Outputs into the EU:</strong> Do your outputs reach people or organisations in the EU, even through another product?</li>
-      <li><strong>EU deployment:</strong> Is your system deployed by an EU‑based team, client, partner, or contractor?</li>
-      <li><strong>Decisions about individuals:</strong> Does your system influence decisions about individuals in the EU?</li>
-      <li><strong>EU‑related data:</strong> Does your model process data relating to EU citizens or residents?</li>
-      <li><strong>EU‑available products:</strong> Is your system integrated into a product or service available in the EU market?</li>
-      <li><strong>Accessible endpoints:</strong> Do you provide an API, model endpoint, or tool that EU users can access?</li>
-      <li><strong>Significant effects:</strong> Does your system support or automate decisions with legal or significant effects?</li>
-      <li><strong>Scoring and assessment:</strong> Does your system classify, score, predict, or assess individuals?</li>
-      <li><strong>Influence and impersonation:</strong> Does your system generate content that could mislead, impersonate, or influence behaviour?</li>
-    </ol>
-
-    <h2>What Your Answers Mean</h2>
-
-    <h3>If you answered YES to anything in 1–7</h3>
-    <p>
-      You are <strong>liable under the EU AI Act</strong>.
-      Your system falls within the EU’s regulatory perimeter.
-      This is not optional and does not depend on your intention, size, or jurisdiction.
-    </p>
-
-    <h3>If you answered YES to anything in 8–10</h3>
-    <p>
-      You may be <strong>liable for additional risk‑based obligations</strong>, including documentation, testing, and behavioural evidence.
-      The more your system affects individuals and decisions, the heavier the expected controls.
-    </p>
-
-    <h3>If you answered NO to everything</h3>
-    <p>
-      You are <strong>not currently liable</strong> under the EU AI Act.
-      However, liability begins the moment your system, its outputs, or its endpoints enter the EU ecosystem in any form.
-      Treat this as a point‑in‑time assessment, not a permanent exemption.
-    </p>
-
-    <h2>What Happens Next</h2>
-
-    <p>If this checker indicates liability, regulators will expect you to determine and document at least the following:</p>
-
-    <ul>
-      <li><strong>Your AI system category</strong> under the EU AI Act framework.</li>
-      <li><strong>Your role</strong> (provider, deployer, importer, distributor, or a combination).</li>
-      <li><strong>Evidence of real‑world behaviour</strong>, not just design intent or marketing claims.</li>
-      <li><strong>How you manage risk, drift, misuse, and unexpected outputs</strong>.</li>
-      <li><strong>How you will demonstrate compliance</strong> during audits, investigations, or enforcement actions.</li>
-    </ul>
-
-    <p>
-      None of this is optional once you are liable.
-      The only question is whether you define this structure yourself, or have it defined for you under pressure.
-    </p>
-
-    <h2>Get Compliant Now</h2>
-
-    <p>
-      If this page has made it clear that you are liable under the EU AI Act, the next step is not to read more theory.
-      You need a structured, practical route to compliance that matches how your system actually behaves in the real world.
-    </p>
-
-    <p>
-      The <a href="eu-ai-act-help.html">Get Compliant Now</a> page outlines a concrete path:
-      focused on testing, evaluation, and behavioural evidence that stands up when regulators ask difficult questions.
-    </p>
-
-    <p>You do not have to deal with this alone. But you do have to deal with it.</p>
-
-    <h2>Further EU AI Act Resources</h2>
-
-    <ul>
-      <li><a href="eu-ai-act-checker.html">Check if the EU AI Act Applies to You</a></li>
-      <li><a href="eu-ai-act-fines.html">Fines and Penalties</a></li>
-      <li><a href="eu-ai-act-categories.html">AI System Categories</a></li>
-      <li><a href="eu-ai-act-obligations.html">Developer Obligations</a></li>
-      <li><a href="eu-ai-act-help.html">Get Compliant Now</a></li>
-    </ul>
-
-<hr>
-
-<hr>
-
-<p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
-  <a href="index.html">Home</a> ·
-  <a href="insights.html">Insights</a> ·
-  <a href="testing.html">Testing</a> ·
-  <a href="research.html">Research</a> ·
-  <a href="training.html">Training</a> ·
-  <a href="openuse.html">Open Use</a> ·
-  <a href="collaborations.html">Collaborations</a> ·
-  <a href="glossary.html">Glossary</a> ·
-  <a href="services.html">Services</a> ·
-  <a href="eu-ai-act.html">EU AI Act</a>
-</p>
-
-<p style="text-align:center; font-size: 0.85rem; color:#555; margin-top:1rem;">
-</p>
-
-    
   </div>
 
 </body>
