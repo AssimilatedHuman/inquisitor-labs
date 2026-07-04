@@ -4,91 +4,126 @@
   <meta charset="UTF-8">
 
   <title>Glossary | Inquisitor Labs</title>
-  <meta name="description" content="Glossary of terminology defined across Inquisitor Labs architectural papers and methodologies.">
+  <meta name="description" content="Canonical glossary of terminology defined across Inquisitor Labs architectural papers and methodologies.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/glossary.html">
-  
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      font-weight: 525; /* slightly heavier, still not bold */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #111;
+      color: #222;
+      background-color: #faf7f4;
       line-height: 1.6;
     }
+
     .top-header {
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 900px;
+      width: 960px;
       height: 140px;
       background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       z-index: 9999;
     }
+
     .top-header img {
-      max-height: 100%;
       width: auto;
       height: auto;
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
-    .container {
-      max-width: 900px;
+
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 24px 16px 48px;
       padding-top: 180px;
-      background: #dfeff0 url('brushed-alum.png') repeat;
-      box-sizing: border-box;
     }
-  h2 {
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
-.defs {
-  white-space: pre-wrap;
-}
+
+    h1, h2 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .defs {
+      white-space: pre-wrap;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 
 <body>
 
   <div class="top-header">
-    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs Logo Header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
   </div>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>Glossary</h1>
+    <section class="section-card">
+      <h1>Glossary</h1>
 
-    <hr>
+      <p>
+        This glossary collects all terminology <strong>defined and coined</strong> across the architectural
+        specifications and methodologies published by Inquisitor Labs.
+      </p>
 
-    <p>
-      This glossary collects all terminology <strong>defined and coined</strong> across the architectural
-      specifications and methodologies published by Inquisitor Labs.
-    </p>
+      <p>
+        Terms are grouped <strong>by paper</strong>, in <strong>publication date order</strong>, and each section contains
+        the <strong>architectural definitions</strong> exactly as they appear in the original documents.
+      </p>
 
-    <p>
-      Terms are grouped <strong>by paper</strong>, in <strong>publication date order</strong>, and each section contains
-      the <strong>architectural definitions</strong> exactly as they appear in the original documents.
-      Technical specifications are not included, as they derive their terminology directly from the
-      architectural layer.
-    </p>
-
-    <p>
-      This page serves as the canonical reference index for all system‑level concepts, behaviours,
-      classifications, and architectural constructs used throughout the Inquisitor Labs research canon.
-    </p>
-
-    <hr>
+      <p>
+        This page serves as the canonical reference index for all system‑level concepts, behaviours,
+        classifications and architectural constructs used throughout the Inquisitor Labs research canon.
+      </p>
+    </section>
 
     <!-- ========================= -->
     <!-- DEFINITIONS BY PAPER      -->
@@ -1153,8 +1188,7 @@ GLOSSARY MAINTENANCE NOTES
 
     <hr>
 
-    <!-- Updated Global Footer Links -->
-    <p style="text-align:center; font-size: 0.9rem; color:#444; margin-top:2rem;">
+    <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
       <a href="testing.html">Testing</a> ·
@@ -1163,11 +1197,12 @@ GLOSSARY MAINTENANCE NOTES
       <a href="openuse.html">Open Use</a> ·
       <a href="collaborations.html">Collaborations</a> ·
       <a href="glossary.html">Glossary</a> ·
-      <a href="services.html">Services</a> .
-      <a href="eu-ai-act.html">EU AI Act</a>
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
     </p>
 
-  </div>
+  </div> <!-- end of .page -->
 
 </body>
 </html>
