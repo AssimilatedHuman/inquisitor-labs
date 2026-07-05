@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIOBES Principles - Artificial Intelligence Operational Behaviour Evaluation Standards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AIOBES Principles. Behavioural evaluation principles for the Artificial Intelligence Operational Behaviour Evaluation Standards.">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/aiobes-principles.html">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #faf7f4;
+      line-height: 1.6;
+    }
+
+    /* Fixed Header */
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 960px;
+      height: 140px;
+      background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    /* Main Page Container */
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      padding-top: 180px; /* space for fixed header */
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.4em 0 0.8em;
+    }
+
+    li {
+      margin-bottom: 0.25em;
+    }
+
+    /* Card Layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+    }
+
+    /* Footer Navigation */
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Fixed Banner -->
+  <div class="top-header">
+    <img src="aiobes-banner.png" alt="AIOBES logo header">
+  </div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="section-card">
+      <h1>AIOBES Principles</h1>
+      <p><strong>Artificial Intelligence Operational Behaviour Evaluation Standards (AIOBES)</strong><br>
+      <strong>Principles v1.0</strong></p>
+    </section>
+
+    <!-- PRINCIPLES INTRO -->
+    <section class="section-card">
+      <h2>Behavioural Evaluation Principles</h2>
+
+      <p>
+        AIOBES is built on behavioural evaluation principles that define how AI systems must be assessed under real operational 
+        conditions. These principles ensure that behavioural testing is consistent, repeatable and aligned to real workflows, 
+        real interactions and real organisational risk.
+      </p>
+
+      <p>
+        These principles apply to all AIOBES methodologies, evidence requirements and evaluation processes.
+      </p>
+    </section>
+
+    <!-- PRINCIPLES LIST -->
+    <section class="section-card">
+      <h2>Principles</h2>
+
+      <h3>1. Real Conditions</h3>
+      <p>
+        AI systems must be evaluated under real operational conditions using real tasks, real workflows and real interactions. 
+        Synthetic prompts, artificial scenarios and isolated test inputs do not represent operational behaviour and cannot be 
+        used as the basis for behavioural evaluation.
+      </p>
+
+      <h3>2. Behaviour Over Architecture</h3>
+      <p>
+        AIOBES evaluates only how the system behaves when used. It does not assess model architecture, training data, internal 
+        mechanisms or benchmark performance. Operational behaviour is the sole focus.
+      </p>
+
+      <h3>3. Failure Mode Identification</h3>
+      <p>
+        Behavioural evaluation must identify specific failure modes such as context collapse, hallucinated content, guardrail 
+        inconsistency, incorrect refusals, unstable outputs and conversational instability. These failure modes must be 
+        documented clearly and without ambiguity.
+      </p>
+
+      <h3>4. Workflow Impact</h3>
+      <p>
+        Behavioural failures must be evaluated in terms of their operational impact, including workflow contamination, workflow 
+        collapse, regulatory non-compliance, legal exposure and reputational risk. Behavioural testing must connect system 
+        behaviour to real organisational consequences.
+      </p>
+
+      <h3>5. Evidence First</h3>
+      <p>
+        All behavioural findings must be supported by clear, reproducible evidence. Evidence must show the behaviour, the 
+        conditions under which it occurred and the resulting operational impact. Assertions without evidence are not valid 
+        under AIOBES.
+      </p>
+
+      <h3>6. Operational Limits and Risk Boundaries</h3>
+      <p>
+        AIOBES does not impose ideals such as guaranteed stability or perfect continuity. Instead, it exposes the operational 
+        limits within which work can be safely performed, and identifies the risk boundaries that organisations must avoid to 
+        prevent workflow contamination and collapse.
+      </p>
+
+      <h3>7. Interaction Variability</h3>
+      <p>
+        AI behaviour must be tested across varied interaction patterns, phrasing, formats and multimodal inputs. Behavioural 
+        stability must hold across natural user communication, not only idealised or controlled inputs.
+      </p>
+
+      <h3>8. Deterministic Interpretation and Cross-Organisational Communication</h3>
+      <p>
+        Behavioural findings must be interpreted consistently. AIOBES provides a unified terminology and structured evaluation 
+        framework that makes it easier for teams, departments and organisations to communicate clearly about what is happening, 
+        why it is happening and how behavioural failures affect workflows.
+      </p>
+
+      <h3>9. Compliance Alignment Support</h3>
+      <p>
+        AIOBES does not perform compliance alignment itself. It provides the behavioural evidence and evaluation tools that 
+        organisations need in order to align AI behaviour with regulated workflows, safety requirements and operational 
+        constraints.
+      </p>
+
+      <h3>10. Evolution and Adaptation</h3>
+      <p>
+        Behavioural evaluation practices must evolve as AI systems change and as new operational use cases emerge. AIOBES 
+        principles guide this evolution and ensure that behavioural testing remains aligned to real-world risk.
+      </p>
+    </section>
+
+    <!-- FOOTER NAVIGATION -->
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
