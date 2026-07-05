@@ -13,12 +13,37 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/research.html</loc>
   </url>
 
-<url>
-  <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes.html</loc>
-  <lastmod>2026-07-04</lastmod>
-</url>
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes.html</loc>
+    <lastmod>2026-07-04</lastmod>
+  </url>
 
-    <url>
+  <!-- AIOBES Spoke Pages -->
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes-charter.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes-principles.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes-methodologies.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes-glossary.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes-research.html</loc>
+  </url>
+
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/aiobes-evidence.html</loc>
+  </url>
+
+  <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/training.html</loc>
   </url>
 
@@ -164,8 +189,8 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/insight-why-cant-i-get-a-job-in-ai-testing.pdf</loc>
   </url>
 
-<url>
-  <loc>https://assimilatedhuman.github.io/inquisitor-labs/vectored-conversational-AI-testing-v1.pdf</loc>
-</url>
-  
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/vectored-conversational-AI-testing-v1.pdf</loc>
+  </url>
+
 </urlset>
