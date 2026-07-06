@@ -37,8 +37,6 @@
     }
 
     .top-header img {
-      width: auto;
-      height: auto;
       max-width: 100%;
       max-height: 100%;
       display: block;
@@ -69,37 +67,35 @@
       margin: 0.4em 0 0.8em;
     }
 
-    /* Card Layout */
-    .section-card {
-      margin-top: 24px;
-      padding: 18px 16px;
-      background: #fff;
-      border-radius: 10px;
-      border: 1px solid #e4d9cf;
-    }
-
-    /* Button Cards */
+    /* Card Layout – dual edge clarity (strong saturated inset) */
+    .section-card,
     .button-card {
       margin-top: 24px;
       padding: 18px 16px;
       background: #fff;
       border-radius: 10px;
+
+      /* Outer warm neutral border */
       border: 1px solid #e4d9cf;
+
+      /* Strong thin saturated cyan inset */
+      box-shadow: 0 0 0 1px #006b7a inset;
     }
 
+    /* Button style – saturated deep turquoise */
     .button-card a {
       display: inline-block;
       padding: 8px 14px;
-      background: #fff;
-      border: 1px solid #e4d9cf;
+      background: #1f7f89;        /* saturated turquoise */
+      border: 1px solid #14545b;  /* darker technical border */
       border-radius: 10px;
-      color: #1f1a17;
+      color: #ffffff;
       font-weight: 600;
       text-decoration: none;
     }
 
     .button-card a:hover {
-      background: #f2ebe4;
+      background: #2eaab6;        /* brighter saturated hover */
     }
 
     /* Footer Navigation */
@@ -121,18 +117,25 @@
 
   <div class="page">
 
-    <!-- HERO -->
+    <!-- HERO – updated intro text -->
     <section class="section-card">
       <h1>Inquisitor Labs</h1>
       <p>
-        Inquisitor Labs evaluates how AI systems behave in real workflows. Benchmarks and synthetic tests do not reveal the failures, drifts and decision patterns that determine operational stability and regulatory exposure. Behaviour does. Our work focuses on operational reality and the evidence required for the EU AI Act.
+        Inquisitor Labs evaluates how AI systems behave in real workflows. AI behaviour determines stability, risk and regulatory exposure. Our independent research focuses on behavioural testing, operational evidence and the requirements of the EU AI Act.
+      </p>
+      <p>
+        We also develop behavioural standards, document anomalies and publish architectural and methodological work for next‑generation AI systems.
+      </p>
+      <p>
+        We publish a range of reference books that give people and organisations the skills and knowledge they need to successfully work with and integrate AI into their workflows and systems. Our work includes unique testing strategies that go far beyond inadequate prompt testing. If you need to be legally compliant and operationally safe, we have the resources to support you.
       </p>
     </section>
 
-       <!-- BUTTON SECTIONS -->
+    <!-- BUTTON SECTIONS -->
+
     <div class="button-card">
-      <a href="insights.html">Insights</a>
-      <p>Practical explanations for everyday AI problems people face at work, from inconsistent behaviour to failed rollouts and confusing job roles.</p>
+      <a href="eu-ai-act.html">EU AI Act – Support, Resources and Guidance</a>
+      <p>Support, resources and guidance for organisations that must comply with the EU AI Act. Find out whether the Act applies to your systems, understand what evidence is required, and learn how to test AI using real‑world conditions to meet the new legal obligations.</p>
     </div>
 
     <div class="button-card">
@@ -141,13 +144,33 @@
     </div>
 
     <div class="button-card">
-      <a href="research.html">Published Research</a>
-      <p>Public research linked to Inquisitor Labs. Updates will be added as further work is completed.</p>
+      <a href="training.html">Training – Products and Reference Materials</a>
+      <p>Practical books, courses and reference materials. All products link to external platforms such as Gumroad or Leanpub.</p>
     </div>
 
     <div class="button-card">
-      <a href="training.html">Training – Products and Reference Materials</a>
-      <p>Practical books, courses and reference materials. All products link to external platforms such as Gumroad or Leanpub.</p>
+      <a href="insights.html">Insights</a>
+      <p>Practical explanations for everyday AI problems people face at work, from inconsistent behaviour to failed rollouts and confusing job roles.</p>
+    </div>
+
+    <div class="button-card">
+      <a href="services.html">AI and UX Evaluation Service</a>
+      <p>Evaluation based on real work, real interactions and real workflows.</p>
+    </div>
+
+    <div class="button-card">
+      <a href="archive.html">Archive</a>
+      <p>The Archive of AI Anomalies. Strange and unusual behaviour from the frontiers of latent space.</p>
+    </div>
+
+    <div class="button-card">
+      <a href="aiobes.html">AIOBES</a>
+      <p>The Artificial Intelligence Operational Behaviour Evaluation Standards, focused on how AI behaves in real tasks, workflows and conversations.</p>
+    </div>
+
+    <div class="button-card">
+      <a href="research.html">Published Research</a>
+      <p>Public research linked to Inquisitor Labs. Updates will be added as further work is completed.</p>
     </div>
 
     <div class="button-card">
@@ -164,27 +187,6 @@
       <a href="glossary.html">Glossary</a>
       <p>Terminology defined and coined across the architectural specifications and methodologies published by Inquisitor Labs.</p>
     </div>
-
-    <div class="button-card">
-      <a href="services.html">AI and UX Evaluation Service</a>
-      <p>Evaluation based on real work, real interactions and real workflows.</p>
-    </div>
-
-    <div class="button-card">
-      <a href="eu-ai-act.html">EU AI Act – What Organisations Must Now Do</a>
-      <p>The EU AI Act requires organisations to test and document AI systems using real‑world conditions. Evidence is now mandatory.</p>
-    </div>
-
-    <div class="button-card">
-      <a href="aiobes.html">AIOBES</a>
-      <p>The Artificial Intelligence Operational Behaviour Evaluation Standards, focused on how AI behaves in real tasks, workflows and conversations.</p>
-    </div>
-
-    <div class="button-card">
-      <a href="archive.html">Archive</a>
-      <p>The Archive of AI Anomalies. Strange and unusual behaviour from the frontiers of latent space.</p>
-    </div>
-
 
     <!-- FOOTER -->
     <p class="footer-nav">
