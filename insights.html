@@ -17,7 +17,6 @@
       line-height: 1.6;
     }
 
-    /* Fixed Header */
     .top-header {
       position: fixed;
       top: 0;
@@ -44,7 +43,6 @@
       display: block;
     }
 
-    /* Main Page Container */
     .page {
       max-width: 960px;
       margin: 0 auto;
@@ -52,7 +50,6 @@
       padding-top: 180px;
     }
 
-    /* Typography */
     h1, h2, h3 {
       font-weight: 600;
       color: #1f1a17;
@@ -78,7 +75,6 @@
       margin: 0.4em 0 0.8em;
     }
 
-    /* Card Layout – homepage cyan edge */
     .section-card {
       margin-top: 24px;
       padding: 18px 16px;
@@ -88,7 +84,6 @@
       box-shadow: 0 0 0 1px #006b7a inset;
     }
 
-    /* Collapsible Cards – same cyan edge */
     details {
       margin-top: 18px;
       background: #fff;
@@ -119,7 +114,6 @@
       margin-bottom: 0.25em;
     }
 
-    /* PDF Buttons */
     .pdf-button {
       display: inline-block;
       padding: 8px 14px;
@@ -136,7 +130,6 @@
       background: #2eaab6;
     }
 
-    /* Footer Navigation */
     .footer-nav {
       text-align: center;
       font-size: 0.9rem;
@@ -147,7 +140,6 @@
 </head>
 
 <body>
-
   <!-- Fixed Banner -->
   <div class="top-header">
     <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
@@ -163,25 +155,92 @@
       </p>
     </section>
 
-    <!-- AVAILABLE INSIGHTS -->
+    <!-- PRACTICAL AI TESTING METHODS -->
     <section class="section-card">
-      <h2>Available Insights</h2>
+      <h2>Practical AI Testing Methods</h2>
 
-      <div>
-        <a class="pdf-button" href="insight-am-i-liable-for-ai-mistake-at-work.pdf">Am I Liable For An AI Mistake At Work?</a><br>
-        <a class="pdf-button" href="insight-how-do-i-test-my-ai.pdf">How Do I Test My AI?</a><br>
-        <a class="pdf-button" href="insight-how-to-talk-effectively-about-ai-at-work.pdf">How Can I Talk Effectively About AI At Work?</a><br>
-        <a class="pdf-button" href="insight-why-ai-fails-at-coding.pdf">Why AI Fails At Coding</a><br>
-        <a class="pdf-button" href="insight-why-ai-fails-in-writing-tasks.pdf">Why AI Fails At Long Writing Tasks</a><br>
-        <a class="pdf-button" href="insight-why-ai-wont-generate-the-image-i-want.pdf">Why AI Won’t Generate The Image I Want</a><br>
-        <a class="pdf-button" href="insight-why-chatbots-say-weird-things.pdf">Why Chatbots Say Weird Things</a><br>
-        <a class="pdf-button" href="insight-why-is-my-ai-development-failing.pdf">Why Is My AI Development Failing?</a><br>
-        <a class="pdf-button" href="insight-why-cant-i-hire-anyone-to-test-my-ai.pdf">Why Can’t I Hire Anyone To Test My AI?</a><br>
-        <a class="pdf-button" href="insight-why-cant-i-get-a-job-in-ai-testing.pdf">Why Can’t I Get A Job In AI Testing?</a>
-      </div>
+      <!-- CARD 1: Off-the-shelf / book / framework -->
+      <details>
+        <summary>Where can I find a real AI testing methodology?</summary>
+        <ul>
+          <li>Where can I find an AI testing methodology book that explains real workflows?</li>
+          <li>Is there an off‑the‑shelf AI testing framework I can use?</li>
+          <li>What AI testing standard can I actually buy and apply?</li>
+          <li>Is there a practical AI workflow testing book available?</li>
+          <li>Where do I find an AI behavioural testing book?</li>
+          <li>Is there a book that explains how to test AI failure modes?</li>
+        </ul>
+        <p>
+          Many practitioners assume a mature discipline already exists and look for a book or ready‑made framework. Instead, they find vendor tools and automated validation that do not test behaviour or workflows. A practical, off‑the‑shelf methodology for testing AI using real‑world work is documented here:
+          <a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a>.
+        </p>
+      </details>
+      <!-- CARD 2: Workflow testing -->
+      <details>
+        <summary>How do I test AI inside real workflows?</summary>
+        <ul>
+          <li>How do I test AI in real workflows instead of synthetic benchmarks?</li>
+          <li>What is the correct methodology for testing AI inside business processes?</li>
+          <li>How do I evaluate AI behaviour in manual or hybrid workflows?</li>
+          <li>How do I test AI beyond automated pipelines and dashboards?</li>
+          <li>How do I test AI using real work rather than lab conditions?</li>
+          <li>What workflow‑based approach should organisations use to test AI?</li>
+        </ul>
+        <p>
+          Most guidance focuses on model validation or automated pipelines. Real workflows are hybrid, manual, and context‑dependent. Behavioural issues only appear when AI is tested inside real work, not benchmarks. A structured workflow‑based methodology is documented here:
+          <a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a>.
+        </p>
+      </details>
 
-      <p><strong>Further Reading:</strong> <a href="https://books2read.com/u/388QRd">Surviving AI Rollouts at Work</a></p>
-      <p><strong>Further Reading:</strong> <a href="https://leanpub.com/llm-inquisitor">Evaluating and Testing AI Using Real‑World Work</a></p>
+      <!-- CARD 3: Behavioural testing / failure modes -->
+      <details>
+        <summary>How do I test AI behaviour and failure modes properly?</summary>
+        <ul>
+          <li>How do I test AI behaviour in realistic working conditions?</li>
+          <li>What is the correct behavioural evaluation standard for AI?</li>
+          <li>How do I test AI for contradictions, drift, and unstable reasoning?</li>
+          <li>How do I test AI failure modes that benchmarks never reveal?</li>
+          <li>How do I evaluate multimodal behaviour and cross‑mode inconsistencies?</li>
+          <li>How do I detect behavioural drift during long or complex tasks?</li>
+        </ul>
+        <p>
+          Benchmarks and automated tests cannot detect behavioural failures such as drift, contradictions, persona collapse, or multimodal divergence. These issues only appear under real working conditions. AIOBES defines a behavioural evaluation standard, and the practical testing methodology is documented here:
+          <a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a>.
+        </p>
+      </details>
+      <!-- CARD 4: Anti‑automation / hype frustration -->
+      <details>
+        <summary>Why doesn’t automated AI testing work for real organisations?</summary>
+        <ul>
+          <li>Why is so much AI testing hype instead of something practical?</li>
+          <li>Why doesn’t automated AI testing work in real workflows?</li>
+          <li>Why are AI testing tools useless for real business processes?</li>
+          <li>Why do dashboards fail to detect real AI behaviour problems?</li>
+          <li>Why do automated pipelines miss the issues humans actually face?</li>
+          <li>Why do AI testing tools focus on metrics instead of behaviour?</li>
+        </ul>
+        <p>
+          Automated tools and dashboards test pipelines, not behaviour. They cannot see tone drift, persona collapse, hallucination cascades, or workflow failures. Real organisations need a human‑centred, workflow‑based methodology that explains how to test AI in actual work. That methodology is available here:
+          <a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a>.
+        </p>
+      </details>
+
+      <!-- CARD 5: Practitioner frustration -->
+      <details>
+        <summary>Why is it so hard to find a practical AI testing approach?</summary>
+        <ul>
+          <li>Why is it so hard to find a practical AI testing methodology?</li>
+          <li>Where can I find a real AI testing framework that already exists?</li>
+          <li>Why does every AI testing resource lead to hype instead of something usable?</li>
+          <li>Why can’t I find a real AI testing method someone has already created?</li>
+          <li>Why do AI testing searches return tools instead of methodologies?</li>
+          <li>Why is practical AI testing guidance so difficult to locate?</li>
+        </ul>
+        <p>
+          Practitioners often search for a clear, practical methodology and instead find hype, dashboards, or automated validation tools. The industry has not yet standardised how to test AI in real work, so useful guidance is hard to find. A complete, practical methodology is documented here:
+          <a href="https://leanpub.com/llm-inquisitor" target="_blank">Evaluating and Testing AI Using Real‑World Work</a>.
+        </p>
+      </details>
     </section>
 
     <!-- DEEPER QUESTIONS -->
@@ -435,6 +494,28 @@
         </ul>
         <p>AI careers are stable when tied to real organisational needs such as testing, safety, risk, operations, and workflow design. Hiring is inconsistent because the field is new. Practical evaluation work stands out more than certificates.</p>
       </details>
+    </section>
+
+    <!-- FURTHER DETAILED INSIGHTS -->
+    <section class="section-card">
+      <h2>Further Detailed Insights</h2>
+      <p>
+        These free short pdfs each tackle a specific, practical question about AI at work: liability, testing, communication, coding failures, long‑form writing, image generation, chatbot behaviour, development problems, and the difficulty of hiring or getting hired for AI testing roles. They are designed as focused briefings you can share, reference, or use to start more grounded conversations inside organisations.
+      </p>
+
+      <div>
+        <a class="pdf-button" href="insight-am-i-liable-for-ai-mistake-at-work.pdf">Am I Liable For An AI Mistake At Work?</a><br>
+        <a class="pdf-button" href="insight-how-do-i-test-my-ai.pdf">How Do I Test My AI?</a><br>
+        <a class="pdf-button" href="insight-how-to-talk-effectively-about-ai-at-work.pdf">How Can I Talk Effectively About AI At Work?</a><br>
+        <a class="pdf-button" href="insight-why-ai-fails-at-coding.pdf">Why AI Fails At Coding</a><br>
+        <a class="pdf-button" href="insight-why-ai-fails-in-writing-tasks.pdf">Why AI Fails At Long Writing Tasks</a><br>
+        <a class="pdf-button" href="insight-why-ai-wont-generate-the-image-i-want.pdf">Why AI Won’t Generate The Image I Want</a><br>
+        <a class="pdf-button" href="insight-why-chatbots-say-weird-things.pdf">Why Chatbots Say Weird Things</a><br>
+        <a class="pdf-button" href="insight-why-is-my-ai-development-failing.pdf">Why Is My AI Development Failing?</a><br>
+        <a class="pdf-button" href="insight-why-cant-i-hire-anyone-to-test-my-ai.pdf">Why Can’t I Hire Anyone To Test My AI?</a><br>
+        <a class="pdf-button" href="insight-why-cant-i-get-a-job-in-ai-testing.pdf">Why Can’t I Get A Job In AI Testing?</a>
+      </div>
+
     </section>
 
     <!-- FOOTER -->
