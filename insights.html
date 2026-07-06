@@ -78,22 +78,24 @@
       margin: 0.4em 0 0.8em;
     }
 
-    /* Card Layout */
+    /* Card Layout – homepage cyan edge */
     .section-card {
       margin-top: 24px;
       padding: 18px 16px;
       background: #fff;
       border-radius: 10px;
       border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #006b7a inset;
     }
 
-    /* Collapsible Cards */
+    /* Collapsible Cards – same cyan edge */
     details {
       margin-top: 18px;
       background: #fff;
       border-radius: 10px;
       border: 1px solid #e4d9cf;
       padding: 12px 14px;
+      box-shadow: 0 0 0 1px #006b7a inset;
     }
 
     details summary {
@@ -117,34 +119,21 @@
       margin-bottom: 0.25em;
     }
 
-    /* PDF Grid */
-    .pdf-grid {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 2%;
-      row-gap: 0.35rem;
-      margin-top: 0.5rem;
-    }
-
-    .pdf-grid div {
-      width: 49%;
-      padding: 0.2rem 0;
-      font-size: 0.95rem;
-      line-height: 1.35;
-      border-bottom: 1px solid #e4d9cf;
-    }
-
-    .pdf-grid div:only-child {
-      width: 100%;
-    }
-
-    .pdf-grid a {
+    /* PDF Buttons */
+    .pdf-button {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 6px 0;
+      background: #1f7f89;
+      border: 1px solid #14545b;
+      border-radius: 999px;
+      color: #ffffff;
+      font-weight: 600;
       text-decoration: none;
-      color: #1f1a17;
     }
 
-    .pdf-grid a:hover {
-      text-decoration: underline;
+    .pdf-button:hover {
+      background: #2eaab6;
     }
 
     /* Footer Navigation */
@@ -178,26 +167,23 @@
     <section class="section-card">
       <h2>Available Insights</h2>
 
-      <div class="pdf-grid">
-        <div><a href="insight-am-i-liable-for-ai-mistake-at-work.pdf">Am I Liable For An AI Mistake At Work?</a></div>
-        <div><a href="insight-how-do-i-test-my-ai.pdf">How Do I Test My AI?</a></div>
-
-        <div><a href="insight-how-to-talk-effectively-about-ai-at-work.pdf">How Can I Talk Effectively About AI At Work?</a></div>
-        <div><a href="insight-why-ai-fails-at-coding.pdf">Why AI Fails At Coding</a></div>
-
-        <div><a href="insight-why-ai-fails-in-writing-tasks.pdf">Why AI Fails At Long Writing Tasks</a></div>
-        <div><a href="insight-why-ai-wont-generate-the-image-i-want.pdf">Why AI Won’t Generate The Image I Want</a></div>
-
-        <div><a href="insight-why-chatbots-say-weird-things.pdf">Why Chatbots Say Weird Things</a></div>
-        <div><a href="insight-why-is-my-ai-development-failing.pdf">Why Is My AI Development Failing?</a></div>
-
-        <div><a href="insight-why-cant-i-hire-anyone-to-test-my-ai.pdf">Why Can’t I Hire Anyone To Test My AI?</a></div>
-        <div><a href="insight-why-cant-i-get-a-job-in-ai-testing.pdf">Why Can’t I Get A Job In AI Testing?</a></div>
+      <div>
+        <a class="pdf-button" href="insight-am-i-liable-for-ai-mistake-at-work.pdf">Am I Liable For An AI Mistake At Work?</a><br>
+        <a class="pdf-button" href="insight-how-do-i-test-my-ai.pdf">How Do I Test My AI?</a><br>
+        <a class="pdf-button" href="insight-how-to-talk-effectively-about-ai-at-work.pdf">How Can I Talk Effectively About AI At Work?</a><br>
+        <a class="pdf-button" href="insight-why-ai-fails-at-coding.pdf">Why AI Fails At Coding</a><br>
+        <a class="pdf-button" href="insight-why-ai-fails-in-writing-tasks.pdf">Why AI Fails At Long Writing Tasks</a><br>
+        <a class="pdf-button" href="insight-why-ai-wont-generate-the-image-i-want.pdf">Why AI Won’t Generate The Image I Want</a><br>
+        <a class="pdf-button" href="insight-why-chatbots-say-weird-things.pdf">Why Chatbots Say Weird Things</a><br>
+        <a class="pdf-button" href="insight-why-is-my-ai-development-failing.pdf">Why Is My AI Development Failing?</a><br>
+        <a class="pdf-button" href="insight-why-cant-i-hire-anyone-to-test-my-ai.pdf">Why Can’t I Hire Anyone To Test My AI?</a><br>
+        <a class="pdf-button" href="insight-why-cant-i-get-a-job-in-ai-testing.pdf">Why Can’t I Get A Job In AI Testing?</a>
       </div>
 
       <p><strong>Further Reading:</strong> <a href="https://books2read.com/u/388QRd">Surviving AI Rollouts at Work</a></p>
       <p><strong>Further Reading:</strong> <a href="https://leanpub.com/llm-inquisitor">Evaluating and Testing AI Using Real‑World Work</a></p>
     </section>
+
     <!-- DEEPER QUESTIONS -->
     <section class="section-card">
       <h2>Deeper AI Questions</h2>
@@ -325,6 +311,7 @@
         </ul>
         <p>LLMs do not expose internal reasoning. They perform well on clean examples but break on messy data. Integrations amplify fragility.</p>
       </details>
+
       <h3>Deploying AI in organisations</h3>
 
       <details>
