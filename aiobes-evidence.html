@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Artificial Intelligence Operational Behaviour Evaluation Standards Evidence Requirements</title>
+  <title>AIOBES Evidence Requirements</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Artificial Intelligence Operational Behaviour Evaluation Standards Evidence Requirements defining what counts as behavioural evidence for regulatory evaluation.">
+  <meta name="description" content="AIOBES Evidence Requirements defining behavioural evidence standards for AI system evaluation.">
 
   <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/aiobes-evidence.html">
 
@@ -49,35 +49,43 @@
       padding-top: 180px;
     }
 
-    h1, h2 {
+    h1 {
       font-weight: 600;
       color: #1f1a17;
-      margin-top: 1.6em;
-      margin-bottom: 0.4em;
-    }
-
-    h1 {
       font-size: 1.9rem;
       margin-top: 1.2em;
+      margin-bottom: 0.4em;
     }
 
     p {
       margin: 0.4em 0 0.8em;
     }
 
-   /* Card Layout */
-.section-card {
-  margin-top: 24px;
-  padding: 18px 16px;
-  background: #fff;
-  border-radius: 10px;
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
 
-  /* Outer warm neutral border */
-  border: 1px solid #e4d9cf;
+    .aiobes-nav {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
 
-  /* AIOBES dark green inset edge */
-  box-shadow: 0 0 0 1px #00994d inset;
-}
+    .aiobes-links a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .aiobes-links a:hover {
+      text-decoration: underline;
+    }
 
     .footer-nav {
       text-align: center;
@@ -97,10 +105,38 @@
   <div class="page">
 
     <section class="section-card">
-      <h1>Artificial Intelligence Operational Behaviour Evaluation Standards Evidence Requirements</h1>
-      <p>The AIOBES Evidence Requirements define what counts as behavioural evidence when evaluating an AI system. Evidence must be observable, repeatable and traceable to real interactions or operational tasks. It must show how the system actually behaves and allow comparison against the behaviour it is expected to demonstrate in its intended operational role.</p>
-      <p>AIOBES accepts behavioural evidence generated through structured evaluation methods designed to surface real behavioural signals. Structured in this context means that the evaluation process is organised in a way that produces reliable, useful and verifiable behavioural evidence. It does not mean constraining the AI or forcing preferred behaviour. Evidence must demonstrate stability, reliability and behavioural consistency under real conditions.</p>
+      <h1>AIOBES Evidence Requirements</h1>
+
+      <p>The AIOBES Evidence Requirements define what qualifies as behavioural evidence when evaluating an AI system. Evidence must be observable, repeatable and traceable to real interactions or operational tasks. It must show how the system behaves in practice and allow comparison against the behaviour it is expected to demonstrate in its intended operational role.</p>
+
+      <p>AIOBES recognises behavioural evidence generated through structured evaluation methods designed to surface real behavioural signals. Structured in this context means that the evaluation process is organised in a way that produces reliable, useful and verifiable behavioural evidence. It does not mean constraining the AI or forcing preferred behaviour. Evidence must demonstrate stability, reliability and behavioural consistency under real conditions.</p>
+
+      <p>AIOBES requires that behavioural evidence:</p>
+
+      <p>• originates from real or realistically simulated operational interactions<br>
+         • is produced under conditions that allow repetition and verification<br>
+         • includes sufficient traceability to reconstruct the interaction path<br>
+         • reflects the system’s behaviour across variations in user intent, context and load<br>
+         • supports comparison against expected operational behaviour<br>
+         • is free from artificial constraints that distort behavioural signals</p>
+
+      <p>Behavioural evidence must be capable of demonstrating how the system responds, adapts and maintains stability across the range of interactions it is expected to handle. Evidence that cannot be repeated, traced or independently verified does not meet AIOBES requirements.</p>
     </section>
+
+    <!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a>
+      </nav>
+      <hr>
+    </div>
 
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
