@@ -69,19 +69,32 @@
       margin: 0.4em 0 0.8em;
     }
 
- /* Card Layout */
-.section-card {
-  margin-top: 24px;
-  padding: 18px 16px;
-  background: #fff;
-  border-radius: 10px;
+    /* Card Layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
 
-  /* Outer warm neutral border */
-  border: 1px solid #e4d9cf;
+    .aiobes-nav {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
 
-  /* AIOBES dark green inset edge */
-  box-shadow: 0 0 0 1px #00994d inset;
-}
+    .aiobes-links a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .aiobes-links a:hover {
+      text-decoration: underline;
+    }
 
     .footer-nav {
       text-align: center;
@@ -101,7 +114,7 @@
   <div class="page">
 
     <section class="section-card">
-      <h1>Artificial Intelligence Operational Behaviour Evaluation Standards Research Catalogue</h1>
+      <h1>AIOBES Research Catalogue</h1>
       <p>This catalogue links to research papers relevant to the AIOBES standard. These works define behavioural evaluation methods, testing protocols and analysis frameworks that support the development and application of AIOBES.</p>
     </section>
 
@@ -132,6 +145,21 @@
       <p>These practices emerged in an industry expanding faster than it can define standards, leaving evaluation shaped by inconsistent methods and gatekeepers with limited grounding in the systems they are judging.</p>
       <p><a href="https://zenodo.org/records/19599444" target="_blank" rel="noopener">Zenodo DOI</a></p>
     </section>
+
+    <!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a>
+      </nav>
+      <hr>
+    </div>
 
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
