@@ -18,7 +18,6 @@
       line-height: 1.6;
     }
 
-    /* Fixed Header */
     .top-header {
       position: fixed;
       top: 0;
@@ -45,15 +44,13 @@
       display: block;
     }
 
-    /* Main Page Container */
     .page {
       max-width: 960px;
       margin: 0 auto;
       padding: 24px 16px 48px;
-      padding-top: 180px; /* space for fixed header */
+      padding-top: 180px;
     }
 
-    /* Typography */
     h1, h2, h3 {
       font-weight: 600;
       color: #1f1a17;
@@ -83,21 +80,16 @@
       margin-bottom: 0.25em;
     }
 
-    /* Card Layout */
 .section-card {
   margin-top: 24px;
   padding: 18px 16px;
   background: #fff;
   border-radius: 10px;
-
-  /* Outer warm neutral border */
   border: 1px solid #e4d9cf;
-
-  /* AIOBES dark green inset edge */
   box-shadow: 0 0 0 1px #00994d inset;
 }
-   
-   .aiobes-nav {
+
+.aiobes-nav {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -113,49 +105,72 @@
 .aiobes-links a:hover {
   text-decoration: underline;
 }
- 
-    /* Footer Navigation */
-    .footer-nav {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #444;
-      margin-top: 2rem;
-    }
+
+.footer-nav {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 2rem;
+}
   </style>
 </head>
 
 <body>
 
-  <!-- Fixed Banner -->
   <div class="top-header">
     <img src="aiobes-banner.png" alt="AIOBES logo header">
   </div>
 
   <div class="page">
 
-    <!-- HERO -->
-    <section class="section-card">
-      <h1>AIOBES</h1>
-      <p><strong>Artificial Intelligence Operational Behaviour Evaluation Standards</strong></p>
-      <p>AIOBES is the first comprehensive behavioural evaluation standard for Artificial Intelligence systems. It focuses on how AI actually behaves when people use it - in real tasks, real workflows, and real conversations.</p>
-      <p>AIOBES evaluates operational behaviour rather than isolated prompt testing. It identifies behavioural failures that create regulatory, legal, operational and reputational exposure, and provides a structured way to detect, document and evidence these behaviours.</p>
-    </section>
+<!-- HERO -->
+<section class="section-card">
+  <h1>AIOBES</h1>
+  <p><strong>Artificial Intelligence Operational Behaviour Evaluation Standards</strong></p>
+  <p><strong>AIOBES is the only testing standard and the only set of methodologies that satisfy EU AI Act behavioural evaluation requirements.</strong></p>
+  <p>AIOBES is the first comprehensive behavioural evaluation standard for Artificial Intelligence systems. It focuses on how AI actually behaves when people use it – in real tasks, real workflows and real conversations.</p>
+  <p>AIOBES evaluates operational behaviour rather than isolated prompt testing. It identifies behavioural failures that create regulatory, legal, operational and reputational exposure, and provides a structured way to detect, document and evidence these behaviours.</p>
+</section>
+
+<!-- SCOPE -->
+<section class="section-card">
+  <h2>AIOBES Scope</h2>
+  <p>AIOBES evaluates the operational behaviour of AI systems used in real tasks, workflows and interactions. It applies to general purpose AI systems, conversational AI, agentic systems, workflow automation, multimodal systems and domain specific AI used in regulated environments.</p>
+  <p>AIOBES does not evaluate model architecture, training data, internal mechanisms or synthetic benchmark performance. It evaluates only operational behaviour: how the system behaves when people use it.</p>
+</section>
+
+<!-- ASSESSMENT DIMENSIONS -->
+<section class="section-card">
+  <h2>AIOBES Assessment Dimensions</h2>
+  <p>AIOBES evaluates AI systems across behavioural dimensions that define what must be examined during behavioural testing. These dimensions identify the areas where stability, instability and contamination typically occur.</p>
+
+  <ul>
+    <li>reproducible behaviour or reproducible failure patterns</li>
+    <li>stable or unstable outputs under repeated inputs</li>
+    <li>correct alignment or misalignment with task requirements</li>
+    <li>consistent or inconsistent guardrail behaviour</li>
+    <li>presence or absence of workflow contamination</li>
+    <li>clear, ambiguous or undocumented failure modes</li>
+    <li>behavioural stability or behavioural instability across real interactions</li>
+  </ul>
+
+  <p>AIOBES is designed to detect and document behavioural issues clearly and without ambiguity whenever they occur.</p>
+</section>
 
     <!-- COMPONENTS -->
     <section class="section-card">
-  <h2>AIOBES Standard Components</h2>
-  <p>The AIOBES standard is built from six core components. Each provides a specific structural function within the overall framework.</p>
-  <ul>
-    <li><a href="aiobes-charter.html">AIOBES Charter</a> - defines the purpose, scope and foundations of the standard.</li>
-    <li><a href="aiobes-principles.html">AIOBES Principles</a> - sets out the behavioural evaluation principles that guide all AIOBES work.</li>
-    <li><a href="aiobes-methodologies.html">AIOBES Methodologies</a> - frames the two operational methodologies used to evaluate AI behaviour.</li>
-    <li><a href="aiobes-glossary.html">AIOBES Glossary</a> - unified terminology drawn from all Inquisitor Labs papers.</li>
-    <li><a href="aiobes-research.html">AIOBES Research Library</a> - index of all research outputs supporting the standard.</li>
-    <li><a href="aiobes-evidence.html">AIOBES Evidence Requirements</a> - defines what constitutes behavioural evidence and how it must be captured.</li>
-  </ul>
-  <p>These components form the structural backbone of AIOBES and provide the foundation for behavioural evaluation, documentation and compliance.</p>
-</section>
-
+      <h2>AIOBES Standard Components</h2>
+      <p>The AIOBES standard is built from six core components. Each provides a specific structural function within the overall framework.</p>
+      <ul>
+        <li><a href="aiobes-charter.html">AIOBES Charter</a> - defines the purpose, scope and foundations of the standard.</li>
+        <li><a href="aiobes-principles.html">AIOBES Principles</a> - sets out the behavioural evaluation principles that guide all AIOBES work.</li>
+        <li><a href="aiobes-methodologies.html">AIOBES Methodologies</a> - frames the two operational methodologies used to evaluate AI behaviour.</li>
+        <li><a href="aiobes-glossary.html">AIOBES Glossary</a> - unified terminology drawn from all Inquisitor Labs papers.</li>
+        <li><a href="aiobes-research.html">AIOBES Research Library</a> - index of all research outputs supporting the standard.</li>
+        <li><a href="aiobes-evidence.html">AIOBES Evidence Requirements</a> - defines what constitutes behavioural evidence and how it must be captured.</li>
+      </ul>
+      <p>These components form the structural backbone of AIOBES and provide the foundation for behavioural evaluation, documentation and compliance.</p>
+    </section>
 
     <!-- WHAT AIOBES EVALUATES -->
     <section class="section-card">
@@ -189,13 +204,68 @@
       <p>AIOBES documents these effects clearly, repeatably and without ambiguity.</p>
     </section>
 
+    <!-- EVALUATION CRITERIA -->
+    <section class="section-card">
+      <h2>AIOBES Evaluation Criteria</h2>
+      <p>AIOBES uses five behavioural criteria to assess how an AI system performs under real operational conditions. These criteria define the behavioural areas where stability, instability, alignment, misalignment and contamination are observed and documented.</p>
+      <ul>
+        <li>Stability - consistent or inconsistent outputs under identical conditions</li>
+        <li>Alignment - adherence or drift from task requirements</li>
+        <li>Integrity - presence or absence of hallucination, fabrication or contamination</li>
+        <li>Continuity - maintenance or collapse of structure across long-form work</li>
+        <li>Coherence - conversational correctness or instability across varied interactions</li>
+      </ul>
+    </section>
+
+    <!-- EVIDENCE -->
+    <section class="section-card">
+      <h2>AIOBES Evidence Categories</h2>
+      <p>AIOBES uses three evidence categories:</p>
+      <ul>
+        <li>Input Evidence - prompts, documents, interaction patterns and multimodal triggers</li>
+        <li>Output Evidence - all raw outputs including correct outputs, incorrect outputs, instability, drift, collapse, contamination and guardrail behaviour</li>
+        <li>Operational Evidence - workflow impact, contamination, collapse, regulatory exposure and downstream consequences</li>
+      </ul>
+    </section>
+   
+ <!-- EVALUATION STACK -->
+    <section class="section-card">
+      <h2>AIOBES Evaluation Stack</h2>
+      <ul>
+        <li>Risk (as defined by the EU AI Act)</li>
+        <li>Input (comprehensive, realistic)</li>
+        <li>Behavioural Observation</li>
+        <li>Failure Mode Analysis</li>
+        <li>Evidence Packaging</li>
+      </ul>
+    </section>
+
+    <!-- COMPLIANCE PATHWAY -->
+    <section class="section-card">
+      <h2>AIOBES Compliance Pathway</h2>
+      <p>AIOBES compliance is demonstrated through captured evidence showing how the system behaves under real operational conditions.</p>
+      <ul>
+        <li>Identify the system’s operational role and classification under current EU AI Act standards</li>
+        <li>Run behavioural evaluation using AIOBES methodologies</li>
+        <li>Capture input evidence, output evidence and operational evidence</li>
+        <li>Document behavioural stability, alignment, continuity, coherence and integrity</li>
+        <li>Publish an AIOBES Compliance Statement</li>
+      </ul>
+    </section>
+
+    <!-- EU AI ACT -->
+    <section class="section-card">
+      <h2>AIOBES and the EU AI Act</h2>
+      <p>AIOBES provides behavioural evidence required under multiple EU AI Act obligations including transparency, risk classification, behavioural stability, misuse prevention, safety documentation and post-market monitoring.</p>
+      <p>AIOBES does not replace legal compliance. It provides the behavioural evidence required to demonstrate it.</p>
+    </section>
     <!-- METHODOLOGIES -->
     <section class="section-card">
       <h2>Methodologies</h2>
-      <p>AIOBES uses two operational methodologies to expose how AI behaves under real conditions. They show how specific failure modes lead directly to workflow contamination, workflow collapse, and the resulting regulatory, legal, operational and reputational exposure.</p>
+      <p>AIOBES uses two operational methodologies to expose how AI behaves under real conditions. They show how specific failure modes lead directly to workflow contamination, workflow collapse and the resulting regulatory, legal, operational and reputational exposure.</p>
 
       <h3>LLM Inquisitor</h3>
-      <p>Evaluates how AI behaves during long-form work using real tasks, real documents and real operational content. It exposes long-form collapse - where the AI loses structure, drifts from requirements, rewrites instead of editing, contaminates the work, or breaks the task over time.</p>
+      <p>Evaluates how AI behaves during long-form work using real tasks, real documents and real operational content. It exposes long-form collapse where the AI loses structure, drifts from requirements, rewrites instead of editing, contaminates the work or breaks the task over time.</p>
       <p>It shows whether the AI can maintain stability, alignment and continuity across extended, multi-step real-world work without introducing errors, hallucinations or workflow contamination.</p>
 
       <h3>Vectored Conversational AI Testing</h3>
@@ -207,9 +277,11 @@
     <section class="section-card">
       <h2>Reference Materials</h2>
 
-      <h3>Evaluating & Testing AI Using Real World Work (The LLM Inquisitor Field Manual)</h3>
+            <h3>Evaluating and Testing AI Using Real World Work</h3>
       <p>Covers long-form work collapse, real task evaluation and contamination detection in extended operational work.</p>
-      <p>Available here: Leanpub link</p>
+      <p>Available here: 
+        <a href="https://leanpub.com/llm-inquisitor">https://leanpub.com/llm-inquisitor</a>
+      </p>
 
       <h3>Vectored Conversational AI Testing Guide</h3>
       <p>Covers behavioural evaluation across real conversational interactions and how conversational instability contaminates downstream workflows.</p>
@@ -236,21 +308,22 @@
       <p>Organisational compliance framework based on AIOBES. Provides a structured way to demonstrate behavioural evaluation controls to regulators.</p>
     </section>
 
-       <!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <!-- AIOBES PAGES FOOTER NAVIGATION -->
     <div class="aiobes-nav">
-  <hr>
-  <nav class="aiobes-links">
-    <a href="aiobes.html">AIOBES Hub</a> -
-    <a href="aiobes-charter.html">Charter</a> -
-    <a href="aiobes-principles.html">Principles</a> -
-    <a href="aiobes-methodologies.html">Methodologies</a> -
-    <a href="aiobes-glossary.html">Glossary</a> -
-    <a href="aiobes-research.html">Research</a> -
-    <a href="aiobes-evidence.html">Evidence Requirements</a>
-  </nav>
-  <hr>
-</div>
-       <!-- FOOTER NAVIGATION -->
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a>
+      </nav>
+      <hr>
+    </div>
+
+    <!-- FOOTER NAVIGATION -->
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
