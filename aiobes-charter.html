@@ -75,18 +75,14 @@
     }
 
     /* Card Layout */
-.section-card {
-  margin-top: 24px;
-  padding: 18px 16px;
-  background: #fff;
-  border-radius: 10px;
-
-  /* Outer warm neutral border */
-  border: 1px solid #e4d9cf;
-
-  /* AIOBES dark green inset edge */
-  box-shadow: 0 0 0 1px #00994d inset;
-}
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
 
     /* Footer Navigation */
     .footer-nav {
@@ -94,6 +90,14 @@
       font-size: 0.9rem;
       color: #444;
       margin-top: 2rem;
+    }
+
+    /* Secondary AIOBES Footer */
+    .aiobes-footer {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+      color: #333;
     }
   </style>
 </head>
@@ -119,21 +123,37 @@
       <h2>Purpose of the Charter</h2>
 
       <p>
-        AIOBES exists to define how Artificial Intelligence systems must be evaluated when used in real operational conditions. 
-        The standard focuses on behavioural performance during real tasks, real workflows and real interactions, and establishes 
-        a structured way to detect, document and evidence behavioural failures that create regulatory, legal, operational and 
-        reputational exposure.
+        AIOBES defines how Artificial Intelligence systems must be evaluated when used in real operational conditions. 
+        The standard establishes the behavioural criteria, evidence requirements and evaluation methodologies required to 
+        assess AI behaviour in real tasks, real workflows and real interactions. It provides the structured method needed 
+        to detect, document and evidence behavioural failures that create regulatory, legal, operational and reputational exposure.
       </p>
 
       <p>
-        AIOBES defines the principles, methodologies and evidence requirements needed to evaluate AI behaviour in operational 
-        environments. It provides a unified framework for identifying workflow contamination, workflow collapse and other 
+        AIOBES defines the principles, methodologies and evidence requirements necessary to evaluate AI behaviour in operational 
+        environments. It provides a formal framework for identifying workflow contamination, workflow collapse and additional 
         behavioural failure modes that emerge only under real use.
       </p>
 
       <p>
         AIOBES does not evaluate model architecture, training data, internal mechanisms or synthetic benchmark performance. 
         It evaluates only operational behaviour: how the system behaves when people use it.
+      </p>
+
+      <h3>Behaviour as the Evidentiary Surface</h3>
+
+      <p>
+        Artificial Intelligence systems do not expose their internal state, internal reasoning, latent representations or decision 
+        pathways. Their internal mechanisms cannot be directly inspected, verified or audited. For this reason, the only evidentiary 
+        surface available for evaluation is operational behaviour: what the system outputs, how it outputs it, and how those outputs 
+        change in response to real users and real workflow interactions.
+      </p>
+
+      <p>
+        AIOBES is based on the principle that behavioural evidence is the only reliable and observable indicator of system performance, 
+        stability, contamination, alignment and failure modes. All evaluation, documentation and auditability within AIOBES is grounded 
+        in this behavioural surface, derived from real tasks, real workflows and real interactions rather than synthetic or artificial 
+        test conditions.
       </p>
     </section>
 
@@ -144,10 +164,10 @@
 
       <ul>
         <li>the scope of behavioural evaluation</li>
-        <li>the principles that govern behavioural testing</li>
-        <li>the methodologies used to expose behavioural failure modes</li>
-        <li>the terminology required for consistent interpretation</li>
-        <li>the evidence requirements needed for auditability and regulatory alignment</li>
+        <li>the principles governing behavioural testing</li>
+        <li>the methodologies required to expose behavioural failure modes</li>
+        <li>the terminology needed for consistent interpretation</li>
+        <li>the evidence requirements necessary for auditability and regulatory alignment</li>
       </ul>
     </section>
 
@@ -155,16 +175,27 @@
       <h2>A Living Standard</h2>
 
       <p>
-        AIOBES is a living standard. Its components evolve as behavioural evaluation practices mature, as AI systems change, 
-        and as new operational use cases emerge. All updates follow the AIOBES versioning and change control process.
+        AIOBES is a living standard. Its components shall evolve as behavioural evaluation practices mature, as AI systems change, 
+        as regulatory requirements develop, and as new operational use cases emerge. All updates shall follow the AIOBES versioning 
+        and change‑control process.
       </p>
 
       <p>
-        This Charter defines the purpose and boundaries of the AIOBES standard and provides the foundation for all AIOBES components.
+        This Charter defines the purpose, scope and boundaries of the AIOBES standard and forms the foundation for all AIOBES components.
       </p>
     </section>
 
-    <!-- FOOTER NAVIGATION -->
+    <!-- SECONDARY AIOBES FOOTER -->
+    <p class="aiobes-footer">
+      <a href="aiobes.html">AIOBES Overview</a> ·
+      <a href="aiobes-charter.html">Charter</a> ·
+      <a href="aiobes-scope.html">Scope</a> ·
+      <a href="aiobes-dimensions.html">Assessment Dimensions</a> ·
+      <a href="aiobes-methodologies.html">Methodologies</a> ·
+      <a href="aiobes-evidence.html">Evidence Requirements</a>
+    </p>
+
+    <!-- MAIN FOOTER NAVIGATION -->
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
