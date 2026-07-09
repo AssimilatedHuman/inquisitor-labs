@@ -83,20 +83,35 @@
       margin-bottom: 0.25em;
     }
 
-   /* Card Layout */
-.section-card {
-  margin-top: 24px;
-  padding: 18px 16px;
-  background: #fff;
-  border-radius: 10px;
+    /* Card Layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
 
-  /* Outer warm neutral border */
-  border: 1px solid #e4d9cf;
+    /* AIOBES Footer */
+    .aiobes-nav {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
 
-  /* AIOBES dark green inset edge */
-  box-shadow: 0 0 0 1px #00994d inset;
-}
-    /* Footer Navigation */
+    .aiobes-links a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .aiobes-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Footer Navigation */
     .footer-nav {
       text-align: center;
       font-size: 0.9rem;
@@ -204,12 +219,28 @@
 
       <h3>10. Evolution and Adaptation</h3>
       <p>
-        Behavioural evaluation practices must evolve as AI systems change and as new operational use cases emerge. AIOBES 
-        principles guide this evolution and ensure that behavioural testing remains aligned to real-world risk.
+        Behavioural evaluation practices must evolve as AI systems change, as regulatory requirements develop, and as new 
+        operational use cases emerge. AIOBES principles guide this evolution and ensure that behavioural testing remains aligned 
+        to real-world risk.
       </p>
     </section>
 
-    <!-- FOOTER NAVIGATION -->
+    <!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a>
+      </nav>
+      <hr>
+    </div>
+
+    <!-- MAIN FOOTER NAVIGATION -->
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
