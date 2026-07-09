@@ -70,18 +70,34 @@
     }
 
     /* Card Layout */
-.section-card {
-  margin-top: 24px;
-  padding: 18px 16px;
-  background: #fff;
-  border-radius: 10px;
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
 
-  /* Outer warm neutral border */
-  border: 1px solid #e4d9cf;
+    /* AIOBES Footer */
+    .aiobes-nav {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
 
-  /* AIOBES dark green inset edge */
-  box-shadow: 0 0 0 1px #00994d inset;
-}
+    .aiobes-links a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .aiobes-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Footer Navigation */
     .footer-nav {
       text-align: center;
       font-size: 0.9rem;
@@ -99,32 +115,108 @@
 
   <div class="page">
 
+    <!-- HERO -->
     <section class="section-card">
       <h1>AIOBES Methodologies</h1>
-      <p>AIOBES uses two operational methodologies to evaluate how AI behaves under real conditions. These methodologies provide the structured mechanisms used to identify behavioural failure modes and assess their impact on workflows, operational stability and organisational risk.</p>
+      <p>
+        AIOBES uses two operational methodologies to evaluate how AI systems behave under real conditions. These methodologies 
+        provide the structured mechanisms required to expose behavioural failure modes and assess their impact on workflows, 
+        operational stability and organisational risk.
+      </p>
+      <p>
+        Both methodologies operate exclusively on real tasks, real workflows and real interactions. They form the behavioural 
+        evidence‑generation layer of AIOBES.
+      </p>
     </section>
 
+    <!-- LLM INQUISITOR -->
     <section class="section-card">
       <h2>LLM Inquisitor</h2>
-      <p>Evaluates AI behaviour during long-form work using real tasks, real documents and real operational content. It identifies long-form collapse, where the AI loses structure, drifts from requirements, rewrites instead of editing, contaminates the work or breaks the task over time.</p>
+      <p>
+        LLM Inquisitor evaluates operational behaviour during long‑form work using real tasks, real documents and real organisational 
+        content. It identifies long‑form collapse, where the AI exhibits structural degradation, drifts from requirements, substitutes 
+        rewriting for editing, contaminates the work or causes task‑level breakdown over time.
+      </p>
+      <p>
+        LLM Inquisitor provides the behavioural evidence required to assess long‑form stability, workflow contamination risk and 
+        operational reliability.
+      </p>
       <p><strong>Full methodology:</strong><br>
       Evaluating and Testing AI Using Real World Work: The LLM INQUISITOR Methodology Field Manual<br>
       <a href="https://leanpub.com/llm-inquisitor" target="_blank" rel="noopener">https://leanpub.com/llm-inquisitor</a></p>
     </section>
 
+    <!-- VECTORED CONVERSATIONAL -->
     <section class="section-card">
       <h2>Vectored Conversational AI Testing</h2>
-      <p>Evaluates AI behaviour across real conversational interactions: text, verbal and multimodal. It identifies conversational instability, where the AI becomes inconsistent, incoherent or misaligned under natural user communication patterns.</p>
+      <p>
+        Vectored Conversational AI Testing evaluates AI behaviour across real conversational interactions — textual, verbal and 
+        multimodal. It identifies conversational instability, where the AI becomes inconsistent, incoherent or misaligned under 
+        natural user communication patterns.
+      </p>
+      <p>
+        This methodology exposes guardrail inconsistency, interaction‑driven drift, unstable conversational trajectories and 
+        behavioural misalignment that emerges only during real user communication.
+      </p>
       <p><strong>Full methodology:</strong><br>
       Vectored Conversational AI Testing Guide<br>
       Leanpub: coming soon</p>
     </section>
 
+    <!-- METHODOLOGY SCOPE -->
     <section class="section-card">
-      <h2>Methodology Role Within AIOBES</h2>
-      <p>These methodologies form the operational foundation of AIOBES. They define how behavioural failures are exposed, evidenced and evaluated across real workflows and real interactions.</p>
+      <h2>Methodology Scope and Interaction</h2>
+      <p>
+        LLM Inquisitor and Vectored Conversational AI Testing together cover the full behavioural surface of operational AI systems:
+      </p>
+      <p>• <strong>LLM Inquisitor</strong> — long‑form operational stability<br>
+         • <strong>Vectored Conversational</strong> — interactive behavioural stability</p>
+      <p>
+        Both methodologies are required for complete behavioural evaluation under AIOBES. They are not interchangeable and not 
+        optional. Each exposes distinct behavioural failure modes that cannot be detected through the other.
+      </p>
     </section>
 
+    <!-- EVIDENCE REQUIREMENTS -->
+    <section class="section-card">
+      <h2>Behavioural Evidence Requirements</h2>
+      <p>
+        All findings produced through these methodologies must be supported by clear, reproducible behavioural evidence. Evidence 
+        must show the behaviour observed, the conditions under which it occurred, the workflow impact and the associated operational 
+        or regulatory risk.
+      </p>
+      <p>
+        Evidence must be documented using AIOBES terminology and must be suitable for auditability, cross‑organisational communication 
+        and regulatory alignment.
+      </p>
+    </section>
+
+    <!-- ROLE WITHIN AIOBES -->
+    <section class="section-card">
+      <h2>Methodology Role Within AIOBES</h2>
+      <p>
+        These methodologies form the operational foundation of AIOBES. They define how behavioural failures are exposed, evidenced 
+        and evaluated across real workflows and real interactions. They provide the behavioural evidence required to identify 
+        operational limits, risk boundaries and workflow contamination risks.
+      </p>
+    </section>
+
+    <!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a>
+      </nav>
+      <hr>
+    </div>
+
+    <!-- MAIN FOOTER NAVIGATION -->
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
