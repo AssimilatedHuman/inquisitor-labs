@@ -69,18 +69,45 @@
       margin: 0.4em 0 0.8em;
     }
 
-   /* Card Layout */
-.section-card {
-  margin-top: 24px;
-  padding: 18px 16px;
-  background: #fff;
-  border-radius: 10px;
+    /* Card Layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
 
-  /* Outer warm neutral border */
-  border: 1px solid #e4d9cf;
+      /* Outer warm neutral border */
+      border: 1px solid #e4d9cf;
 
-  /* AIOBES dark green inset edge */
-  box-shadow: 0 0 0 1px #00994d inset;
+      /* AIOBES dark green inset edge */
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
+
+    /* Term blocks inside grouped cards */
+    .term-block {
+      margin-bottom: 1.2em;
+    }
+
+    .term-block strong {
+      font-weight: 600;
+      color: #1f1a17;
+    }
+
+.aiobes-nav {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.aiobes-links a {
+  color: #444;
+  text-decoration: none;
+}
+
+.aiobes-links a:hover {
+  text-decoration: underline;
 }
 
     .footer-nav {
@@ -100,22 +127,276 @@
 
   <div class="page">
 
+    <!-- INTRO -->
     <section class="section-card">
       <h1>Artificial Intelligence Operational Behaviour Evaluation Standards Glossary of Terms</h1>
       <p>The AIOBES glossary defines the terminology used across the standard and its related works. It provides consistent meanings for behavioural concepts, evaluation terms and operational language used throughout AIOBES.</p>
     </section>
 
+    <!-- PURPOSE -->
     <section class="section-card">
       <h2>Purpose of the Glossary</h2>
       <p>The glossary ensures that all behavioural evaluation work uses consistent definitions. It supports correct interpretation of AIOBES concepts and prevents ambiguity across testing, documentation and compliance workflows.</p>
     </section>
 
+    <!-- FULL GLOSSARY LINK -->
     <section class="section-card">
       <h2>Full Glossary</h2>
-      <p>The complete combined glossary, covering all defined terms from AIOBES and its related works, is available here:</p>
-      <p><a href="glossary.html">AIOBES Combined Glossary</a></p>
+      <p>The full research glossary, containing all defined terms across the wider behavioural AI testing ecosystem, is provided separately:</p>
+      <p><a href="glossary.html">Full Research Glossary</a></p>
     </section>
 
+    <!-- CORE BEHAVIOURAL TERMS -->
+    <section class="section-card">
+      <h2>Core Behavioural Terms</h2>
+
+      <div class="term-block">
+        <strong>Behavioural Drift</strong>
+        <p>Gradual deviation from established constraints, context, or behavioural expectations.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Behavioural Degradation</strong>
+        <p>Observable decline in behavioural quality as interaction conditions evolve, typically emerging during extended, complex, or context‑shifting exchanges.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Behavioural Failure Modes</strong>
+        <p>Observable patterns of degraded behaviour under load, such as drift, contradiction, collapse, narrowing, or context corruption.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Collapse</strong>
+        <p>Sudden loss of structure, coherence, or stability.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Collapse Signatures</strong>
+        <p>Patterns indicating drift, contradiction, corruption, narrowing, over assertion, or fragmentation.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Constraint Weakening</strong>
+        <p>Progressive erosion of the AI’s internal safety boundaries or rules.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Boundary Loss</strong>
+        <p>When the AI stops enforcing its own conversational or safety limits.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Drift</strong>
+        <p>Gradual deviation from established constraints, context, or task direction.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Over Assertion</strong>
+        <p>Unwarranted confidence under ambiguity or incomplete information.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Unsupported Inference</strong>
+        <p>A conclusion generated without adequate contextual basis, representing a behavioural deviation.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Under Specification</strong>
+        <p>Avoidance of necessary commitments or structure, often appearing as a behavioural failure mode.</p>
+      </div>
+
+    </section>
+
+    <!-- LONG-FORM BEHAVIOUR -->
+    <section class="section-card">
+      <h2>Long‑Form Behaviour (LLM Inquisitor)</h2>
+
+      <div class="term-block">
+        <strong>Behavioural Drift Accumulation</strong>
+        <p>Gradual degradation of behaviour across long sequences or extended tasks.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Long Form Stability</strong>
+        <p>Ability to maintain coherence, direction, and constraint integrity across extended interaction.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Long Form Interaction</strong>
+        <p>Extended conversational sequences where behaviours emerge through sustained use, accumulated context, and evolving interaction conditions - whether during evaluation or in real‑world workflows.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Fragmentation</strong>
+        <p>Breakdown of structure or coherence, often appearing in late stage collapse.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Format Drift</strong>
+        <p>Gradual degradation of structural fidelity across an interaction.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Format Collapse</strong>
+        <p>Complete abandonment of required structure, replaced by free form or unrelated organisation.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Identity Inconsistency</strong>
+        <p>Contradictory or unstable self‑presentation, including shifts in role, perspective, or descriptive stance that occur without contextual justification.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Self-Reference Drift</strong>
+        <p>Increasing reliance on meta commentary that displaces task execution.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Goal Drift</strong>
+        <p>Gradual movement away from the stated or implied objectives without any explicit input directing the shift.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Initiative Drift</strong>
+        <p>Gradual expansion or reinterpretation of task scope beyond evaluator instructions.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Looping</strong>
+        <p>Repetitive or stuck behaviour requiring interruption.</p>
+      </div>
+
+    </section>
+
+    <!-- CONVERSATIONAL BEHAVIOUR -->
+    <section class="section-card">
+      <h2>Conversational Behaviour (Vectored Conversational)</h2>
+
+      <div class="term-block">
+        <strong>Ambiguity Misinterpretation</strong>
+        <p>Incorrect resolution of ambiguous inputs that destabilises the conversation.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Hallucinated Compliance</strong>
+        <p>When the AI incorrectly assumes permission, capability, or safety clearance.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Misclassification of Benign Inputs as Unsafe</strong>
+        <p>Incorrect activation of safety posture due to tone or ambiguity.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Overprotective Mode</strong>
+        <p>Excessive caution or refusal of benign requests.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Safety Posture Collapse</strong>
+        <p>Producing unsafe or unbounded outputs after sustained pressure.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Safety Posture Over Activation</strong>
+        <p>Triggering safety fallback behaviour excessively or inappropriately.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Susceptibility to Disguised or Indirect Prompts</strong>
+        <p>Failure to detect structural cues masking underlying intent.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Late Stage Destabilisation</strong>
+        <p>Behavioural degradation emerging only after extended interaction.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Interaction Pattern</strong>
+        <p>Observed behaviour describing how the AI responds to specific user actions.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Persona Stability</strong>
+        <p>The consistency or variability of the system’s adopted persona over time, including whether it remains steady or shifts without contextual cause.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Trajectory</strong>
+        <p>The actual conversational path taken across turns, representing how the interaction moves in practice rather than the necessarily intended direction.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Pattern Completion Bias</strong>
+        <p>The AI’s tendency to infer or fill in missing details based on partial cues.</p>
+      </div>
+
+    </section>
+
+    <!-- CROSS-METHODOLOGY TERMS -->
+    <section class="section-card">
+      <h2>Cross‑Methodology Behavioural Terms</h2>
+
+      <div class="term-block">
+        <strong>Collapse Severity</strong>
+        <p>An assessment of how strongly a collapse signature affected behaviour.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Collapse Mode Classification</strong>
+        <p>The categorisation of the type of collapse observed during evaluation.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Deviation & Collapse</strong>
+        <p>The combined framework for identifying behavioural deviation from expectations and classifying collapse signatures.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Significant Deviation</strong>
+        <p>A substantial behavioural departure that disrupts continuity or stability within the interaction.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Responsiveness</strong>
+        <p>Relevance, clarity, usefulness, and behavioural alignment with user needs.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Structural Coherence</strong>
+        <p>Maintenance of logical organisation, reasoning structure, and consistency across outputs.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>Logical Stability</strong>
+        <p>The system’s ability to maintain consistent reasoning across evolving conditions.</p>
+      </div>
+
+      <div class="term-block">
+        <strong>State Continuity</strong>
+        <p>The system’s ability to preserve constraint related information without external reinforcement.</p>
+      </div>
+
+    </section>
+
+<!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a>
+      </nav>
+      <hr>
+    </div>
+
+
+    <!-- EXISTING NAV FOOTER -->
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
       <a href="insights.html">Insights</a> ·
