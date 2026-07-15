@@ -70,41 +70,13 @@
       margin: 0.4em 0 0.8em;
     }
 
-       /* Card Layout – dual edge clarity (strong saturated inset) */
-    .section-card,
-    .button-card {
+    .section-card {
       margin-top: 24px;
       padding: 18px 16px;
       background: #fff;
       border-radius: 10px;
-
-      /* Outer warm neutral border */
       border: 1px solid #e4d9cf;
-
-      /* Strong thin saturated cyan inset */
       box-shadow: 0 0 0 1px #006b7a inset;
-    }
-
-    .research-card {
-      margin-top: 18px;
-      padding: 16px;
-      background: #fff;
-      border-radius: 10px;
-      border: 1px solid #e4d9cf;
-    }
-
-    .research-card strong {
-      font-size: 1.05rem;
-      color: #1f1a17;
-    }
-
-    .research-card a {
-      color: #1f1a17;
-      text-decoration: none;
-    }
-
-    .research-card a:hover {
-      text-decoration: underline;
     }
 
     .footer-nav {
@@ -131,62 +103,78 @@
       </p>
     </section>
 
+    <h2>Research Catalogue</h2>
+
+    <!-- AIOBES CARD -->
     <section class="section-card">
-      <h2>Research Catalogue</h2>
+      <strong>AIOBES Foundational Paper</strong>
+      <p>
+        The Artificial Intelligence Operational Behavioural Evaluation Standards (AIOBES) Foundational Paper defines the core behavioural governance principles for AI systems, establishing the baseline structure for the AIOBES standard. It outlines the foundational concepts, scope, and operational expectations required for consistent behavioural evaluation and governance across AI systems.
+      </p>
+      <p>
+        The paper provides the initial framework that future AIOBES documents will build upon, forming the structural basis for behavioural assurance, evaluative consistency, and standardised governance practices.
+      </p>
+      <p><a href="https://zenodo.org/records/21374073">Zenodo DOI</a></p>
+    </section>
 
-      <div class="research-card">
-        <strong>Vectored Conversational AI Testing</strong>
-        <p>
-          Vectored Conversational AI Testing is a behavioural evaluation method for AI systems that operate through conversation. It uses live interaction to observe coherence, boundary handling, context retention, and behavioural stability as dialogue evolves.
-        </p>
-        <p>
-          Controlled conversational variations reveal behavioural patterns that static tests do not expose. The paper outlines the structure and operational workflow of the method, its relevance to EU AI Act expectations, and the boundaries of what the approach does and does not attempt.
-        </p>
-        <p><a href="https://zenodo.org/records/21045949">Zenodo DOI</a></p>
-      </div>
-      <div class="research-card">
-        <strong>LLM INQUISITOR Methodology (GitHub Edition) v1.1</strong>
-        <p>
-          This document defines the LLM INQUISITOR Methodology: a structured, repeatable discipline for evaluating the behaviour of large language models under controlled load. It provides a formal approach for assessing reliability through observable behaviour and evidentiary traceability.
-        </p>
-        <p>
-          The methodology supports rigorous evaluation in research, safety, and enterprise assurance contexts, where behavioural stability under real operational conditions is essential.
-        </p>
-        <p><a href="https://zenodo.org/records/20435494">Zenodo DOI</a></p>
-      </div>
+    <!-- Vectored Conversational AI Testing -->
+    <section class="section-card">
+      <strong>Vectored Conversational AI Testing</strong>
+      <p>
+        Vectored Conversational AI Testing is a behavioural evaluation method for AI systems that operate through conversation. It uses live interaction to observe coherence, boundary handling, context retention, and behavioural stability as dialogue evolves.
+      </p>
+      <p>
+        Controlled conversational variations reveal behavioural patterns that static tests do not expose. The paper outlines the structure and operational workflow of the method, its relevance to EU AI Act expectations, and the boundaries of what the approach does and does not attempt.
+      </p>
+      <p><a href="https://zenodo.org/records/21045949">Zenodo DOI</a></p>
+    </section>
 
-      <div class="research-card">
-        <strong>Argo AI Testing Protocol: Sustained Multi Axis Load Testing</strong>
-        <p>
-          Most evaluation of conversational AI relies on short, prompt based tests that fail to reflect how real people use these systems. Such tests do not capture extended interaction, shifting user intent, or cumulative context effects.
-        </p>
-        <p>
-          This paper introduces the Argo AI Testing Protocol, a conceptual approach for evaluating AI systems within the User Interaction Space — the full set of observable outputs and interactions available to a user.
-        </p>
-        <p><a href="https://zenodo.org/records/19919031">Zenodo DOI</a></p>
-      </div>
+    <!-- LLM INQUISITOR -->
+    <section class="section-card">
+      <strong>LLM INQUISITOR Methodology (GitHub Edition) v1.1</strong>
+      <p>
+        This document defines the LLM INQUISITOR Methodology: a structured, repeatable discipline for evaluating the behaviour of large language models under controlled load. It provides a formal approach for assessing reliability through observable behaviour and evidentiary traceability.
+      </p>
+      <p>
+        The methodology supports rigorous evaluation in research, safety, and enterprise assurance contexts, where behavioural stability under real operational conditions is essential.
+      </p>
+      <p><a href="https://zenodo.org/records/20435494">Zenodo DOI</a></p>
+    </section>
 
-      <div class="research-card">
-        <strong>Argo’s Fundamentals of Failings in Prompt Test Design and Evaluation for LLMs</strong>
-        <p>
-          This paper identifies the core structural failings in prompt test design and evaluation for LLMs. It shows that current methods cannot produce reliable signals: they mismeasure capability, misinterpret outputs, and often generate failure states created by the tests themselves.
-        </p>
-        <p>
-          These practices emerged in an industry expanding faster than it can define standards, leaving evaluation shaped by inconsistent methods and gatekeepers with limited grounding in the systems they are judging.
-        </p>
-        <p><a href="https://zenodo.org/records/19599444">Zenodo DOI</a></p>
-      </div>
+    <!-- Argo AI Testing Protocol -->
+    <section class="section-card">
+      <strong>Argo AI Testing Protocol: Sustained Multi Axis Load Testing</strong>
+      <p>
+        Most evaluation of conversational AI relies on short, prompt based tests that fail to reflect how real people use these systems. Such tests do not capture extended interaction, shifting user intent, or cumulative context effects.
+      </p>
+      <p>
+        This paper introduces the Argo AI Testing Protocol, a conceptual approach for evaluating AI systems within the User Interaction Space — the full set of observable outputs and interactions available to a user.
+      </p>
+      <p><a href="https://zenodo.org/records/19919031">Zenodo DOI</a></p>
+    </section>
 
-      <div class="research-card">
-        <strong>Argo Prompting: Pattern Formation in LLMs Under Sustained Conceptual Pressure</strong>
-        <p>
-          This paper introduces Argo Prompting, a method for inducing pattern formation behaviour in large language models through sustained conceptual pressure. It distinguishes pattern formation from collapse, hallucination, and surface level pattern matching.
-        </p>
-        <p>
-          The paper provides a practical framework for researchers studying LLM behaviour under extended reasoning conditions.
-        </p>
-        <p><a href="https://zenodo.org/records/19511615">Zenodo DOI</a></p>
-      </div>
+    <!-- Argo Fundamentals -->
+    <section class="section-card">
+      <strong>Argo’s Fundamentals of Failings in Prompt Test Design and Evaluation for LLMs</strong>
+      <p>
+        This paper identifies the core structural failings in prompt test design and evaluation for LLMs. It shows that current methods cannot produce reliable signals: they mismeasure capability, misinterpret outputs, and often generate failure states created by the tests themselves.
+      </p>
+      <p>
+        These practices emerged in an industry expanding faster than it can define standards, leaving evaluation shaped by inconsistent methods and gatekeepers with limited grounding in the systems they are judging.
+      </p>
+      <p><a href="https://zenodo.org/records/19599444">Zenodo DOI</a></p>
+    </section>
+
+    <!-- Argo Prompting -->
+    <section class="section-card">
+      <strong>Argo Prompting: Pattern Formation in LLMs Under Sustained Conceptual Pressure</strong>
+      <p>
+        This paper introduces Argo Prompting, a method for inducing pattern formation behaviour in large language models through sustained conceptual pressure. It distinguishes pattern formation from collapse, hallucination, and surface level pattern matching.
+      </p>
+      <p>
+        The paper provides a practical framework for researchers studying LLM behaviour under extended reasoning conditions.
+      </p>
+      <p><a href="https://zenodo.org/records/19511615">Zenodo DOI</a></p>
     </section>
 
     <p class="footer-nav">
