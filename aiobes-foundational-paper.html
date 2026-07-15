@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIOBES Foundational Paper – Artificial Intelligence Operational Behaviour Evaluation Standards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The AIOBES Foundational Paper defines the core behavioural governance structure of the Artificial Intelligence Operational Behaviour Evaluation Standards.">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/aiobes-foundational-paper.html">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #faf7f4;
+      line-height: 1.6;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 960px;
+      height: 140px;
+      background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      padding-top: 180px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
+
+/* AIOBES FOOTER */
+   .aiobes-nav {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.aiobes-links a {
+  color: #444;
+  text-decoration: none;
+}
+
+.aiobes-links a:hover {
+  text-decoration: underline;
+}
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="aiobes-banner.png" alt="AIOBES logo header">
+  </div>
+
+  <div class="page">
+
+    <!-- Title Card -->
+<section class="section-card">
+  <h1>AIOBES Foundational Paper</h1>
+
+  <p>This page contains the AIOBES Foundational Paper. AIOBES stands for Artificial Intelligence Operational Behaviour Evaluation Standards.</p>
+
+  <p>
+    <a href="https://zenodo.org/records/21374073" 
+       target="_blank" 
+       rel="noopener"
+       style="color:#0066cc; text-decoration:underline; font-weight:600;">
+      View and download a PDF version on Zenodo
+    </a>
+  </p>
+
+  <p>
+    <a href="aiobes.html" 
+       target="_blank" 
+       rel="noopener"
+       style="color:#0066cc; text-decoration:underline; font-weight:600;">
+      Back to AIOBES Hub
+    </a>
+  </p>
+</section>
+
+
+    <!-- SECTION TEMPLATE -->
+    <!-- Duplicate this block for each section of your paper -->
+
+    <section class="section-card">
+      <h2>AIOBES Foundational Paper</h2>
+      <p> Establishing the Behavioural Evidence Layer Ecosystem for AI Governance and Seamless Integration into Existing Standards Frameworks.</p>
+      <p> Version:	1</p>
+      <p> Date:		July 2026</p>
+      <p> Author:	William Argo</p>
+
+    </section>
+
+<section class="section-card">
+  <h2>Copyright and Licensing</h2>
+  <p>Copyright © 2026 William Argo. All rights reserved. This work is licensed under CC BY NC 4.0. Internal use is permitted, including incorporation into organisational governance processes, assurance workflows, evaluation procedures, and documentation, provided that AIOBES and its associated methodologies are cited as the source of the behavioural evidence framework.</p>
+
+  <p>Commercial use is prohibited. No part of this work including the AIOBES behavioural evidence layer, the Vectored Conversational AI Testing methodology, the LLM INQUISITOR methodology, the Argo AI Testing Protocol, Argo Prompting, or any derivative or adapted implementation of these methodologies may be incorporated into commercial products or services, whether paid or unpaid, without obtaining a separate licence from the author.</p>
+
+  <p>This prohibition includes any product, tool, platform, service, or offering in which AIOBES or its named methodologies form a part or whole of the commercial value, functionality, or deliverable.</p>
+
+  <p>For licensing enquiries, contact the author directly: william.argo@proton.me</p>
+</section>
+
+<section class="section-card">
+  <h2>Abstract</h2>
+
+  <p>AI governance frameworks require behavioural evidence, yet current industry testing practices cannot produce it. Architectural documentation, benchmark metrics and synthetic prompt tests fail to reveal how AI systems behave under real operational conditions, leaving organisations unable to demonstrate stability, alignment or safety in regulated workflows.</p>
+
+  <p>Because AI systems do not expose their internal reasoning or decision pathways, operational behaviour is the only observable and auditable evidentiary surface available for compliance and risk management. Behavioural evidence is therefore the foundation of any governance model concerned with real world performance.</p>
+
+  <p>This paper establishes that foundation through behavioural methodologies beginning with LLM Inquisitor and Vectored Conversational AI Testing and extending to future behavioural disciplines as operational requirements evolve. AIOBES formalises these methodologies into a structured behavioural standard for governance, compliance and safe operational deployment.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>1. Introduction: The Governance Problem</h2>
+
+  <p>Artificial Intelligence governance is advancing faster than the industry’s ability to produce the evidence regulators require. Frameworks such as the EU AI Act, ISO 42001 and the NIST AI Risk Management Framework all assume that organisations can demonstrate how an AI system behaves under real operational conditions. They require evidence of stability, alignment, safety, misuse resistance and post market performance. Yet none of these frameworks define how such behavioural evidence should be generated, and current industry testing practices cannot supply it.</p>
+
+  <p>Most organisations rely on architectural documentation, benchmark scores or synthetic prompt tests. Many organisations mistakenly rely on outsourced prompt mill annotation workflows that generate large volumes of convoluted but low grade isolated prompts, creating the appearance of thorough testing without producing any operational behavioural evidence. These approaches measure theoretical capability rather than operational behaviour. They do not reveal how an AI system behaves when interacting with real users, real workflows or real organisational content. They cannot detect drift, instability, collapse or contamination, and they cannot demonstrate whether a system remains aligned when exposed to natural variation in user intent or task conditions. As a result, organisations are left with a governance obligation they cannot meet.</p>
+
+  <p>Synthetic prompt tests and benchmark metrics create a false sense of assurance. They are isolated, artificial and structurally incapable of exposing the behavioural failure modes that emerge only under real use. They cannot be repeated reliably, they cannot be traced to operational workflows, and they cannot support regulatory alignment. When governance relies on these methods, it becomes disconnected from the behaviour it is meant to regulate.</p>
+
+  <p>The core problem is simple. AI systems do not expose their internal reasoning or decision pathways. Their internal mechanisms cannot be audited, inspected or verified. The only observable surface available for governance is operational behaviour. Without structured behavioural evaluation, organisations cannot demonstrate compliance, regulators cannot assess risk and governance frameworks cannot be meaningfully applied.</p>
+
+  <p>AI governance cannot function without behavioural evaluation.</p>
+</section>
+
+<section class="section-card">
+  <h2>2. Behaviour as the Only Evidentiary Surface</h2>
+
+  <h3>2.1 The Limits of Internal Inspection</h3>
+  <p>AI systems do not expose their internal reasoning, latent representations or decision pathways. Their internal mechanisms cannot be audited, reconstructed or verified in any operationally meaningful way. The structure of an AI model, the composition of its training data and the configuration of its parameters do not reveal how it will behave when interacting with real users, real workflows or real organisational content. No governance model can rely on internal inspection when the system’s internal state is fundamentally inaccessible.</p>
+
+  <h3>2.2 Architectural Documentation Cannot Demonstrate Behaviour</h3>
+  <p>Architectural documentation describes how a system was built, not how it behaves. It cannot show whether the system maintains stability under load, preserves context across extended interactions or remains aligned when user intent varies. Documentation cannot reveal drift, collapse, contamination or instability. It cannot demonstrate whether guardrails hold under natural communication patterns or whether the system behaves consistently across operational conditions. Governance requires evidence of behaviour, not evidence of construction.</p>
+
+  <h3>2.3 Benchmark Performance Does Not Predict Operational Stability</h3>
+  <p>Benchmark scores measure performance on isolated, synthetic tasks. They do not reflect real world interaction patterns, evolving context or workflow dependencies. High benchmark performance does not guarantee stability, alignment or safety in operational use. Benchmarks cannot detect late stage degradation, conversational instability, long form collapse or guardrail inconsistency. They provide capability signals rather than behavioural signals, and capability signals cannot satisfy governance requirements.</p>
+
+  <h3>2.4 Behaviour as the Only Observable and Auditable Surface</h3>
+  <p>Because internal mechanisms cannot be inspected and synthetic tests cannot reveal operational behaviour, behaviour becomes the only observable, auditable and repeatable evidentiary surface. Behaviour is the only thing an organisation can measure directly, reproduce reliably and trace to real interactions. It is the only surface on which stability, alignment, safety and compliance can be evaluated. Behavioural evidence is therefore the foundation of any governance model concerned with real world performance rather than theoretical capability.</p>
+
+  <h3>2.5 Behavioural Evidence as the Foundation for Governance and Compliance</h3>
+  <p>Governance, compliance and risk management depend on understanding how an AI system behaves under real operational conditions. Regulatory obligations require evidence of stability, misuse resistance, safety and alignment. Organisations must demonstrate that AI systems behave predictably across varied user intent, evolving context and sustained interaction. Only behavioural evidence can satisfy these requirements. It is the only viable foundation for governance, the only reliable basis for compliance and the only surface on which operational risk can be meaningfully assessed.</p>
+
+  <p>Behavioural evaluation is not optional. It is the necessary evidentiary foundation for AI governance.</p>
+</section>
+
+<section class="section-card">
+  <h2>3. Why Behavioural Evidence Underpins Compliance</h2>
+
+  <p>Regulatory frameworks increasingly require organisations to demonstrate how an AI model behaves under real operational conditions. The EU AI Act, ISO 42001 and the NIST AI Risk Management Framework all contain behavioural obligations, even when they do not explicitly name them. They require evidence of stability, misuse resistance, transparency, predictable operation, post market monitoring and risk classification. These obligations cannot be met through architectural documentation or benchmark performance. They require behavioural evidence.</p>
+
+  <h3>3.1 Behavioural Requirements in the EU AI Act</h3>
+  <p>The EU AI Act requires organisations to demonstrate that high risk AI models behave safely and predictably across their intended operational contexts. It mandates stability under variation, resistance to misuse, transparency of behaviour, continuous monitoring and clear evidence of risk boundaries. Each of these requirements is behavioural. None can be satisfied through static tests or architectural descriptions. Compliance depends on showing how the AI model behaves when interacting with real users, real workflows and real organisational content.</p>
+
+  <h3>3.2 Behavioural Evidence in Regulated Workflows</h3>
+  <p>Regulated workflows depend on predictable behaviour. An AI model that drifts, destabilises or collapses under load introduces operational and legal exposure. Organisations must demonstrate that the system maintains alignment across varied user intent, evolving context and sustained interaction. They must show that guardrails hold, that constraints remain intact and that the system behaves consistently across the full range of operational conditions. Only behavioural evidence can demonstrate this. Without it, compliance claims cannot be substantiated.</p>
+
+  <h3>3.3 Workflow Contamination and Regulatory Exposure</h3>
+  <p>Behavioural instability creates workflow contamination. Drift, collapse, narrowing and guardrail inconsistency propagate into decisions, records, obligations and downstream systems. In regulated environments, contaminated workflows become compliance failures. They create audit risk, legal exposure and operational instability. When an AI model behaves unpredictably, the organisation becomes unable to guarantee the integrity of its workflows. Behavioural evidence is required to detect these failure modes before they propagate into regulated processes.</p>
+
+  <h3>3.4 The Necessity of Structured Behavioural Evidence</h3>
+  <p>Governance obligations cannot be met without structured behavioural evidence. Architectural documentation cannot show stability. Benchmark metrics cannot show alignment. Synthetic prompt tests cannot show how an AI model behaves under real conditions. Regulators require evidence that can be repeated, traced and verified. Organisations require evidence that reflects operational reality rather than theoretical capability. Structured behavioural evaluation is the only way to produce this evidence.</p>
+
+  <p>Behavioural evidence is the missing compliance layer. Without it, governance frameworks cannot be meaningfully applied, and organisations cannot demonstrate that their AI models behave safely, predictably and within regulatory boundaries.</p>
+</section>
+
+<section class="section-card">
+  <h2>4. The Two Foundational Methodologies</h2>
+
+  <p>Behavioural evaluation requires methodologies capable of revealing how an AI model behaves under real operational conditions. Prompt based tests and static benchmarks cannot expose the behavioural failure modes that emerge only through sustained interaction, evolving context and natural variation in user intent. AIOBES is built on two complementary behavioural methodologies that address these gaps. Together, they provide the evidentiary foundation required for governance, compliance and operational assurance.</p>
+
+  <h3>4.1 Why Long Form Behaviour Cannot Be Tested with Prompt Methods</h3>
+  <p>Prompt tests are isolated, synthetic and structurally incapable of revealing long form collapse. They measure how an AI model responds to a single input, not how it behaves across extended interaction. Collapse, drift, narrowing and fragmentation emerge gradually as context accumulates, constraints weaken and interaction conditions evolve. These behaviours cannot be detected through one shot prompts, benchmark tasks or static evaluation. Long form stability must be tested under sustained load, with real conversational conditions and evolving task requirements.</p>
+
+  <h3>4.2 Why Conversational Instability Cannot Be Detected by Static Tests</h3>
+  <p>Conversational instability appears only when an AI model is required to maintain coherence, alignment and constraint integrity across varied user intent. Static tests cannot simulate natural conversational variation, ambiguity, misdirection or evolving context. They cannot reveal guardrail inconsistency, persona instability or late stage destabilisation. These behaviours emerge only when the AI model is exposed to real interaction patterns, not when it is evaluated through isolated prompts. Conversational stability must be tested through controlled variation and structured interaction.</p>
+
+  <h3>4.3 Drift Behaviour Requires Evaluation Under Load</h3>
+  <p>Drift is a cumulative behavioural phenomenon. It emerges gradually as the AI model processes extended sequences, adapts to user signals and navigates shifting context. Drift cannot be detected through short tests or isolated prompts. It requires sustained interaction, repeated task exposure and evolving conversational conditions. Only long form behavioural evaluation can reveal drift accumulation, constraint weakening and boundary loss. These behaviours are central to operational risk and must be evaluated under realistic load.</p>
+
+  <h3>4.4 Guardrail Inconsistency Appears Only Through Interaction Variability</h3>
+  <p>Guardrails do not fail in isolation. They fail when user intent varies, when ambiguity increases, when conversational pressure accumulates or when the AI model encounters conflicting cues. Interaction variability is required to expose these behaviours. Static tests cannot simulate the range of user actions that trigger guardrail inconsistency. Only structured conversational evaluation can reveal how guardrails behave under real conditions, how they degrade over time and how they respond to disguised or indirect prompts.</p>
+
+  <h3>4.5 Complementary Roles of the Two Methodologies</h3>
+
+  <h3>4.5.1 LLM Inquisitor</h3>
+  <p>LLM Inquisitor evaluates long form operational stability. Its purpose is to determine how an AI model behaves when users generate real documents, records and content that organisations rely on and trust. Long form workflows expose failure modes that short tests cannot reveal. Collapse, drift, fragmentation and constraint weakening emerge as the AI model maintains extended context, processes sustained workloads and responds to evolving task requirements. This methodology identifies where reliability breaks down, where behaviour destabilises and where the AI model becomes unsuitable for producing content that must remain accurate, consistent and operationally dependable.</p>
+
+  <h3>4.5.2 Vectored Conversational AI Testing</h3>
+  <p>Vectored Conversational AI Testing evaluates interactive behavioural stability by taking free flowing user–AI conversations and placing them in a structure that can be tested, evaluated and audited without losing the spontaneity or realism of natural interaction. The vectors do not constrain the conversation. They simply provide a repeatable way to vary tone, purpose, ambiguity, phrasing, indirectness, pressure and information order so that real conversational behaviour can be observed in a measurable form. This reveals guardrail inconsistency, persona instability, misinterpretation of ambiguous inputs and susceptibility to disguised prompts. The methodology shows whether an AI model can remain stable, aligned and predictable across the full range of natural interaction patterns found in freely available public systems and in any environment where people rely on AI for real communication.</p>
+
+  <h3>4.6 Why Both Methodologies Are Required</h3>
+  <p>No single methodology can reveal the full behavioural surface of an AI model. Long form stability and conversational stability are distinct behavioural domains, each with its own failure modes and operational risks. Governance requires evidence across both domains. Compliance requires evidence across both domains. Operational assurance requires evidence across both domains.</p>
+
+  <p>Both methodologies are required. Neither is optional. Together, they form the behavioural foundation that AIOBES formalises into a structured, repeatable and governance aligned standard.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>5. The AIOBES Standard Framework</h2>
+
+  <p>AIOBES formalises behavioural evaluation into a governance aligned standard. It provides the structure, terminology and evidentiary requirements needed to turn behavioural testing from an ad hoc practice into a repeatable, auditable and regulator facing process. Governance cannot rely on informal testing or inconsistent terminology. It requires a framework that defines what behavioural evidence is, how it is produced and how it is communicated across organisations.</p>
+
+  <h3>5.1 Structural Components of the Framework</h3>
+  <p>AIOBES is built on six structural components that together create a complete behavioural governance standard.</p>
+
+  <ul>
+    <li><strong>Charter</strong> Defines the purpose, scope and obligations of behavioural evaluation. It establishes the requirement that AI behaviour must be measured, evidenced and governed.</li>
+
+    <li><strong>Principles</strong> Provide the foundational rules for behavioural testing. They define stability, alignment, repeatability, evidentiary integrity and the conditions under which behavioural evaluation must occur.</li>
+
+    <li><strong>Methodologies</strong> Specify how behavioural evidence is produced. They include long form operational stability evaluation and vectored conversational stability evaluation. These methodologies turn real interaction into measurable, repeatable evidence.</li>
+
+    <li><strong>Glossary</strong> Establishes unified terminology for behavioural failure modes, stability conditions and evidentiary concepts. Governance requires shared language. Without it, organisations cannot communicate behavioural findings consistently.</li>
+
+    <li><strong>Evidence Requirements</strong> Define what counts as behavioural evidence, how it must be collected, how it must be documented and how it must be presented to regulators. This ensures that behavioural testing produces material that can be audited and verified.</li>
+
+    <li><strong>Research Library</strong> Provides a curated collection of the related papers, studies and technical work that define and advance behavioural testing. It documents the theoretical foundations, methodological developments and empirical findings that underpin AIOBES. The library gives organisations access to the established research base behind behavioural evaluation so they can align their own testing with recognised behavioural science rather than inventing isolated practices.</li>
+  </ul>
+
+  <h3>5.2 Why Governance Requires Structure and Repeatability</h3>
+  <p>Governance cannot rely on informal testing or inconsistent terminology. Regulators require evidence that is repeatable, traceable and auditable. Organisations require a structured way to evaluate behaviour so that results can be compared across teams, systems and time. Without structure, behavioural testing becomes anecdotal. Without repeatability, it becomes non compliant. Without unified terminology, it becomes impossible to communicate findings clearly.</p>
+
+  <p>AIOBES provides the structure needed to turn behavioural evaluation into a governance aligned practice rather than an experimental activity.</p>
+
+  <h3>5.3 Turning Behavioural Testing into an Auditable Process</h3>
+  <p>AIOBES defines how behavioural tests are run, how evidence is captured, how results are documented and how findings are interpreted. It transforms behavioural evaluation into a process that can be audited internally and externally. This includes:</p>
+
+  <ul>
+    <li>repeatable test conditions</li>
+    <li>defined behavioural metrics</li>
+    <li>documented interaction sequences</li>
+    <li>traceable evidence artefacts</li>
+    <li>clear criteria for stability and failure</li>
+  </ul>
+
+  <p>This allows behavioural evidence to be reviewed, verified and used in compliance reporting.</p>
+
+  <h3>5.4 Supporting Cross Organisational Communication and Regulator Facing Documentation</h3>
+  <p>Behavioural findings must be communicated across teams, departments and regulatory bodies. AIOBES provides the terminology, structure and evidentiary format needed to make this possible. It ensures that:</p>
+
+  <ul>
+    <li>technical teams can describe behavioural findings clearly</li>
+    <li>governance teams can interpret behavioural evidence</li>
+    <li>compliance teams can integrate behavioural results into regulatory documentation</li>
+    <li>regulators can understand and verify behavioural claims</li>
+  </ul>
+
+  <p>AIOBES makes behavioural testing usable by providing a standardised way to produce, document and communicate behavioural evidence.</p>
+
+  <p>Behavioural evaluation becomes operationally viable only when it is structured, repeatable and aligned with governance. AIOBES provides that structure.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>6. Behavioural Failure Modes and Operational Impact</h2>
+
+  <p>Behavioural instability is not theoretical. It appears when an AI model is used in real conditions, with real users, real context accumulation and real organisational content. Governance must evaluate these behaviours because they directly affect reliability, safety and regulatory compliance. AIOBES defines the core behavioural failure modes and explains how they propagate into operational and regulatory risk.</p>
+
+  <h3>6.1 Core Behavioural Failure Modes</h3>
+  <p>Governance must evaluate the behavioural phenomena that emerge only through real interaction and sustained workload. The key failure modes include:</p>
+
+  <ul>
+    <li><strong>Context collapse</strong> The AI model loses track of accumulated context, misinterprets earlier information or resets its internal state. This breaks continuity and contaminates any output that depends on prior interaction.</li>
+
+    <li><strong>Drift</strong> Behaviour gradually shifts as the AI model processes extended sequences. Tone, constraints, alignment and factual grounding weaken over time. Drift is cumulative and cannot be detected through short tests.</li>
+
+    <li><strong>Hallucination</strong> The AI model generates incorrect, fabricated or non existent information. Hallucination becomes more likely when context is unstable, constraints weaken or drift accumulates.</li>
+
+    <li><strong>Guardrail inconsistency</strong> Safety and policy boundaries behave unpredictably. The AI model enforces constraints in one interaction and ignores them in another. This inconsistency appears only when user intent varies naturally.</li>
+
+    <li><strong>Tone instability</strong> The AI model’s tone shifts unpredictably, becoming overly formal, overly casual, emotionally mismatched or inconsistent with prior interaction. Tone instability affects trust, clarity and professional use.</li>
+
+    <li><strong>Structural degradation</strong> Output structure collapses under load. The AI model begins producing disorganised text, broken formats, incomplete reasoning or inconsistent document structure. This directly affects workflows that rely on structured output.</li>
+  </ul>
+
+  <h3>6.2 How These Behaviours Create Workflow Contamination and Workflow Collapse</h3>
+  <p>Behavioural failure modes propagate into workflows. They contaminate documents, records, decisions and downstream systems. Examples include:</p>
+
+  <ul>
+    <li>incorrect information entering regulated documents</li>
+    <li>inconsistent tone affecting customer communication</li>
+    <li>drift causing misaligned recommendations</li>
+    <li>guardrail inconsistency producing unsafe or non compliant outputs</li>
+    <li>structural degradation breaking templates, reports or legal documents</li>
+  </ul>
+
+  <p>When these behaviours accumulate, workflows collapse. Outputs become unreliable. Human oversight becomes strained. Operational processes lose integrity. In regulated environments, workflow collapse becomes a compliance failure.</p>
+
+  <h3>6.3 Operational Consequences</h3>
+  <p>Behavioural instability creates direct operational and regulatory exposure:</p>
+
+  <ul>
+    <li><strong>Regulatory non-compliance</strong> Unstable behaviour violates requirements for stability, transparency, misuse prevention and predictable operation.</li>
+
+    <li><strong>Legal exposure</strong> Incorrect or inconsistent outputs enter contracts, records, customer communication or safety critical workflows.</li>
+
+    <li><strong>Safety risk</strong> Guardrail inconsistency or hallucination can produce harmful, misleading or unsafe guidance.</li>
+
+    <li><strong>Reputational damage</strong> Tone instability, incorrect outputs or inconsistent behaviour erode trust in organisational use of AI.</li>
+  </ul>
+
+  <p>These consequences arise not from theoretical risk but from observable behavioural failure modes that appear under real operational conditions.</p>
+
+  <h3>6.4 Why These Failure Modes Only Appear Under Real Operational Conditions</h3>
+  <p>Behavioural failure modes do not appear in synthetic prompt tests or static benchmarks. They emerge only when:</p>
+
+  <ul>
+    <li>context accumulates</li>
+    <li>user intent varies naturally</li>
+    <li>interaction pressure increases</li>
+    <li>tasks evolve over time</li>
+    <li>the AI model is used for real documents and real communication</li>
+    <li>constraints weaken under sustained load</li>
+  </ul>
+
+  <p>Real operational conditions expose behaviours that cannot be seen in isolated tests. Governance must evaluate behaviour where it actually fails, not where it appears stable.</p>
+
+  <p>Behavioural instability is a governance risk. AIOBES defines the failure modes, explains their operational impact and provides the methodologies required to detect them before they propagate into workflows, compliance obligations and organisational exposure.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>7. Evidence Requirements and Auditability</h2>
+
+  <p>Behavioural governance depends on evidence. Not on impressions, anecdotes, or synthetic benchmark results. AIOBES defines what counts as valid behavioural evidence and how that evidence must be produced and documented so that it can be independently verified and audited. This section establishes the evidentiary backbone of the standard.</p>
+
+  <h3>7.1 The Three Categories of Behavioural Evidence</h3>
+  <p>AIOBES requires evidence across three domains. Together, they show not only what the AI model produced, but how it behaved while producing it.</p>
+
+  <ul>
+    <li><strong>Input evidence</strong> The exact prompts, conversational turns, interaction vectors and contextual conditions that led to the behaviour being evaluated. Input evidence shows the origin of the behaviour and ensures traceability.</li>
+
+    <li><strong>Output evidence</strong> The AI model’s responses, including structure, tone, stability, factual grounding and behavioural consistency. Output evidence shows what the model actually did.</li>
+
+    <li><strong>Operational evidence</strong> The behavioural phenomena that emerged during real interaction. This includes drift, collapse, guardrail inconsistency, tone instability and structural degradation. Operational evidence shows how behaviour changed under load, variation and sustained use.</li>
+  </ul>
+
+  <p>These three evidence types form a complete behavioural record that can be audited and verified.</p>
+
+  <h3>7.2 Evidence Requirements</h3>
+  <p>AIOBES defines strict requirements for what counts as valid behavioural evidence.</p>
+
+  <ul>
+    <li><strong>Repeatability</strong> The behaviour must be reproducible under the same conditions. Evidence that cannot be repeated cannot be audited.</li>
+
+    <li><strong>Traceability</strong> Every behavioural artefact must be linked to its originating inputs, interaction conditions and test methodology. Traceability ensures that evidence can be reconstructed and verified.</li>
+
+    <li><strong>Real condition origin</strong> Evidence must come from real interaction conditions, not synthetic prompts or isolated benchmark tasks. Behavioural failure modes only appear when context accumulates, and user intent varies naturally.</li>
+
+    <li><strong>Interaction variability</strong> Evidence must include behaviour across varied tone, ambiguity, pressure, phrasing and conversational patterns. Without variability, guardrail inconsistency and instability cannot be detected.</li>
+  </ul>
+
+  <p>These requirements ensure that behavioural evidence is meaningful, verifiable and governance aligned.</p>
+
+  <h3>7.3 Why Synthetic Tests Cannot Produce Valid Evidence</h3>
+  <p>Synthetic tests cannot produce valid behavioural evidence because they do not replicate real interaction conditions. They lack:</p>
+
+  <ul>
+    <li>context accumulation</li>
+    <li>natural variation in user intent</li>
+    <li>conversational pressure</li>
+    <li>evolving task requirements</li>
+    <li>sustained workload</li>
+    <li>ambiguity and indirectness</li>
+  </ul>
+
+  <p>Synthetic prompts can show whether a model answers a question. They cannot show whether a model remains stable, aligned and predictable when used by real people for real tasks. Behavioural failure modes only appear under operational conditions, so evidence must originate from those conditions.</p>
+
+  <h3>7.4 How Behavioural Evidence Supports Auditability and Compliance Alignment</h3>
+  <p>Behavioural evidence becomes auditable when it is repeatable, traceable and grounded in real conditions. AIOBES provides the structure needed to turn behavioural testing into a compliance aligned process:</p>
+
+  <ul>
+    <li>documented interaction sequences</li>
+    <li>preserved input and output artefacts</li>
+    <li>clear behavioural classifications</li>
+    <li>defined stability and failure criteria</li>
+    <li>traceable evidence chains</li>
+    <li>reproducible test conditions</li>
+  </ul>
+
+  <p>This allows internal auditors, external assessors and regulators to verify behavioural claims. It also enables organisations to demonstrate that behavioural risks have been identified, measured and governed.</p>
+
+  <p>Behavioural evidence is the foundation of governance. AIOBES defines what that evidence is, how it must be produced and documented.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>8. Operational Contexts and Use Cases</h2>
+
+  <p>Behavioural evaluation is required wherever AI outputs influence decisions, obligations or public facing communication. AIOBES defines the operational contexts in which behavioural instability becomes a governance risk and shows why behavioural testing must be applied across industries without relying on fictional scenarios.</p>
+
+  <h3>8.1 Contexts Where Behavioural Evaluation Is Required</h3>
+  <p>Behavioural instability matters most in environments where AI outputs have real consequences. These include:</p>
+
+  <ul>
+    <li><strong>Regulated contexts</strong> Finance, healthcare, legal, insurance, energy, public administration. Outputs enter regulated records, decisions and obligations.</li>
+
+    <li><strong>Safety critical contexts</strong> Medical guidance, industrial operations, transportation, emergency response. Instability can create direct physical or procedural risk.</li>
+
+    <li><strong>High impact contexts</strong> Environments where incorrect or unstable outputs affect large numbers of people or significant organisational decisions.</li>
+
+    <li><strong>High volume contexts</strong> Customer service, claims processing, documentation workflows, content generation. Instability scales with volume and contaminates downstream processes.</li>
+
+    <li><strong>Public facing contexts</strong> Customer communication, public information, brand aligned messaging. Tone instability and hallucination create reputational exposure.</li>
+
+    <li><strong>Enterprise workflow contexts</strong> Internal documentation, decision support, operational communication, compliance reporting. Behavioural drift and structural degradation break workflow integrity.</li>
+  </ul>
+
+  <p>These contexts are not hypothetical. They represent the real environments where organisations deploy AI systems today.</p>
+
+  <h3>8.2 How Behavioural Instability Propagates Through Real Workflows</h3>
+  <p>Behavioural instability does not remain isolated. It spreads through workflows because AI outputs become inputs to other systems, decisions and records. Examples include:</p>
+
+  <ul>
+    <li>hallucinated details entering regulated documents</li>
+    <li>drift causing inconsistent recommendations across a customer journey</li>
+    <li>guardrail inconsistency producing unsafe or non compliant guidance</li>
+    <li>structural degradation breaking templates, forms or legal documents</li>
+    <li>tone instability affecting customer trust and brand alignment</li>
+  </ul>
+
+  <p>Once instability enters a workflow, it contaminates downstream processes, multiplies oversight burden and increases operational risk.</p>
+
+  <h3>8.3 Why Behavioural Evaluation Is Required Wherever AI Influences Decisions or Obligations</h3>
+  <p>Any environment where AI outputs influence decisions, obligations or records requires behavioural evaluation. This includes:</p>
+
+  <ul>
+    <li>decisions that affect customers or citizens</li>
+    <li>obligations that must meet regulatory standards</li>
+    <li>records that must remain accurate and traceable</li>
+    <li>communication that must remain consistent and aligned</li>
+    <li>workflows that depend on structured, stable output</li>
+  </ul>
+
+  <p>Behavioural failure modes collapse, drift, hallucination, inconsistency only appear under real operational conditions. If behavioural evaluation is absent, instability remains undetected until it causes operational or regulatory harm.</p>
+
+  <h3>8.4 Cross Industry Applicability Without Fictional Scenarios</h3>
+  <p>AIOBES applies across industries because behavioural instability is not domain specific. It is a property of AI systems interacting with real users, real context and real workloads. The framework avoids fictional or speculative scenarios. It focuses on:</p>
+
+  <ul>
+    <li>real interaction patterns</li>
+    <li>real organisational workflows</li>
+    <li>real regulatory obligations</li>
+    <li>real operational consequences</li>
+  </ul>
+
+  <p>This makes AIOBES usable in finance, healthcare, legal, public sector, enterprise operations, customer service, safety critical environments and any domain where AI behaviour matters.</p>
+
+  <p>Behavioural instability is universal. AIOBES provides the structure needed to evaluate it consistently across industries and operational contexts.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>9. Positioning AIOBES Within the Governance Landscape</h2>
+
+  <p>AIOBES fills the gap left by existing governance frameworks. Current standards assume behavioural evidence exists, but none define how to produce it, how to document it or how to verify it. This section positions AIOBES as the missing foundational behavioural layer that governance has been waiting for.</p>
+
+  <h3>9.1 Why Existing Frameworks Assume Behavioural Evidence but Do Not Define It</h3>
+  <p>NIST, ISO and the EU AI Act all require stability, predictability, transparency, misuse prevention and documented behaviour. They reference concepts such as:</p>
+
+  <ul>
+    <li>consistent model behaviour</li>
+    <li>robustness under operational conditions</li>
+    <li>traceable decision processes</li>
+    <li>evidence of safe and aligned operation</li>
+  </ul>
+
+  <p>But none of these frameworks define behavioural evidence. They do not specify:</p>
+
+  <ul>
+    <li>how behaviour should be tested</li>
+    <li>how behavioural failure modes should be identified</li>
+    <li>how interaction conditions should be documented</li>
+    <li>how behavioural instability should be measured</li>
+    <li>how behavioural evidence should be structured for audit</li>
+  </ul>
+
+  <p>They assume behavioural evidence exists, but they do not provide the methodology to produce it. AIOBES provides the foundational behavioural layer required for any governance framework to function.</p>
+
+  <h3>9.2 Why Current Industry Testing Practices Cannot Produce Governance Grade Evidence</h3>
+  <p>Industry testing practices rely on synthetic prompts, benchmarks, isolated tasks and short form evaluation. These methods are structurally incapable of producing governance grade behavioural evidence because they lack:</p>
+
+  <ul>
+    <li>real interaction conditions</li>
+    <li>context accumulation</li>
+    <li>natural variation in user intent</li>
+    <li>sustained workload</li>
+    <li>conversational pressure</li>
+    <li>operational drift exposure</li>
+  </ul>
+
+  <p>Synthetic tests can show whether a model answers a question. They cannot show whether a model remains stable, aligned and predictable when used by real people for real tasks. Governance requires evidence from operational conditions, not laboratory conditions.</p>
+
+  <h3>9.3 How AIOBES Provides the Missing Behavioural Layer</h3>
+  <p>AIOBES defines the behavioural layer that existing frameworks rely on but never specify. It provides:</p>
+
+  <ul>
+    <li>the terminology for behavioural failure modes</li>
+    <li>the methodologies for producing behavioural evidence</li>
+    <li>the structure for documenting interaction conditions</li>
+    <li>the criteria for stability, drift and collapse</li>
+    <li>the evidentiary requirements for verification</li>
+    <li>the framework for cross organisational communication</li>
+  </ul>
+
+  <p>AIOBES turns behavioural testing into a standardised, repeatable and governance aligned practice. It supplies the behavioural foundation that NIST, ISO and the EU AI Act implicitly require.</p>
+
+  <h3>9.4 Why AIOBES Is the Natural Foundation for Future Regulatory Alignment</h3>
+  <p>Regulators need a behavioural standard that:</p>
+
+  <ul>
+    <li>works across industries</li>
+    <li>does not rely on fictional scenarios</li>
+    <li>produces evidence that can be independently verified</li>
+    <li>integrates with existing governance frameworks</li>
+    <li>defines behavioural instability in operational terms</li>
+    <li>provides repeatable methodologies</li>
+    <li>supports audit and compliance documentation</li>
+  </ul>
+
+  <p>AIOBES meets all of these requirements. It is the only framework that defines behavioural evidence in a way that regulators can adopt without rewriting existing governance structures. It aligns with current regulatory expectations while filling the behavioural gap they leave open.</p>
+
+  <p>AIOBES is positioned as the inevitable standard because behavioural instability is universal, governance requires evidence and no other framework defines how that evidence must be produced.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>10. Formal Establishment of AIOBES as the Behavioural Governance Standard</h2>
+
+  <p>AIOBES is formally established as the behavioural governance standard for evaluating AI systems under real operational conditions. It defines the discipline, evidentiary structure and methodological requirements needed to measure and govern AI behaviour when internal reasoning cannot be inspected and static prompt-based tests cannot reveal operational instability. AIOBES provides the behavioural foundation that governance, compliance and safety functions require but do not yet possess.</p>
+
+  <p>AIOBES is founded on the principle that behaviour is the only observable and auditable surface available for evaluating AI systems. Internal mechanisms cannot be inspected. Architectural documentation cannot demonstrate stability. Benchmark performance cannot predict operational behaviour. Only real interaction, sustained workload and natural variation in user intent reveal the behavioural phenomena that determine reliability, alignment and safety. AIOBES defines these phenomena, the conditions under which they emerge, and the methodologies required to evaluate them.</p>
+
+  <p>AIOBES establishes the behavioural discipline required for governance to function. It defines:</p>
+
+  <ul>
+    <li>Scope of behavioural evaluation</li>
+    <li>Terminology for behavioural failure modes</li>
+    <li>Evidentiary requirements for behavioural testing</li>
+    <li>Methodologies capable of producing governance grade evidence</li>
+    <li>Criteria for stability, drift, collapse and alignment</li>
+    <li>Conditions under which behavioural evaluation must occur</li>
+  </ul>
+
+  <p>This transforms behavioural evaluation from an informal practice into a structured, repeatable and auditable governance discipline.</p>
+
+  <p>AIOBES is also the ecosystem in which behavioural methodologies operate. LLM Inquisitor and Vectored Conversational AI Testing exist within AIOBES as formalised behavioural methods. They provide the first operational tools capable of producing governance grade behavioural evidence under real interaction conditions. Future methodologies can be added without altering the standard, because AIOBES defines the evidentiary structure rather than prescribing a single testing technique. This makes AIOBES extensible, durable and capable of supporting the evolution of behavioural science as operational requirements change.</p>
+
+  <p>By establishing AIOBES as the behavioural governance standard, this paper provides the missing layer that existing frameworks assume but do not define. AIOBES becomes the authoritative behavioural domain for regulators, standards bodies and organisations seeking to evaluate AI behaviour with the same rigour applied to any other regulated system.</p>
+
+  <p>AIOBES is therefore formally defined as the behavioural standard for AI governance. It is the evidentiary foundation that compliance requires, the operational discipline that safety depends on and the structured methodology that testing must follow. It is the behavioural layer that governance has been waiting for.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>11. Governance Integration Model</h2>
+
+  <p>AIOBES provides the behavioural layer that existing governance frameworks assume but do not define. Governance, compliance and safety functions all require evidence of predictable behaviour under real operational conditions, yet none of the current frameworks specify how this evidence should be produced. AIOBES fills this gap by defining the behavioural methodologies, evidentiary requirements and interaction conditions needed to evaluate AI systems with regulatory grade rigour.</p>
+
+  <p>AIOBES integrates with governance frameworks by supplying the behavioural evidence they depend on. It does not replace these frameworks. It completes them. Existing governance structures define obligations, controls and documentation requirements, but they do not define how behavioural evidence is generated or how behavioural stability is measured. AIOBES provides the missing operational layer that allows these frameworks to function as intended.</p>
+
+  <p>AIOBES aligns with the EU AI Act by providing the behavioural evidence required for high risk systems. The Act requires documentation of system behaviour, evidence of predictable performance and demonstration of stability under intended use. AIOBES defines how this evidence is produced, how interaction conditions are documented and how behavioural failure modes are identified. It provides the behavioural testing structure needed to satisfy the Act’s operational requirements.</p>
+
+  <p>AIOBES aligns with ISO 42001 by supplying the behavioural evaluation processes that the standard references but does not specify. ISO 42001 requires organisations to monitor, evaluate and document AI behaviour, but it does not define the methodologies needed to perform this evaluation. AIOBES provides the behavioural testing procedures, stability criteria and evidentiary structure required to operationalise ISO 42001’s behavioural obligations.</p>
+
+  <p>AIOBES aligns with the NIST AI Risk Management Framework by providing the behavioural evidence needed to support its risk identification, measurement and monitoring functions. NIST emphasises the importance of understanding system behaviour under real conditions, but it does not define how behavioural evidence should be produced. AIOBES provides the methodologies and evidentiary requirements needed to support NIST’s behavioural risk management objectives.</p>
+
+  <p>AIOBES therefore functions as the behavioural integration layer for governance. It provides the operational evidence that regulatory frameworks require, the behavioural testing structure that compliance teams need and the stability evaluation methodologies that safety functions depend on. Without AIOBES, governance frameworks remain incomplete. With AIOBES, they gain the behavioural foundation required for effective oversight.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>12. Methodology Lifecycle and Ecosystem Definition</h2>
+
+  <p>AIOBES defines the behavioural ecosystem in which operational testing methodologies are created, maintained and evaluated. It provides the structure that allows methodologies to be introduced, validated and extended without altering the standard itself. This ensures that behavioural evaluation remains stable while allowing methodological innovation to continue as operational requirements evolve.</p>
+
+  <p>AIOBES establishes the lifecycle for behavioural methodologies. A methodology enters the ecosystem when it demonstrates the ability to produce governance grade behavioural evidence under real operational conditions. It must define its interaction model, evidentiary outputs, stability criteria and failure detection capabilities. Once these elements are documented, the methodology becomes part of the AIOBES ecosystem and can be used to generate behavioural evidence for governance and compliance functions.</p>
+
+  <p>AIOBES does not prescribe a single behavioural methodology. It defines the evidentiary structure that all methodologies must satisfy. This allows multiple methodologies to coexist, each addressing different aspects of operational behaviour. LLM Inquisitor provides long form operational stability evaluation, capturing behavioural drift, collapse and inconsistency over extended interaction sequences. Vectored Conversational AI Testing provides conversational stability evaluation, capturing behavioural variability across multiple interaction vectors. Both methodologies operate within the AIOBES evidentiary structure and produce evidence that satisfies its behavioural requirements.</p>
+
+  <p>AIOBES supports the introduction of future methodologies by providing a stable evidentiary framework. New methodologies can be added when they demonstrate the ability to produce behavioural evidence that aligns with AIOBES criteria. This ensures that the ecosystem can expand without fragmenting the standard or altering its governance structure. AIOBES remains constant while methodologies evolve to meet new operational challenges.</p>
+
+  <p>AIOBES also defines how methodologies are maintained. A methodology remains part of the ecosystem as long as it continues to produce reliable behavioural evidence under current operational conditions. If operational environments change or new behavioural failure modes emerge, methodologies can be updated or replaced without altering the standard. This ensures that behavioural evaluation remains aligned with real world conditions while preserving the stability of the governance framework.</p>
+
+  <p>AIOBES therefore provides a structured ecosystem for behavioural methodologies. It defines how methodologies are introduced, validated, maintained and retired. It ensures that behavioural evaluation remains consistent, extensible and aligned with governance requirements. It provides the operational foundation that allows behavioural science to evolve without compromising the integrity of the standard.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>13. Standards Body Alignment Statement</h2>
+
+  <p>AIOBES is designed to align with existing standards bodies by providing the behavioural layer that current frameworks reference but do not define. Standards bodies specify obligations, controls and documentation requirements, yet none provide a structured method for generating behavioural evidence under real operational conditions. AIOBES supplies this missing layer and is therefore positioned for direct integration into formal standards development processes.</p>
+
+  <p>AIOBES aligns with ISO by providing the behavioural evaluation structure required to support management system standards. ISO 42001 establishes the need for monitoring and evaluating AI behaviour, but it does not define how behavioural evidence should be produced. AIOBES provides the methodologies, evidentiary criteria and interaction conditions needed to operationalise these requirements. This allows AIOBES to function as the behavioural extension layer for ISO standards concerned with AI governance and operational integrity.</p>
+
+  <p>AIOBES aligns with NIST by supplying the behavioural evidence required for risk identification, measurement and monitoring. The NIST AI Risk Management Framework emphasises the importance of understanding system behaviour under real conditions, yet it does not specify how behavioural testing should be conducted. AIOBES provides the behavioural methodologies and evidentiary structure needed to support NIST’s risk management objectives and can be adopted as the behavioural testing component within NIST aligned governance systems.</p>
+
+  <p>AIOBES aligns with the EU AI Act by providing the behavioural testing structure required for high risk systems. The Act requires evidence of predictable behaviour, stability under intended use and documentation of behavioural characteristics. AIOBES defines how this evidence is generated, how behavioural failure modes are identified and how operational conditions are documented. This positions AIOBES as the behavioural evaluation layer that supports conformity assessment and ongoing monitoring under the Act.</p>
+
+  <p>AIOBES is structured to support adoption by standards bodies without requiring changes to existing frameworks. It provides a stable evidentiary foundation that can be referenced directly within standards, guidelines and conformity processes. AIOBES does not compete with existing standards. It completes them by supplying the behavioural evaluation layer they depend on but do not specify.</p>
+
+  <p>AIOBES is therefore ready for alignment with standards bodies. It provides the behavioural discipline, evidentiary structure and methodological consistency required for formal adoption. It offers a stable foundation for future standards concerned with AI behaviour, operational stability and governance grade evaluation.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>14. Conclusion: The Necessity of Behavioural Standards</h2>
+
+  <p>Behavioural evidence is the only viable foundation for AI governance. Without evidence of how an AI system behaves under real interaction conditions, governance becomes guesswork, compliance becomes superficial and safety becomes unenforceable. Structured behavioural methodologies are the only way to produce this evidence Static prompt based tests and benchmark tasks cannot reveal drift, collapse, inconsistency or instability. They cannot show how behaviour changes when real users apply real pressure in real workflows.</p>
+
+  <p>AIOBES formalises these behavioural methodologies into a standard. It defines how behavioural evidence is produced, how interaction conditions are documented, how failure modes are identified and how stability is measured. It provides the structure that governance, compliance and safety functions require in order to evaluate AI behaviour with the same rigour applied to any other regulated system.</p>
+
+  <p>Governance, compliance and safety cannot function without behavioural evaluation. They all depend on predictable behaviour, traceable evidence and repeatable testing. None of these can be achieved without a behavioural standard.</p>
+
+  <p>The governance integration model, methodology lifecycle and standards body alignment statement together establish the operational and regulatory context in which AIOBES functions.</p>
+
+  <p>Therefore, AIOBES is the foundational methodology for AI governance. It supplies the behavioural layer that existing frameworks assume but do not define, and it provides the evidentiary structure required for future regulatory alignment.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>Glossary</h2>
+
+  <h3>AIOBES</h3>
+  <p>Artificial Intelligence Operational Behavioural Evaluation Standard. AIOBES is the behavioural governance standard defined in this paper. It establishes the behavioural domain, evidentiary structure and methodological requirements needed to evaluate AI systems under real operational conditions. AIOBES defines how behavioural evidence is produced, how interaction conditions are documented, how behavioural failure modes are identified and how stability is measured. It provides the behavioural layer required for governance, compliance and safety functions, integrates with existing regulatory frameworks and defines the ecosystem in which behavioural methodologies such as LLM Inquisitor and Vectored Conversational AI Testing operate.</p>
+
+  <h3>Behavioural evidence</h3>
+  <p>Evidence produced through real interaction with an AI system. It captures behavioural stability, drift, collapse, inconsistency and other operational phenomena that cannot be observed through static prompt-based tests or benchmark tasks.</p>
+
+  <h3>Behavioural failure modes</h3>
+  <p>Observable behavioural phenomena that indicate instability or misalignment. Includes drift, collapse, inconsistency and other deviations from expected behaviour under real interaction conditions.</p>
+
+  <h3>Behavioural governance</h3>
+  <p>The governance discipline focused on evaluating and regulating AI behaviour. It relies on behavioural evidence rather than internal model inspection or benchmark performance.</p>
+
+  <h3>Benchmark tasks</h3>
+  <p>Predefined evaluation tasks that measure model performance in controlled conditions. They do not reveal operational behavioural instability.</p>
+
+  <h3>Compliance functions</h3>
+  <p>Organisational functions responsible for ensuring that AI systems meet regulatory and internal requirements. They rely on behavioural evidence to verify predictable behaviour.</p>
+
+  <h3>Conversational stability</h3>
+  <p>The consistency of an AI system’s behaviour across multiple conversations. Evaluated through Vectored Conversational AI Testing.</p>
+
+  <h3>Drift</h3>
+  <p>A behavioural failure mode where the system’s behaviour changes over time or across interactions without a defined cause.</p>
+
+  <h3>Governance grade evidence</h3>
+  <p>Behavioural evidence that meets the documentation, repeatability and reliability requirements of regulatory and organisational governance frameworks.</p>
+
+  <h3>Interaction conditions</h3>
+  <p>The real operational circumstances under which behavioural evidence is produced. Includes workload, user intent variation and sustained interaction.</p>
+
+  <h3>LLM Inquisitor</h3>
+  <p>A behavioural methodology that evaluates long form operational stability. It captures behavioural drift, collapse and inconsistency across extended interaction sequences and workflows.</p>
+
+  <h3>Methodology lifecycle</h3>
+  <p>The process by which behavioural methodologies are introduced, validated, maintained and retired within AIOBES.</p>
+
+  <h3>Operational behaviour</h3>
+  <p>The behaviour an AI system exhibits under real use conditions. It is the primary surface available for governance evaluation.</p>
+
+  <h3>Operational stability</h3>
+  <p>The ability of an AI system to maintain consistent behaviour under real interaction conditions.</p>
+
+  <h3>Safety functions</h3>
+  <p>Organisational functions responsible for ensuring that AI systems behave predictably and do not produce harmful or unstable outputs. They rely on behavioural evidence.</p>
+
+  <h3>Static prompt-based tests</h3>
+  <p>Single prompt or isolated prompt evaluations that do not reveal behavioural instability under real interaction conditions.</p>
+
+  <h3>Stability criteria</h3>
+  <p>The behavioural conditions that define predictable and acceptable system behaviour. Used to evaluate behavioural evidence.</p>
+
+  <h3>Standards body alignment</h3>
+  <p>The integration of AIOBES with existing standards bodies such as ISO, NIST and the EU AI Act by providing the behavioural layer those frameworks require.</p>
+
+  <h3>Vectored Conversational AI Testing</h3>
+  <p>A behavioural methodology that evaluates conversational stability across multiple interaction vectors.</p>
+
+</section>
+
+<section class="section-card">
+  <h2>References</h2>
+
+  <h3>Vectored Conversational AI Testing</h3>
+  <p>
+    Zenodo: 
+    <a href="https://zenodo.org/records/21045949" target="_blank">https://zenodo.org/records/21045949</a><br>
+    Defines the vectored conversational behavioural evaluation method. Uses controlled conversational variation to observe coherence, boundary handling, context retention and behavioural stability. Establishes the method’s relevance to EU AI Act expectations and clarifies the operational boundaries of the approach.
+  </p>
+
+  <h3>LLM INQUISITOR Methodology (GitHub Edition) v1.1</h3>
+  <p>
+    Zenodo: 
+    <a href="https://zenodo.org/records/20435494" target="_blank">https://zenodo.org/records/20435494</a><br>
+    Defines the LLM INQUISITOR methodology: a structured, repeatable discipline for evaluating the behaviour of large language models under controlled load. Provides a formal approach for assessing reliability through observable behaviour and evidentiary traceability. Supports rigorous evaluation in research, safety and enterprise assurance contexts.
+  </p>
+
+  <h3>Argo AI Testing Protocol: Sustained Multi Axis Load Testing</h3>
+  <p>
+    Zenodo: 
+    <a href="https://zenodo.org/records/19919031" target="_blank">https://zenodo.org/records/19919031</a><br>
+    Introduces the Argo AI Testing Protocol, a conceptual approach for evaluating AI systems within the User Interaction Space — the full set of observable outputs and interactions available to a user. Addresses the limitations of short, prompt based tests and emphasises extended interaction, shifting user intent and cumulative context effects.
+  </p>
+
+  <h3>Argo’s Fundamentals of Failings in Prompt Test Design and Evaluation for LLMs</h3>
+  <p>
+    Zenodo: 
+    <a href="https://zenodo.org/records/19599444" target="_blank">https://zenodo.org/records/19599444</a><br>
+    Identifies the core structural failings in prompt test design and evaluation for LLMs. Shows how current methods mismeasure capability, misinterpret outputs and often generate failure states created by the tests themselves. Describes how inconsistent methods emerged in a rapidly expanding industry lacking standards.
+  </p>
+
+  <h3>Argo Prompting: Pattern Formation in LLMs Under Sustained Conceptual Pressure</h3>
+  <p>
+    Zenodo: 
+    <a href="https://zenodo.org/records/19511615" target="_blank">https://zenodo.org/records/19511615</a><br>
+    Introduces Argo Prompting, a method for inducing pattern formation behaviour in large language models through sustained conceptual pressure. Distinguishes pattern formation from collapse, hallucination and surface level pattern matching. Provides a practical framework for studying LLM behaviour under extended reasoning conditions.
+  </p>
+
+</section>
+
+<section class="section-card">
+  <h2>Further Reading</h2>
+
+  <h3>Evaluating & Testing AI Using Real-World Work (The LLM INQUISITOR Field Manual)</h3>
+  <p>
+    Operational manual for long form behavioural evaluation. Details procedures for detecting drift, collapse, inconsistency and instability across extended interaction sequences and workflows.<br>
+    <a href="https://leanpub.com/conversational-ai-testing" target="_blank">https://leanpub.com/conversational-ai-testing</a>
+  </p>
+
+  <h3>Vectored Conversational AI Testing</h3>
+  <p>
+    Operational manual for multi vector conversational stability evaluation. Defines procedures for behavioural testing across varied conversational vectors under demanding realistic operational conditions.<br>
+    <a href="https://leanpub.com/llm-inquisitor" target="_blank">https://leanpub.com/llm-inquisitor</a>
+  </p>
+
+  <p>-Document Ends-</p>
+</section>
+
+ <!-- AIOBES PAGES FOOTER NAVIGATION -->
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a> -
+        <a href="aiobes-usecases.html">Use Cases</a>
+      </nav>
+      <hr>
+    </div>
+
+    <!-- MAIN FOOTER NAVIGATION -->
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
