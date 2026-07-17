@@ -121,13 +121,381 @@
 
   <div class="page">
 
-    <!-- HERO -->
+        <!-- HERO -->
     <section class="section-card">
-      <h1>AIOBES Adoption Standards</h1>
-      <p><strong>Artificial Intelligence Operational Behaviour Evaluation Standards (AIOBES)</strong><br>
-      <strong>Adoption Standards v1.0</strong></p>
+      <h1>AIOBES Standards Integration Specification</h1>
+      <p>
+        <strong>Version:</strong> 1.0<br>
+        <strong>Published:</strong> July 2026<br>
+        <strong>Issued by:</strong> AIOBES Governance Group<br>
+        <strong>Status:</strong> Final Specification<br>
+        <strong>Identifier:</strong> AIOBES SIS 1.0
+      </p>
+
+      <p>This document may be freely referenced, cited and integrated. Modification of AIOBES content is not permitted.</p>
     </section>
 
+    <section class="section-card">
+      <h2>1. Purpose of This Document</h2>
+
+      <h3>1.1 Purpose</h3>
+      <p>
+        The purpose of this document is to provide guidance for the correct integration of the Artificial Intelligence Operational Behavioural Evaluation Standard (AIOBES) within external standards, regulatory instruments, and governance frameworks. It defines how AIOBES should be referenced, incorporated, and applied in normative and non normative documents to ensure consistency, interoperability, and technical accuracy across organisations and regulatory bodies.
+      </p>
+
+      <h3>1.2 Definition of AIOBES</h3>
+      <p>
+        AIOBES is the behavioural governance standard that establishes the behavioural domain, evidentiary structure, and methodological requirements needed to evaluate AI systems under real operational conditions. It formalises behavioural methodologies capable of producing governance grade evidence and defines the conditions under which behavioural evaluation must occur. AIOBES provides the behavioural layer that existing governance frameworks assume but do not define.
+      </p>
+
+      <h3>1.3 Rationale and Governance Context</h3>
+      <p>
+        Current governance frameworks including the EU AI Act, ISO 42001 and the NIST AI Risk Management Framework require organisations to demonstrate predictable behaviour, stability under intended use, resistance to misuse and traceable behavioural characteristics. These obligations are behavioural, yet none of the frameworks define how behavioural evidence should be generated, documented or verified.
+      </p>
+
+      <p>
+        Industry testing practices cannot meet these requirements. Short form prompt tests, benchmark tasks and architectural documentation evaluate isolated responses rather than behaviour under real interaction conditions. They cannot reveal behavioural failure modes such as drift, collapse, guardrail inconsistency, tone instability or structural degradation.
+      </p>
+
+      <p>
+        Governance requires behavioural evidence produced under sustained workload, natural variation in user intent, context accumulation and evolving task conditions. AIOBES defines how this evidence is produced and how it must be structured so that it can be audited and aligned with regulatory expectations.
+      </p>
+
+      <h3>1.4 Scope of This Guidance</h3>
+      <p>This document establishes the principles governing the correct referencing and incorporation of AIOBES within external standards and regulatory frameworks. It provides:</p>
+
+      <ul>
+        <li>integration principles for standards bodies and regulators</li>
+        <li>guidance for referencing AIOBES without altering its behavioural domain</li>
+        <li>requirements for consistent use of AIOBES terminology</li>
+        <li>boundaries for correct incorporation of AIOBES methodologies</li>
+        <li>alignment considerations for governance, compliance, and safety functions</li>
+      </ul>
+
+      <p>
+        This guidance does not define behavioural testing procedures, modify AIOBES methodologies, or introduce new behavioural concepts. It ensures that AIOBES is integrated accurately and consistently wherever behavioural evidence is required.
+      </p>
+
+      <h3>1.5 Intended Audience</h3>
+      <p>
+        This document applies to standards bodies, regulatory authorities, conformity assessment organisations, governance teams, and any entity responsible for defining, evaluating, or verifying AI behaviour within operational or regulated environments.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>2. Scope</h2>
+
+      <h3>2.1 Scope of the Guidance</h3>
+      <p>
+        This document defines the scope of guidance for integrating the Artificial Intelligence Operational Behavioural Evaluation Standard within external standards, regulatory instruments and governance frameworks. It specifies how AIOBES may be referenced, incorporated or aligned within normative and non-normative documents, including incorporation by reference, alignment statements and section level citation practices. The scope covers the correct use of AIOBES terminology, evidentiary concepts and behavioural domain definitions when applied within external frameworks.
+      </p>
+
+      <h3>2.2 Boundaries of Application</h3>
+      <p>
+        This guidance applies only to the referencing and integration of AIOBES. It does not include operational testing procedures, implementation methods or behavioural evaluation workflows defined within AIOBES or its constituent methodologies. These methodologies, including LLM Inquisitor and Vectored Conversational AI Testing, remain governed by their own procedural documents and are not reproduced or modified within this guidance.
+      </p>
+
+      <p>
+        The document does not prescribe organisational governance structures, assurance processes or compliance mechanisms. It does not define how organisations must conduct behavioural evaluation or how behavioural evidence must be generated beyond the requirements already established within AIOBES. Its purpose is limited to ensuring that external standards and regulatory frameworks reference AIOBES accurately and consistently.
+      </p>
+
+      <h3>2.3 Exclusions</h3>
+      <p>This document does not:</p>
+
+      <ul>
+        <li>define behavioural testing procedures</li>
+        <li>specify operational interaction conditions</li>
+        <li>modify or extend AIOBES methodologies</li>
+        <li>introduce new behavioural concepts or terminology</li>
+        <li>prescribe organisational controls or compliance workflows</li>
+        <li>provide implementation guidance for behavioural evaluation</li>
+      </ul>
+
+      <p>
+        These areas are outside the scope of this document and remain within the domain of AIOBES and its methodological ecosystem.
+      </p>
+
+      <h3>2.4 Intended Use</h3>
+      <p>
+        The scope of this guidance is intended for standards bodies, regulatory authorities, conformity assessment organisations and governance teams responsible for drafting, maintaining or interpreting external standards and regulatory instruments. It ensures that AIOBES is integrated in a manner that preserves its behavioural domain, evidentiary structure and methodological integrity.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>3. Definitions</h2>
+
+      <h3>3.1 Purpose of Definitions</h3>
+      <p>
+        This section defines the high level behavioural concepts required for interpreting this guidance document. Definitions are limited to the core terminology used when referencing AIOBES within external standards and regulatory frameworks.
+      </p>
+
+      <h3>3.2 Key Behavioural Concepts</h3>
+
+      <p><strong>Behavioural evidence</strong><br>
+        Evidence produced through real interaction with an AI system. Behavioural evidence captures stability, drift, collapse and inconsistency that cannot be observed through isolated prompt tests or benchmark tasks.
+      </p>
+
+      <p><strong>Behavioural failure modes</strong><br>
+        High level categories of behavioural instability observed under real interaction conditions. Failure modes include stability loss, drift, collapse and inconsistency.
+      </p>
+
+      <p><strong>Behavioural testing</strong><br>
+        Evaluation of AI behaviour under real interaction conditions. Behavioural testing focuses on operational behaviour rather than isolated responses.
+      </p>
+
+      <p><strong>Long form behavioural evaluation</strong><br>
+        Behavioural testing conducted across extended interaction sequences and sustained workload. Long form evaluation reveals behavioural failure modes that emerge over time.
+      </p>
+
+      <p><strong>Conversational stability</strong><br>
+        The consistency of an AI system's behaviour across multiple conversations or interaction vectors.
+      </p>
+
+      <p><strong>Operational behaviour</strong><br>
+        The behaviour an AI system exhibits under real use conditions.
+      </p>
+
+      <p><strong>Operational stability</strong><br>
+        The ability of an AI system to maintain consistent behaviour under sustained workload, context accumulation and varied user intent.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>4. Integration Principles</h2>
+
+      <h3>4.1 Neutrality</h3>
+      <p>
+        AIOBES must be referenced in a neutral and non-prescriptive manner. Integration must not alter the behavioural domain defined by AIOBES or introduce interpretations that change its evidentiary requirements. External standards and regulatory instruments may reference AIOBES to support behavioural evaluation, but must not modify its concepts, terminology or scope.
+      </p>
+
+      <h3>4.2 Interoperability</h3>
+      <p>
+        Integration of AIOBES must support interoperability across governance frameworks, organisational assurance functions and conformity assessment processes. References to AIOBES must preserve compatibility with existing structures for risk management, safety evaluation and compliance documentation. Interoperability requires consistent use of AIOBES terminology and alignment with its behavioural evidence model.
+      </p>
+
+      <h3>4.3 Standards compatibility</h3>
+      <p>
+        AIOBES must be integrated in a manner that is compatible with established standards practices. Section level citations, incorporation by reference and alignment statements must follow recognised standards conventions. Integration must respect the boundaries between behavioural evaluation defined by AIOBES and other forms of assessment defined within external standards.
+      </p>
+
+      <h3>4.4 Alignment with governance frameworks</h3>
+      <p>
+        Integration must support alignment with governance frameworks that rely on behavioural evidence. References to AIOBES must enable organisations and regulators to meet behavioural obligations within frameworks such as the EU AI Act, ISO 42001 and the NIST AI Risk Management Framework. Alignment requires that AIOBES be used to provide behavioural evidence without altering the structure or intent of the external framework.
+      </p>
+
+      <h3>4.5 Preservation of scope</h3>
+      <p>
+        Integration must preserve the scope of AIOBES as a behavioural evaluation standard. External standards and regulatory instruments may apply AIOBES terminology to assessment practices outside its behavioural domain, provided this does not imply or infer that AIOBES requirements, methods or behavioural evidence were used when they were not.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>5. Referencing AIOBES</h2>
+
+      <h3>5.1 Normative citation format</h3>
+      <p>
+        Normative references to AIOBES must use the full standard title and version identifier. The required citation format is: <em>Artificial Intelligence Operational Behavioural Evaluation Standards, AIOBES, Version X.X.</em> Normative citations must appear in the references section of the external standard or regulatory instrument and must be used when AIOBES requirements are intended to be binding.
+      </p>
+
+      <h3>5.2 Incorporation by reference</h3>
+      <p>
+        Incorporation by reference allows an external standard or regulatory instrument to rely on AIOBES without reproducing its content. Incorporation must use the normative citation format and must specify the sections or requirements of AIOBES that are being incorporated. Incorporation by reference must not modify AIOBES terminology, behavioural concepts or evidentiary requirements.
+      </p>
+
+      <h3>5.3 Alignment statements</h3>
+      <p>
+        Alignment statements may be used when an external standard or regulatory instrument intends to recognise AIOBES as a compatible behavioural evaluation framework without making its requirements mandatory. Alignment statements must reference AIOBES using the normative citation format and must describe the area of compatibility, such as behavioural evidence, operational stability or long form behavioural evaluation.
+      </p>
+
+      <h3>5.4 Section level referencing</h3>
+      <p>
+        Section level referencing may be used when an external standard or regulatory instrument requires precision in citing specific parts of AIOBES. Section level references must use the normative citation format followed by the relevant section identifier. Section level referencing must not alter the meaning or scope of the referenced AIOBES content.
+      </p>
+
+      <h3>5.5 Non normative references</h3>
+      <p>
+        AIOBES may be cited informatively within annexes, guidance notes or explanatory material. Informative references must use the normative citation format and must not imply mandatory use of AIOBES requirements.
+      </p>
+
+      <h3>5.6 Prohibition on partial reproduction</h3>
+      <p>
+        External standards and regulatory instruments must not reproduce, alter or selectively modify AIOBES content. References to AIOBES must rely on citation rather than partial reproduction to ensure consistency with the behavioural domain and evidentiary structure defined by the standard.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>6. Integration Models</h2>
+
+      <h3>6.1 Direct reference</h3>
+      <p>
+        Direct reference is used when external standards or regulatory instruments cite AIOBES as the behavioural evaluation authority without modification. Direct reference is appropriate when behavioural evidence is required in its original form and when AIOBES requirements must be applied as written.
+      </p>
+
+      <h3>6.2 Cross mapping</h3>
+      <p>
+        Cross mapping is used when external standards or regulatory instruments require alignment between their own assessment structures and the behavioural domain defined by AIOBES. Cross mapping is appropriate when behavioural concepts or evidentiary elements must be matched to existing frameworks without replacing those frameworks.
+      </p>
+
+      <h3>6.3 Evidence alignment</h3>
+      <p>
+        Evidence alignment is used when external standards or regulatory instruments require behavioural evidence that is consistent with AIOBES but do not mandate full adoption of AIOBES methods. Evidence alignment is appropriate when behavioural evidence must support obligations defined in other standards while remaining compatible with AIOBES terminology and evidentiary structure.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>7. Evidence Requirements</h2>
+
+      <h3>7.1 Behavioural evidence outputs</h3>
+      <p>
+        AIOBES produces behavioural evidence describing operational behaviour, behavioural stability, behavioural consistency and behavioural risk indicators. Behavioural evidence outputs include structured behavioural observations, behavioural stability profiles, behavioural deviation records and long form behavioural evaluation reports. These outputs represent the behavioural domain defined by AIOBES and form the evidentiary basis for behavioural assessment.
+      </p>
+
+      <h3>7.2 Evidence available to external standards</h3>
+      <p>
+        External standards and regulatory instruments may rely on behavioural evidence produced under AIOBES when behavioural evaluation is required to support obligations defined outside the behavioural domain. External standards may use AIOBES behavioural evidence to satisfy behavioural evidence requirements, behavioural risk documentation, operational behaviour verification or behavioural consistency checks. External standards must rely only on behavioural evidence produced through AIOBES methods and must not reinterpret behavioural evidence outside the behavioural domain.
+      </p>
+
+      <h3>7.3 Boundaries of evidence responsibility</h3>
+      <p>
+        AIOBES is responsible only for behavioural evidence produced through its behavioural evaluation methods. External standards and regulatory instruments are responsible for determining whether AIOBES behavioural evidence satisfies their own obligations. AIOBES does not determine compliance with external standards, regulatory instruments or legal requirements. External standards must not imply that AIOBES behavioural evidence establishes compliance outside the behavioural domain or replaces evidentiary requirements defined by other standards.
+      </p>
+
+      <h3>7.4 Prohibition on evidentiary substitution</h3>
+      <p>
+        Behavioural evidence produced under AIOBES must not be used as a substitute for evidentiary requirements defined by external standards or regulatory instruments. External standards may use AIOBES behavioural evidence only for behavioural evaluation purposes and must not treat behavioural evidence as fulfilling non behavioural evidentiary obligations.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>8. Conformance Considerations</h2>
+
+      <h3>8.1 Effect of referencing AIOBES on conformance</h3>
+      <p>
+        Referencing AIOBES affects conformance only within the behavioural domain. Conformance claims made by external standards or regulatory instruments may rely on behavioural evidence produced under AIOBES, but referencing AIOBES does not establish compliance with obligations outside the behavioural domain. Conformance to AIOBES requires the use of AIOBES behavioural evaluation methods and the production of behavioural evidence defined by AIOBES.
+      </p>
+
+      <h3>8.2 Normative and non-normative use</h3>
+      <p>
+        Normative use occurs when external standards or regulatory instruments require behavioural evaluation under AIOBES and treat AIOBES requirements as binding. Non normative use occurs when AIOBES is referenced for guidance, alignment or evidentiary support without creating a conformance obligation. Non-normative use must not imply that AIOBES requirements were applied or that AIOBES behavioural evidence establishes compliance outside the behavioural domain.
+      </p>
+
+      <h3>8.3 Compliance statements</h3>
+      <p>
+        Compliance statements referencing AIOBES must specify whether the reference is normative or non-normative. Compliance statements must identify the behavioural evidence produced under AIOBES and must not imply compliance with obligations defined by external standards or regulatory instruments. Compliance statements must not state or imply that AIOBES establishes compliance outside the behavioural domain or replaces evidentiary requirements defined by other standards.
+      </p>
+
+      <h3>8.4 Prohibition on implied conformance</h3>
+      <p>
+        External standards and regulatory instruments must not imply conformance with AIOBES when AIOBES behavioural evaluation methods were not used. External standards must not imply that behavioural evidence produced outside AIOBES satisfies AIOBES requirements. Implied conformance is prohibited in both normative and non-normative references.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>9. Licensing and Usage</h2>
+
+      <h3>9.1 Permitted referencing and citation</h3>
+      <p>
+        AIOBES may be freely referenced, cited and integrated within external standards and regulatory instruments. Referencing AIOBES does not require licensing, permission or registration. External standards may include normative or non-normative references to AIOBES using the citation format defined in Section 5.
+      </p>
+
+      <h3>9.2 Permitted use within standards and regulatory documents</h3>
+      <p>
+        External standards and regulatory instruments may incorporate AIOBES by reference, apply AIOBES terminology, align evidentiary requirements with AIOBES or use behavioural evidence produced under AIOBES. External standards may use AIOBES for behavioural evaluation purposes and may integrate AIOBES within broader assessment frameworks, provided the behavioural domain defined by AIOBES is preserved.
+      </p>
+
+      <h3>9.3 Restrictions on modification</h3>
+      <p>
+        External standards and regulatory instruments must not modify, alter or reproduce AIOBES text. AIOBES content must not be edited, reworded, selectively reproduced or incorporated in a form that changes its meaning or scope. Integration must rely on citation, cross mapping or evidence alignment rather than modification of AIOBES content.
+      </p>
+
+      <h3>9.4 Restrictions on derivative works</h3>
+      <p>
+        External standards and regulatory instruments must not create derivative works that replicate or replace AIOBES behavioural evaluation methods. Derivative works that alter behavioural concepts, evidentiary structures or behavioural evaluation outputs are prohibited. External standards may define additional requirements outside the behavioural domain but must not redefine behavioural evaluation methods established by AIOBES.
+      </p>
+
+      <h3>9.5 Prohibition on misrepresentation</h3>
+      <p>
+        External standards and regulatory instruments must not imply that AIOBES requirements were applied when they were not. External standards must not imply that modified or non AIOBES behavioural evidence was produced under AIOBES. Misrepresentation of AIOBES use, scope or evidentiary status is prohibited in both normative and non-normative references.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>10. Document Structure and Versioning</h2>
+
+      <h3>10.1 Version identification</h3>
+      <p>
+        AIOBES documents must include a version identifier on the cover page, in the document metadata and in the normative references section. The version identifier must use the format defined in Section 5 and must remain stable for the duration of the version’s publication. Each version of AIOBES represents a complete behavioural evaluation standard and must be cited in full.
+      </p>
+
+      <h3>10.2 Version updates</h3>
+      <p>
+        Updates to AIOBES must be issued as new versions. Updates may include revisions to behavioural evaluation methods, evidentiary structures, terminology or integration rules. Each update must be published as a complete version and must not replace or modify previously published versions. Previously published versions remain valid for historical citation and for references made at the time of their publication.
+      </p>
+
+      <h3>10.3 Version reference rules</h3>
+      <p>
+        External standards and regulatory instruments must reference the specific version of AIOBES used for behavioural evaluation. References must use the version identifier exactly as published. External standards must not reference AIOBES without specifying the version and must not imply that behavioural evidence produced under one version satisfies requirements defined in another version.
+      </p>
+
+      <h3>10.4 Stability of citations</h3>
+      <p>
+        Citations to AIOBES must remain stable over time. External standards and regulatory instruments must not update citations automatically when new versions of AIOBES are released. Citations must remain fixed to the version originally referenced unless the external standard is formally revised. Stability of citations ensures traceability of behavioural evidence and prevents retroactive changes to conformance claims.
+      </p>
+
+      <h3>10.5 Archival access</h3>
+      <p>
+        All versions of AIOBES must remain accessible for reference, citation and historical review. External standards and regulatory instruments must ensure that references to older versions remain valid by maintaining access to the cited version. Archival access ensures continuity of behavioural evaluation and supports long term stability of standards integration.
+      </p>
+    </section>
+
+        <section class="section-card">
+      <h2>11. Publication and Maintenance</h2>
+
+      <h3>11.1 Publication responsibility</h3>
+      <p>
+        AIOBES must be published in a stable and accessible format. Publication must include the complete standards text, version identifier, document metadata and archival access to all previously published versions. Publication responsibility includes ensuring that the behavioural domain defined by AIOBES remains intact and that all published versions remain available for reference.
+      </p>
+
+      <h3>11.2 Maintenance process</h3>
+      <p>
+        Maintenance of AIOBES must follow a structured revision process. Revisions may address behavioural evaluation methods, evidentiary structures, terminology or integration rules. Maintenance activities must not modify previously published versions. Each revision must be issued as a new version in accordance with the versioning rules defined in Section 10.
+      </p>
+
+      <h3>11.3 Governance of revisions</h3>
+      <p>
+        Revisions to AIOBES must be made under a defined governance process. Governance responsibilities include evaluating proposed changes, ensuring consistency with the behavioural domain and determining whether revisions require publication of a new version. Governance decisions must preserve the integrity of AIOBES and must not introduce changes that alter the behavioural domain without explicit justification.
+      </p>
+
+      <h3>11.4 Change documentation</h3>
+      <p>
+        Each new version of AIOBES must include documentation describing changes from the previous version. Change documentation must identify revisions to behavioural evaluation methods, evidentiary structures, terminology or integration rules. Change documentation must not imply retroactive modification of previously published versions.
+      </p>
+
+      <h3>11.5 Continuity of behavioural evaluation</h3>
+      <p>
+        Maintenance activities must ensure continuity of behavioural evaluation across versions. Behavioural evidence produced under earlier versions remains valid for references made at the time of publication. Maintenance must not invalidate behavioural evidence produced under previous versions unless explicitly stated in the new version.
+      </p>
+    </section>
+
+    Section 12. Governance
+
+12.1 Governance authority 
+AIOBES is governed by its issuing body. The issuing body is responsible for maintaining the behavioural domain, approving revisions, protecting terminology and ensuring the stability of AIOBES across versions. Governance authority includes stewardship of the standard and oversight of all publication and maintenance activities.
+
+12.2 Decision making authority 
+Decisions regarding revisions, publication, versioning and maintenance must be made under a defined governance process. Decision making authority includes evaluating proposed changes, determining whether revisions are required and ensuring that updates remain consistent with the behavioural domain defined by AIOBES.
+
+12.3 Protection of the behavioural domain 
+Governance must ensure that the behavioural domain defined by AIOBES is preserved across versions. Proposed changes that alter behavioural concepts, evidentiary structures or behavioural evaluation methods must be evaluated for consistency with the behavioural domain. Governance must reject changes that compromise behavioural integrity.
+
+12.4 Consistency across versions 
+Governance must ensure consistency across versions of AIOBES. Revisions must not introduce contradictions, incompatible terminology or changes that disrupt continuity of behavioural evaluation. Consistency across versions supports stable referencing, reliable behavioural evidence and long term integration with external standards.
+
+12.5 Transparency of governance actions 
+Governance actions must be documented and made accessible. Documentation must include decisions regarding revisions, publication, versioning and maintenance. Transparency ensures traceability of changes and supports confidence in the stability and integrity of AIOBES.
+-Document Ends-
+
+    
     <!-- CONTENT SECTIONS WILL BE INSERTED HERE -->
     <!-- You will paste each converted section below as I generate them -->
 
