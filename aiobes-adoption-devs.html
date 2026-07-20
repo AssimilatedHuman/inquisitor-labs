@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIOBES Developer Adoption Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="AIOBES Developer Adoption Guide 1.0. Specification defining behavioural evaluation requirements, workflow testing methodologies and evidence production for engineering and product teams adopting the Artificial Intelligence Operational Behaviour Evaluation Standard.">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/aiobes-adoption-devs.html">
+
+  <meta property="og:title" content="AIOBES Developer Adoption Guide">
+  <meta property="og:description" content="Developer adoption specification defining behavioural evaluation requirements and workflow testing methodologies for AIOBES.">
+  <meta property="og:image" content="https://assimilatedhuman.github.io/inquisitor-labs/cover-inquisitor.JPG">
+  <meta property="og:url" content="https://assimilatedhuman.github.io/inquisitor-labs/aiobes-adoption-devs.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AIOBES Developer Adoption Guide">
+  <meta name="twitter:description" content="Developer adoption specification defining behavioural evaluation requirements and workflow testing methodologies for AIOBES.">
+  <meta name="twitter:image" content="https://assimilatedhuman.github.io/inquisitor-labs/cover-inquisitor.JPG">
+
+  <link rel="icon" href="/inquisitor-labs/favicon.ico">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #faf7f4;
+      line-height: 1.6;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 960px;
+      height: 140px;
+      background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      padding-top: 180px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-top: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0.4em 0 0.8em;
+    }
+
+    .section-card {
+      margin-top: 24px;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #00994d inset;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+
+    .aiobes-nav {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .aiobes-links a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .aiobes-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="aiobes-banner.png" alt="AIOBES logo header">
+  </div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="section-card">
+      <h1>AIOBES Developer Adoption Guide</h1>
+      <p>
+        <strong>Version:</strong> 1.0<br>
+        <strong>Published:</strong> July 2026<br>
+        <strong>Issued by:</strong> AIOBES Engineering Standards Group<br>
+        <strong>Status:</strong> Final Developer Specification<br>
+        <strong>Identifier:</strong> AIOBES DAS 1.0
+      </p>
+
+      <p>This document may be freely referenced, cited and integrated. Modification of AIOBES content is not permitted.</p>
+    </section>
+
+    <!-- SECTION 1 -->
+   <section class="section-card">
+  <h2>1. Who This Is For (and Why You Are Here)</h2>
+
+  <p>
+    This guide is for developers, engineers, test leads and product teams who are dealing with the same recurring problem across every AI deployment: your prompt tests pass, but the system collapses in production.
+  </p>
+
+  <p>You see it every week:</p>
+
+  <ul>
+    <li>A workflow that was stable in staging suddenly drifts mid execution.</li>
+    <li>A guardrail that behaved yesterday misfires today.</li>
+    <li>A conversation that looked aligned in testing derails when a real user interacts with it.</li>
+  </ul>
+
+  <p>
+    None of this is surprising. It is the predictable outcome of relying on prompt based testing, which only evaluates isolated inputs rather than real operational behaviour.
+  </p>
+
+  <p>
+    Meanwhile, compliance noise is rising. ISO 42001, NIST and the EU AI Act all demand behavioural evidence, but governance tools cannot give you any. Dashboards, policy portals and risk templates do not evaluate behaviour, so they are useless for the problems you actually face.
+  </p>
+
+  <p>If you are here, it is because:</p>
+
+  <ul>
+    <li>Your current testing does not catch real failures.</li>
+    <li>Your governance tools do not help you understand behaviour.</li>
+    <li>You need a practical, engineering grade way to evaluate AI systems that actually matches how they behave in production.</li>
+  </ul>
+
+  <p>This guide gives you that.</p>
+</section>
+
+
+
+
+    
+    <!-- MORE SECTIONS WILL BE INSERTED HERE -->
+
+    <div class="aiobes-nav">
+      <hr>
+      <nav class="aiobes-links">
+        <a href="aiobes.html">AIOBES Hub</a> -
+        <a href="aiobes-charter.html">Charter</a> -
+        <a href="aiobes-principles.html">Principles</a> -
+        <a href="aiobes-methodologies.html">Methodologies</a> -
+        <a href="aiobes-glossary.html">Glossary</a> -
+        <a href="aiobes-research.html">Research</a> -
+        <a href="aiobes-evidence.html">Evidence Requirements</a> -
+        <a href="aiobes-usecases.html">Use Cases</a>
+      </nav>
+      <hr>
+    </div>
+
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
