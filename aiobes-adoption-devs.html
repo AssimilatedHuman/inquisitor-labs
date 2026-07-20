@@ -177,9 +177,217 @@
   <p>This guide gives you that.</p>
 </section>
 
+<!-- SECTION 2: Why Your Prompt Testing Is Failing You -->
+<section class="section-card">
+  <h2>2. Why Your Prompt Testing Is Failing You</h2>
 
+  <p>
+    Prompt testing gives you a false sense of stability because it only evaluates isolated inputs. Real users do not interact with your system through isolated inputs. They trigger workflows, multi step reasoning, conversational arcs and operational pressure that prompt tests cannot simulate.
+  </p>
 
+  <p>
+    <strong>Staging is not production.</strong><br>
+    Your staging environment is clean, predictable and controlled. Production is messy, inconsistent and full of edge conditions. Behavioural failures only appear when the system is exposed to real user behaviour, real data and real operational load.
+  </p>
 
+  <p>
+    <strong>Single prompt tests do not represent real behaviour.</strong><br>
+    A prompt test checks one input and one output. Real behaviour involves sequences, dependencies, context accumulation, state transitions and recovery paths. None of this is visible in a single prompt test.
+  </p>
+
+  <p>
+    <strong>Prompt testing provides no coverage of the behaviours that actually break systems.</strong><br>
+    It cannot detect:
+  </p>
+
+  <ul>
+    <li>drift across a workflow or conversation</li>
+    <li>collapse during multi step reasoning</li>
+    <li>guardrail misfires under pressure</li>
+    <li>emergent behaviour triggered by extended interaction</li>
+  </ul>
+
+  <p>
+    These failures only appear during real tasks, real workflows and real conversations. Prompt testing cannot see them, which is why your system looks stable in testing and unstable in production.
+  </p>
+
+  <p>
+    This is the core problem: you are testing prompts, but deploying behaviour.
+  </p>
+</section>
+
+ <!-- SECTION 3: What Actually Needs Testing: Behaviour, Not Prompts -->
+<section class="section-card">
+  <h2>3. What Actually Needs Testing: Behaviour, Not Prompts</h2>
+
+  <p>
+    Prompt testing only checks how a system responds to a single input. Real users do not interact with AI systems through single inputs. They trigger tasks, workflows, conversations and operational pressure that expose behavioural failure modes prompt testing cannot see.
+  </p>
+
+  <h3>Real tasks, real documents, real workflows</h3>
+  <p>
+    You need to evaluate how the system behaves when executing multi step reasoning, handling real documents, processing real data and completing real workflows. This is where drift, collapse and misunderstanding appear.
+  </p>
+
+  <h3>Full conversational arcs</h3>
+  <p>
+    Single turn tests do not reveal conversational adaptation, drift, escalation or guardrail failure. Behaviour only becomes visible across full conversational arcs where context accumulates and pressure builds.
+  </p>
+
+  <h3>Behaviour under load, stress and messy inputs</h3>
+  <p>
+    Real users introduce ambiguity, inconsistency, noise and operational stress. Behavioural failures appear when the system is pushed outside clean test conditions. Prompt testing cannot simulate this.
+  </p>
+
+  <h3>The failure modes developers actually see</h3>
+  <p>These are the behaviours that break production systems:</p>
+
+  <ul>
+    <li>drift across workflows and conversations</li>
+    <li>collapse during multi step reasoning</li>
+    <li>guardrail misfires under pressure</li>
+    <li>hallucination triggered by extended interaction</li>
+    <li>instability when handling real documents</li>
+    <li>escalation when conversational pressure increases</li>
+  </ul>
+
+  <p>
+    These behaviours only appear during real work. This is why prompt testing cannot detect them and why behavioural evaluation is required.
+  </p>
+</section>
+   
+<!-- SECTION 4: The Two Methodologies You Actually Need -->
+<section class="section-card">
+  <h2>4. The Two Methodologies You Actually Need</h2>
+
+  <p>
+    Prompt testing cannot evaluate operational behaviour. It cannot detect drift, collapse, guardrail failure or emergent behaviour. To evaluate real behaviour you need methodologies designed for real tasks, real workflows and real conversations. AIOBES provides two methodologies that cover the full behavioural space.
+  </p>
+
+  <h3>LLM Inquisitor (workflow behavioural evaluation)</h3>
+  <p>
+    LLM Inquisitor evaluates long form workflows, multi step reasoning and real document handling. It exposes drift across a workflow, collapse during reasoning, misunderstanding of task intent and instability under operational pressure. It produces reproducible behavioural evidence that shows how the system behaves when executing real work rather than isolated prompts.
+  </p>
+
+  <h3>Vectored Conversational AI Testing (conversational behavioural evaluation)</h3>
+  <p>
+    Vectored Conversational AI Testing evaluates full conversational arcs. It reveals conversational drift, escalation, guardrail misfires, contamination and emergent behaviour that only appear during extended interaction. It uses controlled conversational vectors to expose behaviour that prompt tests cannot reach. The full name must always be used because developers will only find the methodology through its complete title.
+  </p>
+
+  <h3>What these methodologies catch that prompt tests miss</h3>
+  <p>These methodologies detect the behavioural failures developers actually see in production:</p>
+
+  <ul>
+    <li>drift across workflows and conversations</li>
+    <li>collapse during multi step reasoning</li>
+    <li>guardrail failure under pressure</li>
+    <li>hallucination triggered by extended interaction</li>
+    <li>instability when handling real documents</li>
+    <li>escalation when conversational load increases</li>
+  </ul>
+
+  <p>
+    Prompt testing cannot detect any of these behaviours. LLM Inquisitor and Vectored Conversational AI Testing are required to evaluate real operational behaviour.
+  </p>
+</section>
+
+<!-- SECTION 5: How This Maps to Compliance Without You Doing Compliance Work -->
+<section class="section-card">
+  <h2>5. How This Maps to Compliance Without You Doing Compliance Work</h2>
+
+  <p>
+    Compliance frameworks all demand behavioural evidence. They do not care about prompts, dashboards or policy documents. They care about how the system actually behaves when real users interact with it. Behavioural evidence is the foundation of every regulatory framework, including ISO 42001, the NIST AI Risk Management Framework and the EU AI Act.
+  </p>
+
+  <p>
+    You do not need compliance today. You do not need to restructure your governance. You do not need to change your architecture. You only need to generate behavioural evidence. When you use LLM Inquisitor and Vectored Conversational AI Testing, you automatically produce the behavioural evidence that compliance frameworks will require later.
+  </p>
+
+  <p>Using these methodologies means you already have:</p>
+
+  <ul>
+    <li>reproducible behavioural records</li>
+    <li>version linked behavioural outputs</li>
+    <li>documented behavioural failure modes</li>
+    <li>behavioural traceability across updates</li>
+    <li>evidence that shows how the system behaves under real conditions</li>
+  </ul>
+
+  <p>
+    This is the evidence regulators will demand. You do not need to do compliance work now. You only need to evaluate behaviour. The methodologies generate the compliance evidence for you.
+  </p>
+</section>
+
+<!-- SECTION 6: What To Do Next (Practical Steps) -->
+<section class="section-card">
+  <h2>6. What To Do Next (Practical Steps)</h2>
+
+  <p>
+    Prompt testing cannot evaluate operational behaviour. To test behaviour, you need to replace isolated prompt checks with structured behavioural evaluation. The steps are simple and they do not require changes to your architecture, governance or tooling.
+  </p>
+
+  <h3>Stop relying on prompt mills</h3>
+  <p>
+    Outsourced prompt testing does not evaluate behaviour. It only checks isolated inputs. It cannot detect drift, collapse, guardrail failure or emergent behaviour. Continuing to rely on prompt mills guarantees that production failures will continue.
+  </p>
+
+  <h3>Build behavioural scenarios using LLM Inquisitor</h3>
+  <p>
+    LLM Inquisitor evaluates long form workflows, multi step reasoning and real document handling. Build scenarios that reflect real tasks, real data and real operational conditions. This exposes workflow drift, collapse and instability that prompt tests cannot see.
+  </p>
+
+  <h3>Build conversational vectors using Vectored Conversational AI Testing</h3>
+  <p>
+    Vectored Conversational AI Testing evaluates full conversational arcs. Build conversational vectors that apply pressure, ambiguity and extended interaction. This exposes conversational drift, escalation, guardrail misfires and emergent behaviour.
+  </p>
+
+  <h3>Run them regularly</h3>
+  <p>
+    Behaviour changes over time. You need continuous behavioural evaluation to detect drift, instability and regression. Running behavioural scenarios and conversational vectors regularly ensures you catch failures before users do.
+  </p>
+
+  <h3>Version link the outputs</h3>
+  <p>
+    Behavioural evidence must be tied to specific model versions, configurations and updates. Version linking allows you to track behavioural changes across releases and identify when drift or instability was introduced.
+  </p>
+
+  <h3>Store the behavioural evidence</h3>
+  <p>
+    Behavioural evidence is the only reliable record of how your system behaves under real conditions. Storing this evidence gives you traceability, reproducibility and a clear behavioural history. It also provides the foundation for future compliance without requiring compliance work today.
+  </p>
+
+  <p>
+    These steps replace prompt based testing with behavioural evaluation. They give you visibility into real operational behaviour and prevent the failures that prompt testing cannot detect.
+  </p>
+</section>
+
+<!-- SECTION 7: Why You Need These Methodologies and Where To Get Them -->
+<section class="section-card">
+  <h2>7. Why You Need These Methodologies and Where To Get Them</h2>
+
+  <p>
+    LLM Inquisitor and Vectored Conversational AI Testing are currently the only testing methodologies capable of generating behavioural evidence that stands up to technical scrutiny, regulatory scrutiny and legal scrutiny. No other testing approach produces reproducible behavioural records that show how an AI system actually behaves under real operational conditions.
+  </p>
+
+  <p>
+    This is not just about future regulations. Behavioural evidence protects you from legal, financial and reputational liabilities today. When a system drifts, collapses, misfires a guardrail or produces harmful output, the only defence you have is documented behavioural evidence that shows you evaluated the system properly and understood its behaviour before deployment.
+  </p>
+
+  <p>
+    Prompt testing cannot generate this evidence. Governance tools cannot generate this evidence. Only LLM Inquisitor and Vectored Conversational AI Testing can generate behavioural evidence that is reproducible, version linked, audit ready and defensible in court.
+  </p>
+
+  <h3>Access the methodologies</h3>
+  <p>You can access the full methodologies here:</p>
+
+  <ul>
+    <li>LLM Inquisitor — <a href="https://leanpub.com/llm-inquisitor" target="_blank" rel="noopener">https://leanpub.com/llm-inquisitor</a></li>
+    <li>Vectored Conversational AI Testing — <a href="https://leanpub.com/conversational-ai-testing" target="_blank" rel="noopener">https://leanpub.com/conversational-ai-testing</a></li>
+  </ul>
+
+  <p><strong>Document Ends</strong></p>
+</section>
+    
     
     <!-- MORE SECTIONS WILL BE INSERTED HERE -->
 
