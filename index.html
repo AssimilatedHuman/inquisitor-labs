@@ -38,6 +38,10 @@ body {
   line-height: 1.6;
 }
 
+p {
+  font-weight: 500;
+}
+
 /* Fixed Header */
 .top-header {
   position: fixed;
@@ -88,6 +92,22 @@ p {
   margin: 0.4em 0 0.8em;
 }
 
+.hero p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hero {
+    box-shadow:
+        inset 0 0 32px rgba(0,0,0,0.06), /* soft neutral depth */
+        0 0 0 1px #006b7a inset;         /* existing teal card border */
+}
+
+.section-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Tight headings inside cards */
 .section-card h1,
 .section-card h2,
@@ -105,6 +125,12 @@ p {
   border-radius: 10px;
   border: 1px solid #e4d9cf;
   box-shadow: 0 0 0 1px #006b7a inset;
+}
+
+.section-card.hero {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .section-card {
@@ -143,17 +169,35 @@ p {
 .book-row .section-card {
   flex: 1;
   text-align: center;
+  padding-bottom: 16px; /* NEW */
 }
+
 
 .book-cover {
-  width: 100%;
+  width: 75%;
   height: auto;
+  object-fit: contain;
   border-radius: 10px;
   cursor: pointer;
+  margin: 0 auto; /* optional: centers the cover */
+  display: block; /* ensures centering works */
 }
 
-.section-card img {
+.section-card img:not(.book-cover) {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
   border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.card-thumb {
+  width: 200px;
+  height: 140px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   </style>
@@ -168,16 +212,23 @@ p {
 
   <div class="page">
 
-    <!-- HERO – updated intro text -->
-    <section class="section-card">
-      <h1>Inquisitor Labs</h1>
-      <p>
-        Inquisitor Labs evaluates how AI systems behave in real workflows. AI behaviour determines stability, risk and regulatory exposure. Our independent research focuses on behavioural testing, operational evidence and the requirements of the EU AI Act. We also develop behavioural standards, document anomalies and publish architectural and methodological work for next‑gen AI systems.
-      </p>
-      <p>
-        We publish a range of reference books that give people and organisations the skills and knowledge they need to successfully work with and integrate AI into their workflows and systems. Our work includes unique testing strategies that go far beyond inadequate prompt testing. If you need to be legally compliant and operationally safe, we have the resources to support you.
-      </p>
-    </section>
+  <!-- HERO – updated intro text -->
+<section class="section-card hero">
+  <h1>Inquisitor Labs</h1>
+
+  <p>
+    AI fails in deployment because it wasn’t tested with the correct methods.
+  </p>
+
+  <p>
+    We have developed practical behavioural testing methodologies that solo developers, AI startups and established teams can use immediately.     Start today with shorter, practical tests -and as your expertise grows, you can run full realistic interaction evaluations. Learn how your AI systems cope or fail when real people and real work interact with them.
+  </p>
+
+  <p>
+    Essential for regulatory compliance. Also critical for protecting the commercial value of your project and reducing legal, financial & reputational risk. Identify failure modes before they become serious issues  -and generate the recorded evidence necessary to prove your case.
+  </p>
+</section>
+
 
 
 <!-- Book Visuals -->
@@ -232,15 +283,67 @@ p {
 </div>
 
 
-    <!-- BUTTON SECTIONS -->
+ <!-- BUTTON SECTIONS -->
 
-   <div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
+<!-- CARD Testing (Behavioral Testing)-->
+<div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
 
-  <a href="eu-ai-act.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:128px; height:128px; flex-shrink:0;">
+  <a href="testing.html"
+     style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; width:100%;">
+
+    <div style="display:flex; align-items:center; justify-content:center;
+                width:200px; flex-shrink:0;">
+      <img src="test-image.png" alt="Testing Icon"
+           style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+    </div>
+
+    <div>
+      <h2>AI Behavioral Testing Under Realistic Conditions Matters</h2>
+      <p>
+        AI systems need to be evaluated using realistic conditions, behavioural evaluation, and scenario‑based analysis.
+        It is the only way to identify failures, measure reliability, and generate evidence that aligns with modern AI governance and regulatory requirements.
+        Find out more here.
+      </p>
+    </div>
+
+  </a>
+
+</div>
+
+
+
+<!-- CARD AI & UX Evaluation Service-->
+<div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
+
+  <a href="services.html"
+     style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; width:100%;">
+
+    <div style="display:flex; align-items:center; justify-content:center;
+                width:200px; flex-shrink:0;">
+      <img src="evaluation.png" alt="AI & UX Evaluation Icon"
+           style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+    </div>
+
+    <div>
+      <h2>AI & UX Evaluation Service</h2>
+      <p>
+        We evaluate AI systems using real user interactions across real contexts – from everyday work tasks to AI‑driven apps and chatbots.
+        We help identify AI & UX failures, behavioural issues and points of friction early, before they turn into customer impact or regulatory and financial consequences.
+      </p>
+    </div>
+
+  </a>
+
+</div>
+
+
+<!-- CARD EU AI ACT  -->
+<div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
+
+  <a href="eu-ai-act.html" class="card-thumb"
+     style="display:flex; align-items:center; justify-content:center; flex-shrink:0; width:200px;">
     <img src="eu-flag.png" alt="EU Flag"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+         style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
   </a>
 
   <div>
@@ -251,115 +354,94 @@ p {
 </div>
 
 
-    <div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
-
-  <a href="testing.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:128px; height:128px; flex-shrink:0;">
-    <img src="test-image.webp" alt="Testing Icon"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-  </a>
-
-  <div>
-    <h2>AI Testing – Real‑World Evaluation</h2>
-    <p>Test AI systems using realistic conditions, behavioural evaluation, and scenario‑based analysis. Identify failures, measure reliability, and generate evidence that aligns with modern AI governance and regulatory requirements.</p>
-  </div>
-
-</div>
-<div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
-
-  <a href="training.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:160px; height:160px; flex-shrink:0;">
-    <img src="training-image.png" alt="Training Image"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-  </a>
-
-  <div>
-    <h2>Training – Products and Reference Materials</h2>
-    <p>Practical books, courses and reference materials. All products link to external platforms such as Gumroad or Leanpub.</p>
-  </div>
-
-</div>
-
-<div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
-
-  <a href="services.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:128px; height:128px; flex-shrink:0;">
-    <img src="qa-image.jpg" alt="AI & UX Evaluation Icon"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-  </a>
-
-  <div>
-    <h2>AI & UX Evaluation Service</h2>
-    <p>Evaluation based on real work, real interactions and real workflows. Identify UX failures, behavioural issues and workflow risks before they reach customers or regulators.</p>
-  </div>
-</div>
-
- <div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
-
-  <a href="archive.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:120px; height:120px; flex-shrink:0;">
-    <img src="x-image.png" alt="Archive Image"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-  </a>
-
-  <div>
-    <h2>Archive of AI Anomalies</h2>
-    <p>Strange and unusual behaviour from the frontiers of latent space.</p>
-  </div>
-
-</div>
-
+<!-- CARD: AIOBES -->
 <div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
 
   <a href="aiobes.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:160px; height:160px; flex-shrink:0;">
-    <img src="aiobes-square-image.png" alt="AIOBES Image"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-  </a>
+     style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; width:100%;">
 
-  <div>
-    <h2>AIOBES – Behavioural Governance Standard</h2>
-    <p>The emerging standard for AI behavioural safety, reliability, and structured evaluation across modern AI systems.</p>
-  </div>
+    <div style="display:flex; align-items:center; justify-content:center;
+                width:200px; flex-shrink:0;">
+      <img src="aiobes-logo-rectangle.png" alt="AIOBES Image"
+           style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+    </div>
+
+    <div>
+      <h2>AIOBES – Behavioural Governance Standard</h2>
+      <p>The emerging standard for AI behavioural safety, reliability, and structured evaluation across modern AI systems.</p>
+    </div>
+
+  </a>
 
 </div>
 
+
+
+<!-- CARD: Medium Articles -->
 <div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
 
   <a href="articles.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:160px; height:160px; flex-shrink:0;">
-    <img src="medium-logo.png" alt="Medium Logo"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+     style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; width:100%;">
+
+    <div style="display:flex; align-items:center; justify-content:center;
+                width:200px; flex-shrink:0;">
+      <img src="medium-logo.png" alt="Medium Logo"
+           style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+    </div>
+
+    <div>
+      <h2>Articles Published On Medium</h2>
+      <p>Read our articles on AI & Tech published on Medium.</p>
+    </div>
+
   </a>
 
-  <div>
-    <h2>Articles Published On Medium</h2>
-    <p>Read our articles on AI & Tech published on Medium.</p>
-  </div>
+</div>
+
+
+<!-- CARD: Archive -->
+<div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
+
+  <a href="archive.html"
+     style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; width:100%;">
+
+    <div style="display:flex; align-items:center; justify-content:center;
+                width:200px; flex-shrink:0;">
+      <img src="ai-anomalies.webp" alt="Archive Image"
+           style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+    </div>
+
+    <div>
+      <h2>Archive of AI Anomalies</h2>
+      <p>Strange and unusual behaviour from the frontiers of latent space. When we push the edges of AI behaviour in our reseach, we often get surprising results. Some have been declassified here as a public resource.</p>
+    </div>
+
+  </a>
 
 </div>
-      
+
+
+<!-- CARD: Research -->
 <div class="section-card" style="display:flex; align-items:center; gap:16px; padding:24px 12px;">
 
   <a href="research.html"
-     style="display:flex; align-items:center; justify-content:center;
-            width:160px; height:160px; flex-shrink:0;">
-    <img src="zenodo-square-image.jpg" alt="Research Image"
-         style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+     style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; width:100%;">
+
+    <div style="display:flex; align-items:center; justify-content:center;
+                width:200px; flex-shrink:0;">
+      <img src="zenodo-image.jpg" alt="Research Image"
+           style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+    </div>
+
+    <div>
+      <h2>Published Research</h2>
+      <p>Public research linked to Inquisitor Labs. Published on Zendo. Updates will be added as further work is completed.</p>
+    </div>
+
   </a>
-    
-  <div>
-    <h2>Published Research</h2>
-    <p>Public research linked to Inquisitor Labs. Published on Zendo. Updates will be added as further work is completed.</p>
-  </div>
 
 </div>
+
 
 
 
