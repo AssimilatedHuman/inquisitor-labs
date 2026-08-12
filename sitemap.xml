@@ -89,6 +89,11 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/insights.html</loc>
   </url>
 
+  <!-- working with AI -Browser extensions page-->
+  <url>
+    <loc>https://assimilatedhuman.github.io/inquisitor-labs/working-with-ai.html</loc>
+  </url>
+  
   <!-- Testing Cluster -->
   <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/testing.html</loc>
