@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Working With AI – Inquisitor Labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Browser extensions designed to improve workflow clarity, stability and control when working with any browser‑based AI system.">
+
+  <link rel="canonical" href="https://assimilatedhuman.github.io/inquisitor-labs/working-with-ai.html">
+
+  <meta property="og:title" content="Working With AI – Inquisitor Labs">
+  <meta property="og:description" content="Overview of browser extensions that improve workflow clarity and stability when working with AI systems.">
+  <meta property="og:image" content="https://assimilatedhuman.github.io/inquisitor-labs/cover-inquisitor.JPG">
+  <meta property="og:url" content="https://assimilatedhuman.github.io/inquisitor-labs/working-with-ai.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Working With AI – Inquisitor Labs">
+  <meta name="twitter:description" content="Browser extensions designed to improve workflow clarity and stability when working with AI systems.">
+  <meta name="twitter:image" content="https://assimilatedhuman.github.io/inquisitor-labs/cover-inquisitor.JPG">
+
+  <link rel="icon" href="/inquisitor-labs/favicon.ico">
+
+  <style>
+    /* ——— same CSS as testing.html ——— */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #faf7f4;
+      line-height: 1.6;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 960px;
+      height: 140px;
+      background: #000;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .top-header img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      padding-top: 140px;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+      color: #1f1a17;
+      margin-top: 1.6em;
+      margin-bottom: 0.4em;
+    }
+
+    h1 { font-size: 1.9rem; margin-top: 1.2em; }
+    h2 { font-size: 1.4rem; }
+
+    p { margin: 0.4em 0 0.8em; }
+
+    /* Card layout */
+    .section-card {
+      margin-top: 24px;
+      padding: 12px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 0 0 1px #006b7a inset;
+    }
+
+    .extension-card {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 12px;
+    }
+
+    .extension-left {
+      width: 30%;
+      flex-shrink: 0;
+    }
+
+    .extension-left img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .extension-right {
+      width: 70%;
+    }
+
+    .footer-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-header">
+    <img src="inquisitor_lab_logo_header.png" alt="Inquisitor Labs">
+  </div>
+
+  <div class="page">
+
+    <!-- ——— Intro Card ——— -->
+    <section class="section-card" style="display:flex; align-items:center; gap:16px; padding:8px 12px;">
+      <div style="width:200px; flex-shrink:0;">
+        <img src="working-with-ai.png" alt="Working With AI" style="width:100%; border-radius:10px;">
+      </div>
+
+      <div>
+        <h1>Working With AI</h1>
+        <p>
+          We’ve developed a range of browser extensions designed to help you get more out of any browser‑based AI system - from major freely available lab models to your own custom local builds.
+        </p>
+        <p>
+          Each tool focuses on practical workflow improvements: clearer prompts, faster iteration, better UI control, and more predictable behaviour. These extensions are listed below.
+        </p>
+      </div>
+    </section>
+
+    <!-- ——— Extension Cards ——— -->
+
+<section class="section-card extension-card">
+  <div class="extension-left">
+    <img src="screenshot_drift_anchor.jpg" alt="Drift Anchor Screenshot">
+  </div>
+
+  <div class="extension-right">
+
+    <h2>Drift Anchor (Web Broswer Extension)</h2>
+
+    <p>
+      Drift Anchor is a simple way to keep your rules steady during long AI sessions. The AI drifts, forgets things, or starts rewriting your instructions. Drift Anchor gives you a set of persistent text blocks you can re‑inject whenever the AI wanders off. Each block stores its own text, survives browser and system restarts, and works on any browser‑based AI system. It’s available for both Chrome and Edge.
+    </p>
+
+    <p><strong>AI systems drift. This keeps your rules steady.</strong></p>
+
+    <h2>Using Drift Anchor Effectively</h2>
+
+    <p>
+      Drift Anchor provides six independent text boxes. Each box stores its own content and persists across Chrome restarts and Windows restarts. You can prepare structured prompts in advance and inject only the parts you need, exactly when you need them.
+    </p>
+
+    <p>
+      Injection attempts to place the text directly into the site’s AI prompt field. Some sites allow this, many do not. When injection doesn’t work, <strong>use the Copy button and then manually paste</strong> the text yourself.
+    </p>
+
+    <h3>Typical uses</h3>
+
+    <ol>
+      <li>
+        <strong>Formatting Rules</strong><br>
+        Use this block to define how you want the AI to structure its output.<br>
+        Examples:<br>
+        • “Use short paragraphs and clear section headers.”<br>
+        • “No metaphors, no filler, no conversational tone.”<br>
+        • “Lists must be single‑level, no nested bullets.”<br>
+        This keeps the model from drifting into rambling or decorative writing.
+      </li>
+
+      <li>
+        <strong>AI Persona</strong><br>
+        Set the tone and interaction style.<br>
+        Examples:<br>
+        • “Direct, literal, technical. No hype.”<br>
+        • “Dry, concise, adult tone. No emojis.”<br>
+        • “Explain reasoning only when asked.”<br>
+        Re‑inject this whenever the model slips into cheerleading or over‑explanation.
+      </li>
+
+      <li>
+        <strong>AI Role</strong><br>
+        Define the functional role the model should adopt.<br>
+        Examples:<br>
+        • “Act as a developer reviewing code.”<br>
+        • “Act as a technical editor improving clarity.”<br>
+        • “Act as a requirements analyst.”<br>
+        Roles drift easily, so this block helps pull the model back to the correct mode.
+      </li>
+
+      <li>
+  <strong>Context</strong><br>
+  Store the project outline or the specific thing you’re working on.<br>
+  Examples:<br>
+  • “This is for a job application cover letter.”<br>
+  • “We’re drafting a message to a landlord about a repair.”<br>
+  • “This is the outline for a short story set in winter.”<br>
+  • “We’re working on a plan for reorganising the garage.”<br>
+  • “This is the description of the product I’m selling online.”<br>
+  Re‑inject when the AI starts forgetting what the session is about.
+</li>
+
+<li>
+  <strong>Critical Info</strong><br>
+  Facts the AI must not distort.<br>
+  Examples:<br>
+  • Names of people involved (“Emma is the tenant, Mark is the landlord”).<br>
+  • Constraints (“must fit in a 2‑metre space”, “budget is £150”).<br>
+  • Important details (“the appointment is on Thursday”, “the parcel is already paid for”).<br>
+  • Specific wording that must stay unchanged (“use this exact sentence in the email”).<br>
+  This block prevents the AI from mutating or rewriting details that need to stay exact.
+</li>
+
+      <li>
+        <strong>Spare Block</strong><br>
+        A general‑purpose slot for anything temporary or session‑specific.<br>
+        Examples:<br>
+        • A short checklist<br>
+        • A temporary constraint<br>
+        • A snippet you need to reuse across turns<br>
+        It’s simply an extra box for whatever doesn’t fit cleanly into the other categories.
+      </li>
+    </ol>
+
+    <h3>Workflow notes</h3>
+    <ul>
+      <li>Re‑inject your rules whenever the model starts drifting.</li>
+      <li>Keep persona, role and formatting separate — it reduces distortion.</li>
+      <li>Use Critical Info to anchor facts the model tends to mutate.</li>
+      <li>Use the Spare Block for temporary constraints or session‑specific instructions.</li>
+      <li>When injection doesn’t work, use the Copy button and then manually paste.</li>
+      <li>Treat Drift Anchor as your reset point during long conversations.</li>
+    </ul>
+
+    <p><strong>Download:</strong> Coming soon</p>
+  </div>
+</section>
+
+
+    <!-- Scene Stealer -->
+<section class="section-card extension-card">
+  <div class="extension-left">
+    <img src="screenshot_scene_stealer.jpg" alt="Scene Stealer Screenshot Top">
+    <img src="screenshot_scene_stealer_a.jpg" alt="Scene Stealer Screenshot Middle">
+    <img src="screenshot_scene_stealer_b.jpg" alt="Scene Stealer Screenshot Bottom">
+  </div>
+
+  <div class="extension-right">
+
+    <h2>Scene Stealer (Web Broswer Extension)</h2>
+
+    <p>
+      Scene Stealer helps you set up creative scenes, situations, or moments for you to explore and develop with AI. Each block stores its own text and lets you inject or copy it into the AI prompt field. All fields are optional. Provide only the information relevant to the output you want the AI to generate. You can define the idea, background, style, current moment, roles, and any extra details you want the AI to follow. It’s available for both Chrome and Edge.
+    </p>
+
+    <p><strong>Build the scene. Let the AI explore it.</strong></p>
+
+    <h2>Using Scene Stealer Effectively</h2>
+
+    <ol>
+
+      <li>
+        <strong>Concept / Idea</strong><br>
+        Describe the core idea or premise you want to explore.<br>
+        Examples:<br>
+        • “I am developing a brainstorming session on a creative topic.”<br>
+        • “I am developing a novel about a specific situation or theme.”<br>
+        • “I am developing dialogue for a video short.”<br>
+        • “I am developing a simple scene about two people disagreeing.”<br>
+        Start with: “I am developing…”
+      </li>
+
+      <li>
+        <strong>Background</strong><br>
+        Enter relevant setting information, history, rules, assumptions, or background details.<br>
+        Examples:<br>
+        • “This is set in a science fiction world with political conflict between rival factions.”<br>
+        • “This is set around two people arguing about technological change.”<br>
+        • “This is set in a small town dealing with a local issue.”<br>
+        Start with: “This is set in…” or “The background is…”
+      </li>
+
+      <li>
+        <strong>Stylistic Intent</strong><br>
+        Describe tone, pacing, or stylistic direction.<br>
+        Examples:<br>
+        • “In the style of a space opera fantasy.”<br>
+        • “In the style of a noir detective novel.”<br>
+        • “In the style of a humorous explainer video.”<br>
+        • “In the style of a grounded drama.”<br>
+        Start with: “In the style of…”
+      </li>
+
+      <li>
+        <strong>Story So Far</strong><br>
+        Start with: “The story so far / current situation is…”<br>
+        Examples:<br>
+        • “The detective has discovered an unusual clue.”<br>
+        • “The rebels have won their first victory over the empire.”<br>
+        • “The explainer video has introduced the rapid pace of technology.”<br>
+        • “The main character has just arrived somewhere important.”<br>
+      </li>
+
+      <li>
+        <strong>Current Scene</strong><br>
+        Describe the moment you want the AI to simulate or explore.<br>
+        Examples:<br>
+        • “The rebels debate their next move.”<br>
+        • “The detective questions someone connected to the clue.”<br>
+        • “Show the positive impacts of technology on everyday life compared to 50 years ago.”<br>
+        • “Two people try to resolve a disagreement.”<br>
+        Start with: “Current scene or scenario is…”
+      </li>
+
+      <li>
+        <strong>AI Role</strong><br>
+        Describe the role the AI should take in the scene or exploration.<br>
+        Examples:<br>
+        • “You are the narrator of the story.”<br>
+        • “You are playing the part of a character.”<br>
+        • “Your role is a lively sparring partner discussing my concept.”<br>
+        • “You are the voiceover explaining the situation.”<br>
+        Start with: “You are…” or “Your role is…”
+      </li>
+
+      <li>
+        <strong>User Role</strong><br>
+        Describe the role you are taking in the scene or exploration.<br>
+        Examples:<br>
+        • “I am the detective questioning a suspect.”<br>
+        • “I am the rebel commander faced with a difficult choice.”<br>
+        • “I am the director of the story giving instructions as we go.”<br>
+        • “I am the person trying to solve the problem.”<br>
+        Start with: “I am…” or “I am playing the role of…”
+      </li>
+
+      <li>
+        <strong>Additional Info</strong><br>
+        Add any extra context that affects the scene or exploration.<br>
+        Examples:<br>
+        • “The rebels are being hunted by the empire.”<br>
+        • “The detective has a past romantic history with the suspect.”<br>
+        • “The explainer video is aimed at a younger audience.”<br>
+        • “The characters are under time pressure.”<br>
+        Start with: “Additional facts to consider…” or “Important points to note…”
+      </li>
+
+      <li>
+        <strong>Format Selection</strong><br>
+        Choose the output format you want the AI to produce.<br>
+        Examples:<br>
+        • “The format is a screenplay.”<br>
+        • “The format is a noir detective novel.”<br>
+        • “The format is a 3‑minute short script for social media.”<br>
+        • “The format is a simple dialogue scene.”<br>
+        Start with: “The format is…”
+      </li>
+
+    </ol>
+
+     <p><strong>Download:</strong> Coming soon</p>
+ 
+
+  </div>
+</section>
+
+
+
+    <section class="section-card extension-card">
+  <div class="extension-left">
+    <img src="screenshot_mood_shot.jpg" alt="Mood Shot Screenshot">
+  </div>
+
+  <div class="extension-right">
+
+    <h2>
+Mood Shot: Persona Style Mixer for AI<br>(Web Browser Extension)
+</h2>
+
+    <p>
+      Mood Shot is a persona style mixer for AI. It lets you shape how the AI behaves by adjusting sliders for tone, warmth, enthusiasm, directness, creativity, and more. As you move the sliders, Mood Shot builds a combined persona prompt in real time. You can inject that prompt into the AI text box when the site allows it, or use the Copy button and paste it yourself. Mood Shot works with any web based AI chatbot on Chrome or Edge.
+    </p>
+
+    <p><strong>Pick the mood. The AI follows it.</strong></p>
+
+    <h2>Using Mood Shot Effectively</h2>
+
+    <p>
+      Mood Shot gives you fine grained control over the AI's behaviour. Each slider adjusts a specific dimension:
+    </p>
+
+    <ul>
+      <li><strong>Formal to Casual</strong> controls how structured or relaxed the AI's tone is.</li>
+      <li><strong>Cool to Warm</strong> adjusts how emotionally neutral or friendly the AI feels.</li>
+      <li><strong>Reserved to Enthusiastic</strong> sets how energetic or understated the delivery should be.</li>
+      <li><strong>Diplomatic to Direct</strong> determines whether the AI should be tactful or straightforward.</li>
+      <li><strong>Analytical to Creative</strong> shifts the AI toward logic or imagination.</li>
+    </ul>
+
+    <p>
+      As you change the sliders, Mood Shot assembles a persona prompt that reflects your chosen mix. There are 3125 possible combinations, giving you a wide range of styles to experiment with.
+    </p>
+
+    <h3>Style Controls</h3>
+
+    <ul>
+      <li><strong>Apply Style</strong> inserts the assembled persona prompt into the AI's input field when supported.</li>
+      <li><strong>Copy Style</strong> copies the persona prompt to your clipboard.</li>
+      <li><strong>Apply Reset Prompt</strong> sends a neutral baseline prompt to the AI.</li>
+      <li><strong>Copy Reset Prompt</strong> copies the neutral baseline prompt to your clipboard.</li>
+    </ul>
+
+    <h3>Instructions</h3>
+
+    <p>
+      Mood Shot works with any freely available web based AI. System restrictions permitting, it is a simple way to adjust the AI's persona without writing long behavioural prompts yourself. Pick your settings, generate the style, and inject or paste it into the AI.
+    </p>
+
+    <h3>Behaviour Notice</h3>
+    <p>
+      Mood Shot may produce exaggerated or unpredictable AI behaviour, especially with extreme slider combinations. Treat all outputs with caution.
+    </p>
+
+    <h3>Compatibility</h3>
+    <p>
+      Apply Style may not work with all web based AIs. Copy Style is always reliable.
+    </p>
+
+<p><strong>Download:</strong> Coming soon</p>
+
+  </div>
+</section>
+
+
+   <section class="section-card extension-card">
+  <div class="extension-left">
+    <img src="screenshot_turn_prompter.jpg" alt="Turn Prompter Screenshot">
+  </div>
+
+  <div class="extension-right">
+
+    <h2>Turn Prompter (Web Browser Extension)</h2>
+
+    <p>
+      Turn Prompter is a lightweight interface built for a heavy purpose. It gives developers and QA testers a fast way to run short, controlled test conversations without workflow friction. It accepts a column of five CSV cells or any input containing exactly five lines, where each line ends with a Return or Enter line break. Each line is placed into Turn 1 through Turn 5 in order, ready to inject or copy into any web based AI.
+    </p>
+
+    <p>
+      Turn Prompter keeps the UI minimal so the testing process stays focused. The concept behind it is not lightweight. It is designed for structured, repeatable, multi turn evaluation, where consistency matters and manual copy paste slows everything down.
+    </p>
+
+    <h3>How Turn Prompter Works</h3>
+
+    <ul>
+      <li><strong>Prepare five user side turns</strong> in a single CSV column or as five separate lines.</li>
+      <li><strong>Ensure each line ends with a Return or Enter line break</strong> so Turn Prompter can detect the boundaries.</li>
+      <li><strong>Paste the five lines</strong> into the input box.</li>
+      <li><strong>Select Generate Turns</strong> to map each line to Turn 1 through Turn 5.</li>
+      <li><strong>Inject</strong> places the text directly into the AI input field when supported.</li>
+      <li><strong>Copy</strong> lets you paste the text manually when injection is not available.</li>
+    </ul>
+
+    <p>
+      Turn Prompter does not rewrite or modify your text. It simply assigns each line to its own turn for controlled testing.
+    </p>
+
+    <h3>Usage Notes</h3>
+
+    <p>
+      Turn Prompter works with any model. Injection is fully reliable on local models. Some hosted AIs may accept injected blocks intermittently depending on their own safety rules. Copy is a reliable fallback when injection is unsupported.
+    </p>
+
+    <p>
+      Turn Prompter is intended for short, five turn test runs. It is ideal for prompt engineers, extension developers, QA testers, and anyone who needs to repeatedly test the same structured inputs without friction.
+    </p>
+
+    <p><strong>Download: coming soon</strong></p>
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <p class="footer-nav">
+      <a href="index.html">Home</a> ·
+      <a href="insights.html">Insights</a> ·
+      <a href="testing.html">Testing</a> ·
+      <a href="research.html">Research</a> ·
+      <a href="training.html">Training</a> ·
+      <a href="openuse.html">Open Use</a> ·
+      <a href="collaborations.html">Collaborations</a> ·
+      <a href="glossary.html">Glossary</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="eu-ai-act.html">EU AI Act</a> ·
+      <a href="aiobes.html">AIOBES</a>
+    </p>
+
+  </div>
+</body>
+</html>
