@@ -174,6 +174,26 @@
   margin: 32px 0 16px;
 }
 
+/* Force all images inside section-card to stack vertically */
+.section-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+}
+
+/* Make image stacks behave like the old page */
+.section-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+}
+
+/* Prevent images from acting like flex items */
+.section-card img {
+  flex: 0 0 auto;
+}
   </style>
 </head>
 
@@ -195,121 +215,260 @@
 
   <div>
     <h1>AI Behavioural Testing</h1>
+<p>
+Deployed commercial AI systems do not fail in the isolation of a single prompt. Their failures emerge across behaviour, over time, across workflows, and through realistic conversational or operational sequences.
+</p>
+
+<p>
+  Our testing methodologies expose AI behaviour under realistic conditions and provide the structures needed to evaluate systems in operational workflows. These methods produce auditable behavioural evidence suitable for compliance, risk assessment, and real‑world deployment.
+</p>
+
+  </div>
+
+</section>
+
+<section class="section-card" style="display:flex; align-items:center; gap:16px; padding:8px 12px;">
+
+  <div style="display:flex; align-items:center; justify-content:center;
+              width:200px; flex-shrink:0;">
+    <img src="mit_headline.jpg" alt="95% AI Deployment Failure"
+         style="width:100%; height:auto; object-fit:cover; border-radius:10px;">
+  </div>
+
+  <div>
+    <h2>Why Are Most AI Deployments Failing?</h2>
 
     <p>
-      AI systems do not fail at the level of prompts. They fail at the level of behaviour. Behavioural testing examines how a system behaves across time, across workflows, and across realistic conversational or operational sequences.
+      AI is moving faster than organisations can understand or control, and public discussion around it is loud,
+      polarised, and often misinformed. That misinformation has pushed lawmakers to introduce ill‑conceived rules
+      that add pressure to companies already struggling with deployment.
     </p>
+
+    <p>Most AI rollouts are failing in practice. MIT reports up to 95 percent showing issues.</p>
+
+    <ul>
+      <li>inaccurate outputs</li>
+      <li>workflow disruption</li>
+      <li>legal teams blocking use</li>
+      <li>bad information entering decisions</li>
+    </ul>
+
     <p>
-      It focuses on stability, predictability, behavioural integrity, and real workflow performance. This page introduces the core ideas behind AI behavioural testing and links to the pages that expand each part of the discipline.
+      These failures carry real liabilities -operational, reputational, financial, and legal- and all of them
+      existed long before any new legislation was considered.
+    </p>
+
+    <p>
+      Regulators are now imposing serious financial and legal penalties for non‑compliance, backed by burdensome
+      evidentiary requirements that most organisations have no idea how to meet. AI governance and auditing services
+      are everywhere, yet fundamental testing is not. You cannot govern a system you do not understand, and you cannot
+      audit a system that has no proper evidence.
+    </p>
+
+    <p>This is the situation developers find themselves in.</p>
+  </div>
+
+</section>
+
+<section class="section-card" style="display:flex; align-items:flex-start; gap:16px; padding:8px 12px;">
+
+  <!-- LEFT COLUMN (fixed width, same as other cards) -->
+  <div style="width:200px; flex-shrink:0;">
+    <div class="image-stack">
+      <img src="prompt_test.png">
+      <img src="prompt_fail.png">
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+
+  <div>
+    <h2>Why Prompt Testing Fails</h2>
+
+    <p>
+      Many companies have approached AI as if it were traditional IT. Deterministic systems produce fixed outputs from fixed logic; modern AI generates probabilistic pattern‑matched continuations. This mismatch has been a major source of AI deployment failures at all levels.
+    </p>
+
+    <p>
+      Developers, unsurprisingly, tested AI the way they test software: short inputs, clean conditions, controlled environments. Real workflows are nothing like this -they are messy, multi‑step, multi‑actor, and unfold over long durations. Under those conditions, AI systems break.
+    </p>
+
+    <p>
+      The industry default has been prompt testing: one input, one output, judged in isolation. But real AI use is conversational, stateful, and embedded in workflows. Prompt tests cannot reveal the failure modes that appear in real deployments:
+    </p>
+
+    <ul>
+      <li>behaviour changing over time</li>
+      <li>behaviour diverging across similar inputs</li>
+      <li>behaviour collapsing under pressure</li>
+      <li>context loss across long workflows</li>
+      <li>pattern‑completion hallucinations</li>
+    </ul>
+
+    <p>
+      The majority of companies have struggled to take ownership of testing. Many do not know who should test, what should be tested, or how testing should be done. Some outsource the work to “prompt mills” -services that generate convoluted one‑off prompts, deliver shallow results, and provide no insight into how AI behaves under real conditions.
+    </p>
+  </div>
+
+</section>
+
+<section class="section-card" style="display:flex; align-items:flex-start; gap:16px; padding:8px 12px;">
+
+  <!-- LEFT COLUMN: image stack, same width as other cards -->
+  <div style="width:200px; flex-shrink:0;">
+    <div class="image-stack">
+      <a href="https://zenodo.org/records/20435494" target="_blank">
+        <img src="zenodo_realistic.png" alt="zenodo realistic testing paper">
+      </a>
+
+ <!-- Spacer to push second image further down -->
+    <div style="height:140px;"></div>
+
+      <a href="https://zenodo.org/records/21045949" target="_blank">
+        <img src="zenodo_conversational.png" alt="zenodo convesrational paper">
+      </a>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN: content -->
+  <div>
+    <h2>Beyond Prompt Testing</h2>
+
+    <p>
+      Prompt testing collapses under real conditions. Our research with conversational AI systems identified two structural inadequacies that explain why deployments fail even when prompt tests look clean-and why organisations keep shipping systems in an unsatisfactory state.
+    </p>
+
+    <h3>1. Real workflows expose failure modes that prompt tests cannot see</h3>
+    <p>
+      Administrative work, report writing, and multi-step operational tasks reveal behavioural failures that only appear across time and under workflow pressure:
+    </p>
+
+    <ul>
+      <li>drift</li>
+      <li>context loss</li>
+      <li>collapse</li>
+      <li>pattern-completion errors</li>
+      <li>instability under load</li>
+    </ul>
+
+    <p>
+      These failures matter at the point of production and downstream, where they enter decisions, records, and compliance exposure.
+    </p>
+
+    <h3>2. The conversational layer destabilises user experience</h3>
+    <p>
+      The interaction itself is a behavioural surface. Tone, frustration, repetition, and pressure shift model behaviour, producing:
+    </p>
+
+    <ul>
+      <li>broken workflows</li>
+      <li>user frustration</li>
+      <li>resentment toward the system</li>
+      <li>antagonistic exchanges</li>
+      <li>abandonment of tools meant to improve efficiency</li>
+    </ul>
+
+    <p>
+      When the system’s purpose is smoother operations, conversational instability becomes a deployment-level failure.
+    </p>
+
+    <h3>Methodology Basis</h3>
+    <p>
+      These conclusions come from our behavioural testing of real conversational AI systems. The formal papers on Zenodo set out that methodology, and it forms the basis of the practical testing and evaluation resources we provide.
     </p>
   </div>
 
 </section>
 
 
+<section class="section-card" style="display:flex; align-items:flex-start; gap:16px; padding:8px 12px;">
+
+  <!-- LEFT COLUMN (fixed width, same as other cards) -->
+<div style="width:200px; flex-shrink:0;">
+  <div class="image-stack" style="padding-top:40px;">
+
+    <a href="https://leanpub.com/llm-inquisitor" target="_blank">
+      <img src="cover_inquisitor_small.jpg" alt="book cover 1">
+    </a>
+
+    <!-- Spacer to push second image further down -->
+    <div style="height:240px;"></div>
+
+    <a href="https://leanpub.com/conversational-ai-testing" target="_blank">
+      <img src="cover_vectored_small.jpg" alt="book cover 2">
+    </a>
+
+  </div>
+</div>
 
 
+  <!-- RIGHT COLUMN -->
 
-    <section class="section-card">
-      <div class="section-divider"></div>
-      <h2>Core Concepts</h2>
+  <div>
+    <h2>Resources For Testing AI That You Can Use Today</h2>
 
-      <details>
-        <summary>Why Behavioural Evidence Matters</summary>
-        <p>
-          Legal teams explain what the law demands, but not whether you have the evidence. Auditors confirm whether evidence exists, but not how to produce it. Behavioural testing fills this gap by showing how to generate behavioural evidence suitable for real deployments.
-        </p>
-        <p>
-          It examines how systems behave across time and workflows, not just in isolated prompt tests, so you can stay compliant and avoid liability.
-        </p>
-      </details>
-      <details>
-        <summary>Why Prompt Testing Is Not Enough</summary>
-        <p>
-          Prompt testing treats AI systems as if they were simple input output machines. Modern models do not behave this way. They change state, accumulate context, shift behaviour as interactions progress, and behave differently under pressure or load.
-        </p>
-        <p>
-          Prompt testing cannot reveal whether a system is stable, predictable, or safe across time. It cannot show drift, collapse, or behavioural divergence. These failures only appear when you test behaviour, not prompts.
-        </p>
-        <p>
-          See <a href="testing-prompt-testing.html">Prompt Testing</a>.
-        </p>
-      </details>
+    <h3>1) Evaluating and Testing AI Using Real‑World Work</h3>
+    <p>
+      This guide explains how AI behaviour changes when you move from nominal operating conditions into the realities of deployment. Even a single factor such as server load can noticeably alter the quality, stability, and reliability of the model’s output. Under ideal test conditions the system behaves one way; under heavier demand it behaves another.
+    </p>
 
-      <details>
-        <summary>Behavioural Failure Patterns</summary>
-        <p>
-          Real deployments reveal consistent behavioural patterns that never appear in single prompt tests. These patterns are central to understanding system stability and reliability.
-        </p>
-        <ul>
-          <li>behaviour changing over time</li>
-          <li>behaviour diverging across similar inputs</li>
-          <li>behaviour collapsing under pressure</li>
-        </ul>
-        <p>
-          These patterns are invisible to audits, dashboards, and compliance checklists. They only emerge when you observe the system in motion, not in snapshots.
-        </p>
-        <p>
-          See <a href="testing-failure-modes.html">Behavioural Failure Modes</a>.
-        </p>
-      </details>
+    <p>
+      This manual also covers the failure modes of long‑form work such as reports, factual synthesis, and multi‑step reasoning, where collapse becomes visible and users often don’t understand why the system is failing. It gives teams a clear way to recognise when the AI is drifting, collapsing, or more likely to produce contaminated output.
+    </p>
 
-      <details>
-        <summary>Behavioural Testing vs Prompt Testing</summary>
-        <p>
-          Behavioural testing and prompt testing measure different things. Understanding the distinction is essential for evaluating system quality, assessing deployment risk, and avoiding personal and corporate liability.
-        </p>
-        <ul>
-          <li>evaluating system quality</li>
-          <li>assessing deployment risk</li>
-          <li>avoiding personal and corporate liability</li>
-        </ul>
-        <p>
-          Prompt testing tells you nothing about whether a system will behave safely tomorrow. Behavioural testing shows whether the system is stable enough to trust and whether you have the evidence required for legal and operational accountability.
-        </p>
-        <p>
-          See <a href="testing-vs-prompt-testing.html">Behavioural Testing vs Prompt Testing</a>.
-        </p>
-      </details>
-      <details>
-        <summary>Vectored Conversations</summary>
-        <p>
-          Vectored conversations provide a structured way to observe system behaviour across controlled conversational paths. They support repeatable behavioural observation, workflow simulation, stability and drift detection, and cross model comparison.
-        </p>
-        <ul>
-          <li>repeatable behavioural observation</li>
-          <li>workflow simulation</li>
-          <li>stability and drift detection</li>
-          <li>cross model comparison</li>
-        </ul>
-        <p>
-          See <a href="testing-vectored.html">Vectored Conversations</a>.
-        </p>
-      </details>
+    <p>
+      A Quick Start Guide is included so you can begin testing immediately. You don’t need to read the full methodology first. You can jump in, get a feel for how behaviour shifts, and then use the full methodology to deepen your testing practice.
+    </p>
 
-      <details>
-        <summary>LLM INQUISITOR Methodology</summary>
-        <p>
-          The LLM INQUISITOR Methodology is the first behavioural testing methodology designed specifically for LLM systems. It provides a complete, structured approach for evaluating AI behaviour in real workflows and under real conditions.
-        </p>
-        <p>
-          It is the only approach designed to produce behavioural evidence suitable for legal, operational, and compliance use.
-        </p>
-        <p>
-          The Methodology page contains the full paper, including:
-        </p>
-        <ul>
-          <li>the behavioural testing lifecycle</li>
-          <li>scenario and workflow design</li>
-          <li>behavioural signature extraction</li>
-          <li>evaluation patterns</li>
-          <li>practitioner guidance</li>
-        </ul>
-        <p>
-          See <a href="methodology.html">Methodology</a>.
-        </p>
-      </details>
-    </section>
+    <ul>
+      <li>A shared vocabulary for describing behavioural failures</li>
+      <li>Ways to recognise when long‑form work is collapsing</li>
+      <li>Methods for managing failure modes</li>
+      <li>Clear approaches for coordinating work around known limitations</li>
+      <li>A Quick Start entry point so teams can begin testing today</li>
+    </ul>
+
+    <h3>2) Vectored Conversational AI Testing</h3>
+    <p>
+      This methodology takes what would normally be free‑flowing, messy, unpredictable human conversation and places it inside a formal test structure that can be used for meaningful evaluation.
+    </p>
+
+    <p>
+      It scales from short probe tests that sample many domains to fully representative conversations with nuanced behaviour, subtle interaction styles, and realistic user personas.
+    </p>
+
+    <ul>
+      <li>Recreate realistic user interactions in a controlled, repeatable form</li>
+      <li>Evaluate how the AI responds across different domains and personas</li>
+      <li>Identify where the system succeeds and where it fails</li>
+      <li>Build a consistent evidential record of behaviour</li>
+      <li>Use that evidence later in compliance audits or regression comparisons</li>
+    </ul>
+
+    <p>
+      Any conversation, simple or complex, becomes a repeatable, evidence‑producing test vector that can be archived, re‑run, and compared across model versions or operating conditions.
+    </p>
+
+<p style="margin-top:12px;">
+<p><i>Both manuals available for instant download from leanpub.com</i></p>
+</p>
+  </div>
+
+</section>
+
+<section class="card">
+  <h2>Testing Tools <span style="opacity:0.6;">(coming soon)</span></h2>
+
+  <p>
+    A collection of practical testing applications, designed to support structured LLM testing, workflow
+    inspection, anomaly detection, and conversational behaviour analysis.
+    These tools provide clear, repeatable mechanisms for validating outputs,
+    probing edge‑cases, stress‑testing AI systems and auditable evidence of AI system performance.
+  </p>
+
+  <p><i>Tools, apps, and test suites launching soon</i></p>
+</section>
+
 
     <p class="footer-nav">
       <a href="index.html">Home</a> ·
