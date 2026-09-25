@@ -9,6 +9,12 @@
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/index.html</loc>
   </url>
 
+<url>
+  <loc>https://assimilatedhuman.github.io/inquisitor-labs/domain-surface.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+  
  <url>
     <loc>https://assimilatedhuman.github.io/inquisitor-labs/visibility-audit.html</loc>
   </url>
